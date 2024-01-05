@@ -7,8 +7,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      {/* <h1>Hello Devs!✌️</h1> */}
+      {/* <Navbar /> */}
       <h1>Hi, I'm Sithu Aung Khant</h1>
       <p>A Front End Developer</p>
     </>
