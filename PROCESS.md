@@ -28,3 +28,6 @@
 - I wasn't able to implement dark mode today; I require a bit more knowledge on that. However, in the evening session, I successfully developed a responsive navbar. It is fully functional.
 
 - I also customized the logo for both dark and light modes, incorporating my personal touch by tweaking it with my name. I am loving the result.
+
+- I was able to add toggle switch finally. Here is the the useful resource from [
+  Lokesh Sharma](https://www.linkedin.com/pulse/creating-dark-light-mode-tailwind-css-reactjs-guide-beginners-sharma/)

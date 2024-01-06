@@ -1,13 +1,11 @@
 import React from 'react';
 import Navbar from './Navbar';
-import Toggle from './Toggle';
 
 const Header = () => {
   return (
-    <>
+    <header className="bg-white dark:bg-black dark:text-white">
       <Navbar />
-      {/* <Toggle /> */}
-    </>
+    </header>
   );
 };
 

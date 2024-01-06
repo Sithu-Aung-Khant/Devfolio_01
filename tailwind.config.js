@@ -13,7 +13,11 @@ export default {
         'sans-serif',
       ],
     },
-    extend: {},
+    extend: {
+      colors: {
+        black: '#242424',
+      },
+    },
   },
   plugins: [],
 };
