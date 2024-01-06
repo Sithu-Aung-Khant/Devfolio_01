@@ -1,15 +1,13 @@
 import { useState } from 'react';
 import './App.css';
-import Navbar from './components/Navbar';
+import Header from './components/Header/Header';
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      {/* <Navbar /> */}
-      <h1>Hi, I'm Sithu Aung Khant</h1>
-      <p>A Front End Developer</p>
+      <Header />
     </>
   );
 }
