@@ -35,3 +35,8 @@
 
 - Today, I move useState from child component {toggle} to parent compoent {navbar} so that I can manipulate logo icon based on the dark mode of the window.
 - I wasn't sure I can do it so I create a new branch and test my logic, but it works! Amazing! so I will merge the branch.
+
+### Adding dark/light button on mobile viw.
+
+- I want to add toggle beside the menu icon right here.
+- It was easy to implement it, I thought it wouldn't be that easy. But I got it. It is so easy to style for both dark and light mode. I'm loving tailwind CSS.
