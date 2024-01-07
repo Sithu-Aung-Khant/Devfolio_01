@@ -29,5 +29,9 @@
 
 - I also customized the logo for both dark and light modes, incorporating my personal touch by tweaking it with my name. I am loving the result.
 
-- I was able to add toggle switch finally. Here is the the useful resource from [
-  Lokesh Sharma](https://www.linkedin.com/pulse/creating-dark-light-mode-tailwind-css-reactjs-guide-beginners-sharma/)
+- I was able to add toggle switch finally. Here is the the useful resource from [Lokesh-Sharma](https://www.linkedin.com/pulse/creating-dark-light-mode-tailwind-css-reactjs-guide-beginners-sharma/)
+
+1/7/2024
+
+- Today, I move useState from child component {toggle} to parent compoent {navbar} so that I can manipulate logo icon based on the dark mode of the window.
+- I wasn't sure I can do it so I create a new branch and test my logic, but it works! Amazing! so I will merge the branch.

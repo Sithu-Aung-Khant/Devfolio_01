@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Toggle from './Toggle';
@@ -12,6 +12,18 @@ const navigation = [
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    setDarkMode(isDarkMode);
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', darkMode);
+    localStorage.setItem('darkMode', darkMode);
+  }, [darkMode]);
+
   return (
     <>
       <nav
@@ -20,7 +32,11 @@ const Navbar = () => {
       >
         <div className="flex items-center">
           <a href="#">
-            <img src="./2-1.png" alt="" className="h-8 w-auto pe-1" />
+            {darkMode ? (
+              <img src="./1-1.png" alt="" className="h-8 w-auto pe-1" />
+            ) : (
+              <img src="./2-1.png" alt="" className="h-8 w-auto pe-1" />
+            )}
           </a>
           <div className="block">
             <div className="text-xl mt-1 leading-5 font-semibold">SITHU</div>
@@ -48,7 +64,7 @@ const Navbar = () => {
               {item.name}
             </a>
           ))}
-          <Toggle />
+          <Toggle darkMode={darkMode} onToggle={() => setDarkMode(!darkMode)} />
         </div>
       </nav>
       <Dialog
