@@ -1,42 +1,35 @@
-## Navbar
+## 1/6/2024
 
-- To build navbar I want to try tailwind CSS, so now I will install tailwind CSS in my vite project.
+### Navbar
 
-### Resources to Check
+- To create the navbar for my portfolio website, I decided to utilize Tailwind CSS. Here's how I approached building it:
 
-#### Tailwind CSS
+### Font Configuration
 
-- [tailwind-components](https://tailwindcomponents.com/)
-- [material-tailwind](https://www.material-tailwind.com/)
-- [flow-bite](https://flowbite.com/)
+- I initially configured the font family in the `tailwind.config.js` file, opting for the theme bracket to set it as a default without specifying the font name for every element. However, this approach didn't work as expected, so I later moved the `configuration` to the `extend` bracket. This underscores the importance of practical experimentation in determining what works.
 
-1/6/2024
+### Light/Dark Mode Implementation
 
-- I modified the font family for the website by configuring it in the tailwind.config.js file. The crucial decision was determining whether to place my fontFamily configuration within the themes bracket or the extend bracket. Convention suggests putting it in the extend bracket, but I wanted fontFamily as a default without specifying the font name for every element. Consequently, I chose to place it in the theme bracket, accepting the associated risk.
+- Next, I wanted to incorporate a dark and light mode into my website. Although I had done it with SCSS previously, adapting it to a React app with Tailwind CSS posed a new challenge.
 
-### Light/Dark Mode
+  I found useful guides for building a toggle switch and implementing dark mode:
 
-- Now, I want to add dark and light mode in my website. I have done it with scss but I haven't tried in react app with tailwind. So let's overcome this challenge.
+  - [Tailwind CSS | Dark & Light Theme Switcher](https://www.youtube.com/watch?v=oMOe_32M6ss&ab_channel=JohnKomarnicki)
+  - [Tailwind CSS Dark Mode | React App Theme Switcher](https://www.youtube.com/watch?v=VylXkPy-MIc&ab_channel=OverClocked)
+  - [Tailwind CSS Dark/Light/System Base Change Theme With Local Storage | React js dark mode](https://www.youtube.com/watch?v=NMTq5HIxMa8&ab_channel=CodeAProgram)
 
-#### Resources
+  After a bit of struggle, I successfully added the dark mode toggle switch, incorporating resources from [Lokesh-Sharma](https://www.linkedin.com/pulse/creating-dark-light-mode-tailwind-css-reactjs-guide-beginners-sharma/).
 
-- This guide is exactly what I've been looking for – it outlines the exact steps I want to follow in building a toggle switch. [Tailwind CSS | Dark & Light Theme Switcher](https://www.youtube.com/watch?v=oMOe_32M6ss&ab_channel=JohnKomarnicki)
+## 1/7/2024
 
-- [Tailwind CSS Dark Mode | React App Theme Switcher](https://www.youtube.com/watch?v=VylXkPy-MIc&ab_channel=OverClocked)
-- [Tailwind CSS Dark/Light/System Base Change Theme With Local Storage | React js dark mode](https://www.youtube.com/watch?v=NMTq5HIxMa8&ab_channel=CodeAProgram)
+- Today, I moved `useState` from the child component `{toggle}` to the parent component `{navbar}` to manipulate the logo icon based on the dark mode of the window. After testing my logic in a new branch, I was delighted to see it worked successfully.
 
-- I wasn't able to implement dark mode today; I require a bit more knowledge on that. However, in the evening session, I successfully developed a responsive navbar. It is fully functional.
+### Adding Dark/Light Button on Mobile View
 
-- I also customized the logo for both dark and light modes, incorporating my personal touch by tweaking it with my name. I am loving the result.
+- I decided to include a toggle button beside the menu icon for easy access to dark and light modes. Surprisingly, it was straightforward to implement and style for both modes, thanks to Tailwind CSS.
 
-- I was able to add toggle switch finally. Here is the the useful resource from [Lokesh-Sharma](https://www.linkedin.com/pulse/creating-dark-light-mode-tailwind-css-reactjs-guide-beginners-sharma/)
+### Navbar-Complete
 
-1/7/2024
+- The customization for the navbar is now complete. It includes a dark/light mode button that is fully responsive and works seamlessly on both desktop and mobile views. The color scheme of the navbar can be changed using the toggle button.
 
-- Today, I move useState from child component {toggle} to parent compoent {navbar} so that I can manipulate logo icon based on the dark mode of the window.
-- I wasn't sure I can do it so I create a new branch and test my logic, but it works! Amazing! so I will merge the branch.
-
-### Adding dark/light button on mobile viw.
-
-- I want to add toggle beside the menu icon right here.
-- It was easy to implement it, I thought it wouldn't be that easy. But I got it. It is so easy to style for both dark and light mode. I'm loving tailwind CSS.
+##
