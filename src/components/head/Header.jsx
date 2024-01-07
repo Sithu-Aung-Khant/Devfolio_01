@@ -32,12 +32,19 @@ const Header = () => {
       >
         <div className="flex items-center">
           <a href="#">
+            <img
+              src="./svgs/9.svg"
+              alt=""
+              className="h-10 w-auto pe-1 pt-1 dark:text-white"
+            />
+          </a>
+          {/* <a href="#">
             {darkMode ? (
               <img src="./1-1.png" alt="" className="h-8 w-auto pe-1" />
             ) : (
               <img src="./2-1.png" alt="" className="h-8 w-auto pe-1" />
             )}
-          </a>
+          </a> */}
           <div className="block">
             <div className="text-xl mt-1 leading-5 font-semibold">SITHU</div>
             <div className="text-xs  font-semibold">AUNG KHANT</div>

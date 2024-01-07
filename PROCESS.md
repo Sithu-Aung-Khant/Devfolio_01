@@ -30,4 +30,18 @@ I decided to include a toggle button beside the menu icon for easy access to dar
 
 The customization for the navbar is now complete. It includes a dark/light mode button that is fully responsive and works seamlessly on both desktop and mobile views. The color scheme of the navbar can be changed using the toggle button.
 
-##
+## Hero Section
+
+I struggle of tailwind way ot doing responsive columns and grid. But I was finally to able to pull out the result I want.
+What I want to do is I want my photo to wabbly circle shape. I tried searching for resoruces and here is what I found.
+
+- [01](https://www.smashingmagazine.com/2021/03/css-generators/)
+- [02](https://turbofuture.com/internet/CSS-Shapes-Generator)
+- [03](https://www.blobmaker.app/)
+- [04](https://blog.logrocket.com/15-best-css-shape-generators-demo/#triangles)
+
+While building my portfolio, I found the exact website that I have in my mind. Believe me It was exactly and it amazed me. Even the dark/light concept was the same. see yourselves here folks! [here](https://www.youtube.com/watch?app=desktop&v=27JtRAI3QO8&ab_channel=Bedimcode)
+
+What relief me is that it was two years ago and tech stack are not the same, but It will be easier to take inspiration from it. Damn! the world is too small bro 😆.
+
+I was content with the result for profile background svg. I need to add my photo in the svg tomorrow in canva. The logo icon in the top left corner feels odd to me so I tried to change it. I palyaround in canva, customize icons and design and import svgs to it. After testing 9 svgs I was finally content with the logo I got. It is more engaging, it can draw attention and my name just more clear beside the icon so I choose that icon for the day. That's all for today, It was really well spent day for the project. It is exciting and pleasing at the same time seeing my websites coming into life/reality.
