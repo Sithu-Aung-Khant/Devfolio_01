@@ -13,7 +13,7 @@ const HeroSection = () => {
         </div>
         <div className="md:w-1/2">
           <div className="wrapper flex items-center justify-center">
-            <div className="blob relative bg-cover bg-center shadow-xl animate-class transition-all duration-1000 size-60 bg-[url('./cyan.png')]"></div>
+            <div className="blob relative bg-cover bg-center shadow-lg shadow-gray-400 animate-class transition-all duration-1000 size-60 bg-[url('./cyan.png')]"></div>
           </div>
         </div>
       </div>
