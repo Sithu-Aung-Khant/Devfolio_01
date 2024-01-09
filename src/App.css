@@ -40,3 +40,98 @@
 .read-the-docs {
   color: #888;
 } */
+
+@keyframes animate {
+  0% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  50% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  100% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+}
+
+.animate-class {
+  animation: animate 8s ease-in-out infinite;
+}
+
+/* The `.typing-effect` class is responsible for creating a typing effect animation. Here's a breakdown
+of what each part of the code does: */
+/* .typing-effect {
+  width: 14ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes disappear {
+  100% {
+    border-color: transparent;
+  }
+} */
+
+/* ================== REAL ============================ */
+
+.type-effect p:nth-child(1) {
+  width: 300px;
+  animation: type 1.2s steps(20, end) forwards;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* animation: animation 2s steps(20, end) 1.2s forwards,
+  blink 0.5s step-end 2.2s infinite alternate; */
+
+.type-effect p:nth-child(2) {
+  width: 250px;
+  animation: animation 2s steps(20, end) 1.2s infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1%,
+  99% {
+    border-right: 4px solid #2d4a53;
+  }
+  100% {
+    border-right: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes animation {
+  0% {
+    width: 0;
+    /* width: 20%; */
+  }
+  1% {
+    border-right: 3px solid #2d4a53;
+  }
+  100% {
+    border-right: 3px solid #2d4a53;
+  }
+}

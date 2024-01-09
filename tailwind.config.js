@@ -12,11 +12,13 @@ export default {
         'Arial',
         'sans-serif',
       ],
+      poppins: ['Poppins', 'sans-serif'],
     },
     extend: {
       colors: {
         black: '#242424',
       },
+      fontFamily: {},
     },
   },
   plugins: [],
