@@ -10,19 +10,13 @@ const navigation = [
   { name: 'CONTACT', href: '#' },
 ];
 
-const Header = () => {
+const Header = ({ isDark, toggleDarkMode }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-    setDarkMode(isDarkMode);
-  }, []);
-
-  useEffect(() => {
-    document.documentElement.classList.toggle('dark', darkMode);
-    localStorage.setItem('darkMode', darkMode);
-  }, [darkMode]);
+    document.documentElement.classList.toggle('dark', isDark);
+    localStorage.setItem('darkMode', isDark);
+  }, [isDark]);
 
   return (
     <header className="bg-white dark:bg-black dark:text-white">
@@ -44,7 +38,7 @@ const Header = () => {
           </div>
         </div>
         <div className="flex md:hidden items-center">
-          <Toggle darkMode={darkMode} onToggle={() => setDarkMode(!darkMode)} />
+          <Toggle isDark={isDark} onToggle={toggleDarkMode} />
           <button
             type="button"
             className="inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
@@ -64,7 +58,7 @@ const Header = () => {
               {item.name}
             </a>
           ))}
-          <Toggle darkMode={darkMode} onToggle={() => setDarkMode(!darkMode)} />
+          <Toggle isDark={isDark} onToggle={toggleDarkMode} />
         </div>
       </nav>
       <Dialog
@@ -79,7 +73,7 @@ const Header = () => {
             <div className="flex items-center">
               <a href="#">
                 <span className="sr-only">S Logo</span>
-                {darkMode ? (
+                {isDark ? (
                   <img src="./1-1.png" alt="" className="h-8 w-auto pe-1" />
                 ) : (
                   <img src="./2-1.png" alt="" className="h-8 w-auto pe-1" />

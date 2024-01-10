@@ -2,11 +2,11 @@
 
 import { SunIcon, MoonIcon } from '@heroicons/react/24/outline';
 
-const Toggle = ({ onToggle, darkMode }) => {
+const Toggle = ({ onToggle, isDark }) => {
   return (
     <>
       <button onClick={onToggle} className="h-6 w-6 text-black-500 -ms-2">
-        {darkMode ? <SunIcon /> : <MoonIcon />}
+        {isDark ? <SunIcon /> : <MoonIcon />}
       </button>
     </>
   );
