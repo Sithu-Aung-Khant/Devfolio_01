@@ -107,3 +107,14 @@ Here are the resources that helped me when I am figuring out
 - [Typed.css](https://typedcss.com/)
 - [10+ CSS Typing Effects](https://freefrontend.com/css-typing-text/)
 - [gradient typing text effects](https://codepen.io/ladyjellington/pen/qBBQBYy)
+
+The type animation is looking good but I want to pause at the end of the animation before it goes backwards. I searched through tutorial and when I found this [tuto](https://www.youtube.com/watch?v=ccO2B40zkv4&ab_channel=OnlineTutorials) I quickly learn, try and finally I was able to pull out the result I want.
+
+Now what I want it I want to highlight the text of my name and some important text I want to highlight. so researching begins!
+
+I also need to add rounded shadow to my profile photos in canva cus I can't do inner and shadow at the same time in tailwind CSS.
+
+# 1/10/2024
+
+Today, I've done choosing font family for hero paragraph. I used `Work Sans` font. Now I will try adding highlight to the text I want to.
+eg. My name, job etc...
