@@ -6,13 +6,22 @@ const HeroSection = () => {
           <p className="text-4xl font-bold">Front-End React</p>
           <p className="text-4xl font-bold ">Developer</p>
           <p className="my-2 leading-6 font-text tracking-tight py-3 md:py-0 md:mb-0">
-            I am Sithu, a developer with a focus on React, shaping intuitive and
-            visually appealing
-            <span className="md:hidden"> Front-end solutions.</span>
+            I am <span className="bg-gradient-to-t from-blue">Sithu,</span> a
+            developer with a focus on React, shaping{' '}
+            <span className="bg-gradient-to-t from-blue">intuitive</span> and{' '}
+            <span className="bg-gradient-to-t from-blue">
+              visually appealing
+            </span>
+            <span className="md:hidden "> Front-end solutions.</span>
           </p>
           <p className=" leading-6 font-text tracking-tight hidden md:block">
-            Front-end solutions.
+            <span className="bg-gradient-to-r from-[]">
+              Front-end solutions.
+            </span>
           </p>
+          <button className="bg-blue py-2 px-4 my-4 rounded-md font-medium">
+            PROJECTS
+          </button>
         </div>
         <div className="md:w-1/2">
           <div className="wrapper flex items-center justify-center">
