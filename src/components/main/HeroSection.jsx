@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
 const HeroSection = () => {
   return (
     <div className="hero-section container-2xl mx-auto">
@@ -32,6 +35,7 @@ const HeroSection = () => {
             <button className="bg-green text-white py-2 px-4 mt-5 rounded-md font-medium ">
               PROJECTS
             </button>
+            <FontAwesomeIcon icon={faEnvelope} />
           </div>
           <div className="md:w-1/2">
             <div className="wrapper flex items-center justify-center">
