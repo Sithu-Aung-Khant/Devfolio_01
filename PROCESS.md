@@ -117,3 +117,7 @@ I also need to add rounded shadow to my profile photos in canva cus I can't do i
 # 1/10/2024
 
 Today, I've done choosing font family for hero paragraph. I used `Work Sans` font. Now I will try adding highlight to the text I want to. This video [Low Highlight Text Effect CSS ](https://www.youtube.com/watch?v=WKgkWL7RXXQ&ab_channel=CodingArtist) helped me to grasp the concept behind the effect and after that I reapply it with tailwind.
+
+# 1/11/2024
+
+Yesterday, I tried to use icons from font awesome. To do that i happen to install bable-plugin and it got error. I don't know why but after debugging all the morning, I was able to go back to the state that I haven't installed babel plugin and it works find again. Now what I need to do is instead ot adding icons through dynamic import I will try adding individually.
