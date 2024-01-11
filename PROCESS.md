@@ -121,3 +121,13 @@ Today, I've done choosing font family for hero paragraph. I used `Work Sans` fon
 # 1/11/2024
 
 Yesterday, I tried to use icons from font awesome. To do that i happen to install bable-plugin and it got error. I don't know why but after debugging all the morning, I was able to go back to the state that I haven't installed babel plugin and it works find again. Now what I need to do is instead ot adding icons through dynamic import I will try adding individually.
+
+I spent all day to figure this out and when I found out, I feel dumb. Af first the icons I want to add (github & linked) icon are not available in the version 6. it says so in website. so I tried to install font awesome 5 which I cant and it fraustrated me. when I apply the icon path as the individual guide says, the console log says it is not in the file path they give. I was so clueless why I can't use these icons. but when I carefull read through the dependecies I install, there are there version, and what is happening was, I was importing icons as the into documentation says from `free-solid-svg-icons` but they are moved to 'free-brands-svg-icons` for social media related icons and they didn't mention in the documentation. so I had to spent all day to figure that out. At the end of the day I was importing the icon from the wrong path.
+
+```
+ "@fortawesome/free-brands-svg-icons": "^6.5.1",
+  "@fortawesome/free-regular-svg-icons": "^6.5.1",
+  "@fortawesome/free-solid-svg-icons": "^6.5.1",
+```
+
+After that, I debug color opacity problem when I open menu button in light mode. I can see the underlying layer and I don't want to do that. I was feeling stuck to debug this when I was coding navbar and now what I found out was the color I set for `white ` with rbg and it has `0.87` opacity in it. It was causing the problem and I didn't notice it. I thought it was the color problem. At the end of the day it was just overlooking something cause it and sometimes tiny little things are what cause the problem. You just have to have patience and look through it.

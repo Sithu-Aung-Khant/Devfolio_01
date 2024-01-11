@@ -19,6 +19,7 @@ export default {
         black: '#242424',
         blue: '#a5c8d4',
         green: '#2D4A53',
+        dim_white: '#ffffffde',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],

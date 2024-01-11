@@ -1,11 +1,17 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import {
+  faGithub,
+  faLinkedinIn,
+  faGithubAlt,
+  faGithubSquare,
+  faSquareGithub,
+} from '@fortawesome/free-brands-svg-icons';
 
 const HeroSection = () => {
   return (
     <div className="hero-section container-2xl mx-auto">
       <section
-        className="p-10 lg:px-40 lg:py-20 dark:bg-black dark:text-white"
+        className="p-10 lg:px-40 lg:py-20 dark:bg-black dark:text-dim_white"
         id="home"
       >
         <div className="md:flex text-center items-center">
@@ -32,10 +38,23 @@ const HeroSection = () => {
                 Front-end solutions.
               </span>
             </p>
-            <button className="bg-green text-white py-2 px-4 mt-5 rounded-md font-medium ">
-              PROJECTS
-            </button>
-            <FontAwesomeIcon icon={faEnvelope} />
+            <div className="flex items-center mt-5">
+              <button className="bg-green text-dim_white py-2 px-4  rounded-md font-medium ">
+                PROJECTS
+              </button>
+              <a href="https://github.com/Sithu-Aung-Khant">
+                <FontAwesomeIcon
+                  className="px-2 py-1 ml-2 size-6 text-green0 dark:text-dim_white"
+                  icon={faGithub}
+                />
+              </a>
+              <a href="https://www.linkedin.com/in/sithu-aung-khant-504ba91b5/">
+                <FontAwesomeIcon
+                  className="px-2 py-1 size-6 text-green0 dark:text-dim_white"
+                  icon={faLinkedinIn}
+                />
+              </a>
+            </div>
           </div>
           <div className="md:w-1/2">
             <div className="wrapper flex items-center justify-center">

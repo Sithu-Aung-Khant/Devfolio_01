@@ -19,7 +19,7 @@ const Header = ({ isDark, toggleDarkMode }) => {
   }, [isDark]);
 
   return (
-    <header className="bg-white dark:bg-black dark:text-white">
+    <header className="bg-white dark:bg-black dark:text-dim_white">
       <nav
         className="flex items-center justify-between p-4 lg:py-6 lg:px-8"
         aria-label="Global"
@@ -29,7 +29,7 @@ const Header = ({ isDark, toggleDarkMode }) => {
             <img
               src="./svgs/9.svg"
               alt=""
-              className="h-10 w-auto pe-1 pt-1 dark:text-white"
+              className="h-10 w-auto pe-1 pt-1 dark:text-dim_white"
             />
           </a>
           <div className="block">
@@ -45,7 +45,10 @@ const Header = ({ isDark, toggleDarkMode }) => {
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-8 w-8 dark:text-white" aria-hidden="true" />
+            <Bars3Icon
+              className="h-8 w-8 dark:text-dim_white"
+              aria-hidden="true"
+            />
           </button>
         </div>
         <div className="hidden md:flex md:gap-x-6 ">
@@ -53,7 +56,7 @@ const Header = ({ isDark, toggleDarkMode }) => {
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-gray-900 dark:text-white"
+              className="text-sm font-semibold leading-6 text-gray-900 dark:text-dim_white"
             >
               {item.name}
             </a>
@@ -68,8 +71,8 @@ const Header = ({ isDark, toggleDarkMode }) => {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-50" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white dark:bg-black p-4 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-          <div className="flex items-center justify-between dark:text-white">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white dark:bg-black p-4 sm:max-w-sm ">
+          <div className="flex items-center justify-between dark:text-dim_white">
             <div className="flex items-center">
               <a href="#">
                 <span className="sr-only">S Logo</span>
@@ -93,7 +96,7 @@ const Header = ({ isDark, toggleDarkMode }) => {
             >
               <span className="sr-only">Close menu</span>
               <XMarkIcon
-                className="h-8 w-8 dark:text-white"
+                className="h-8 w-8 dark:text-dim_white"
                 aria-hidden="true"
               />
             </button>
@@ -105,7 +108,7 @@ const Header = ({ isDark, toggleDarkMode }) => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="-mx-3 block rounded-md px-3 py-2 text-center font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-zinc-800"
+                    className="-mx-3 block rounded-md px-3 py-2 text-center font-semibold leading-7 text-gray-900 dark:text-dim_white hover:bg-gray-50 dark:hover:bg-zinc-800"
                   >
                     {item.name}
                   </a>
