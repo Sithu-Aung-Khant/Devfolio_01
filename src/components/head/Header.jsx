@@ -37,9 +37,6 @@ const Header = ({ isDark, toggleDarkMode }) => {
             <div className="text-xl mt-1 leading-5 font-semibold">SITHU</div>
             <div className="text-xs  font-semibold">AUNG KHANT</div>
           </div>
-          <div className="flex">
-            <Socials />
-          </div>
         </div>
         <div className="flex md:hidden items-center">
           <Toggle isDark={isDark} onToggle={toggleDarkMode} />

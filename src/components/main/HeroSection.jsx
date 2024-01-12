@@ -1,16 +1,16 @@
-import Socials from '../head/Socials';
+import SocialIcons from '../head/Socials';
 
 const HeroSection = () => {
   return (
     <div className="hero-section container-2xl mx-auto">
       <section
-        className="p-10 lg:px-40 lg:py-20 dark:bg-black dark:text-dim_white"
+        className="p-10 lg:px-40 lg:py-20 2xl:px-72 dark:bg-black dark:text-dim_white"
         id="home"
       >
-        <div className="absolute left-1 top-40 hidden lg:block p-4 lg:py-6 lg:px-8 ">
-          <Socials />
-        </div>
-        <div className="md:flex text-center items-center">
+        <div className="md:flex items-center">
+          <div className="absolute left-1 top-40 hidden lg:block p-4 lg:py-6 lg:px-8 ">
+            <SocialIcons />
+          </div>
           <div className="md:w-1/2 text-start type-effect">
             <p className="text-4xl font-bold">Front-End React</p>
             <p className="text-4xl font-bold ">Developer</p>
