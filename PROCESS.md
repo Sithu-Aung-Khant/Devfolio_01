@@ -135,3 +135,9 @@ After that, I debug color opacity problem when I open menu button in light mode.
 After styling for both dark & light mode. It is so tricky to go the icon and click again and again so I tried to add keyboard shorcut keys for opening dark & light mode. With the help for chat gpt I was able to implement this feature easily.
 
 1/12/2024
+
+I created social component and added icons and links for my social accounts. At first the sample jsx was very bloat and I thought I can reduce the code with js array methods. I am so proud of myself for coming up with this idea. After that. I play around and figure out which play of the screen is the best suitable for palcing my social icons.
+
+when I text responsiveness for my design. I found out that the text are a little bit too small so I make bigger the sizes of the overall text.
+
+One thing I struggled was responsive of the widths I created. At first the width of the columsn are find but when I add social icons as the third column chaos happen and I had to spent a lot of time to balance the width, style between different screen sizes.
