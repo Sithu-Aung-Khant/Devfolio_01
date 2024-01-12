@@ -133,3 +133,5 @@ I spent all day to figure this out and when I found out, I feel dumb. Af first t
 After that, I debug color opacity problem when I open menu button in light mode. I can see the underlying layer and I don't want to do that. I was feeling stuck to debug this when I was coding navbar and now what I found out was the color I set for `white ` with rbg and it has `0.87` opacity in it. It was causing the problem and I didn't notice it. I thought it was the color problem. At the end of the day it was just overlooking something cause it and sometimes tiny little things are what cause the problem. You just have to have patience and look through it.
 
 After styling for both dark & light mode. It is so tricky to go the icon and click again and again so I tried to add keyboard shorcut keys for opening dark & light mode. With the help for chat gpt I was able to implement this feature easily.
+
+1/12/2024

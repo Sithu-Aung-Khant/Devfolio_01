@@ -17,14 +17,14 @@
 
 /* ================== HERO SECTION ANIMATION ============================ */
 
-.type-effect p:nth-child(1) {
+.type-effect p:nth-child(2) {
   width: 300px;
   animation: type 2s steps(20, end) forwards;
   white-space: nowrap;
   overflow: hidden;
 }
 
-.type-effect p:nth-child(2) {
+.type-effect p:nth-child(3) {
   width: 250px;
   animation: animation 4s steps(20, end) 1.5s infinite;
   white-space: nowrap;
@@ -40,6 +40,7 @@
     border-right: 4px solid #2d4a53;
   }
   100% {
+    width: 13ch;
     border-right: none;
   }
 }

@@ -52,12 +52,12 @@ const Header = ({ isDark, toggleDarkMode }) => {
             />
           </button>
         </div>
-        <div className="hidden md:flex md:gap-x-6 ">
+        <div className="hidden md:flex md:gap-x-6">
           {navigation.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-gray-900 dark:text-dim_white"
+              className="text-md font-semibold leading-6 text-gray-900 dark:text-dim_white"
             >
               {item.name}
             </a>
