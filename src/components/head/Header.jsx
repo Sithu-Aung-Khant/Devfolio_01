@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Toggle from './Toggle';
+import Socials from './Socials';
 
 const navigation = [
   { name: 'HOME', href: '#' },
@@ -35,6 +36,9 @@ const Header = ({ isDark, toggleDarkMode }) => {
           <div className="block">
             <div className="text-xl mt-1 leading-5 font-semibold">SITHU</div>
             <div className="text-xs  font-semibold">AUNG KHANT</div>
+          </div>
+          <div className="flex">
+            <Socials />
           </div>
         </div>
         <div className="flex md:hidden items-center">

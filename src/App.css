@@ -44,24 +44,6 @@
   }
 }
 
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
-@keyframes animation01 {
-  0% {
-    width: 0;
-  }
-  1% {
-    border-right: 3px solid #2d4a53;
-  }
-  100% {
-    border-right: 3px solid #2d4a53;
-  }
-}
-
 @keyframes animation {
   0%,
   10%,
@@ -73,36 +55,5 @@
   70% {
     width: 9ch;
     border-right: 3px solid #2d4a53;
-  }
-}
-
-/* =============== FOR DARK MODE==================== */
-
-@media (prefers-color-scheme: dark) {
-  @keyframes type {
-    0% {
-      width: 0;
-    }
-    1%,
-    99% {
-      border-right: 4px solid #ffffff;
-    }
-    100% {
-      border-right: none;
-    }
-  }
-  /* Adjust the color for dark mode */
-  @keyframes animation {
-    0%,
-    10%,
-    100% {
-      width: 0;
-      border-right: 3px solid #ffffff;
-    }
-    60%,
-    70% {
-      width: 9ch;
-      border-right: 3px solid #ffffff;
-    }
   }
 }

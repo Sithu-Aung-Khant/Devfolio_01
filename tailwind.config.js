@@ -17,7 +17,7 @@ export default {
     extend: {
       colors: {
         black: '#242424',
-        blue: '#a5c8d4',
+        blue: '#bae1ec',
         green: '#2D4A53',
         dim_white: '#ffffffde',
       },
