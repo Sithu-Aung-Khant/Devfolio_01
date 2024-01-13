@@ -53,7 +53,7 @@ const HeroSection = () => {
             </div>
           </div>
           {/* <div className="hidden lg:block absolute lg:left-20 xl:left-36 mt-4"> */}
-          <div className="hidden lg:block absolute right-40">
+          <div className="hidden lg:block absolute right-28 xl:right-40">
             <SocialIcons />
           </div>
         </div>
