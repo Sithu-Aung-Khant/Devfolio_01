@@ -1,4 +1,5 @@
 import SocialIcons from '../head/Socials';
+import './hero.css';
 
 const HeroSection = () => {
   return (
@@ -52,10 +53,12 @@ const HeroSection = () => {
               <div className="blob relative bg-cover bg-center shadow-lg shadow-gray-400 dark:shadow-gray-900 animate-class transition-all duration-1000 size-72 bg-[url('./cyan01.png')]"></div>
             </div>
           </div>
-          {/* <div className="hidden lg:block absolute lg:left-20 xl:left-36 mt-4"> */}
           <div className="hidden lg:block absolute right-28 xl:right-40">
             <SocialIcons />
           </div>
+        </div>
+        <div className="mt-20 flex justify-center">
+          <div className="mouse border-2 border-solid border-green dark:border-dim_white"></div>
         </div>
       </section>
     </div>

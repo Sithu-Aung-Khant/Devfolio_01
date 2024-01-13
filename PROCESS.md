@@ -141,3 +141,9 @@ I created social component and added icons and links for my social accounts. At 
 when I text responsiveness for my design. I found out that the text are a little bit too small so I make bigger the sizes of the overall text.
 
 One thing I struggled was responsive of the widths I created. At first the width of the columsn are find but when I add social icons as the third column chaos happen and I had to spent a lot of time to balance the width, style between different screen sizes.
+
+# 13/1/2024
+
+Today- After I moved the social icons to thr right, I am content with the design so I won't test putting them at the bottom and I will add other features instead.
+
+What I want to add right now is the mouse scroll icons with animation to encourage users to scroll down.
