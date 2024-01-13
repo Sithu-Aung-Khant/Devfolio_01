@@ -58,7 +58,9 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="mt-20 flex justify-center">
-          <div className="mouse border-2 border-solid border-green dark:border-dim_white"></div>
+          <div class="mouse w-6 h-10 rounded-full relative overflow-hidden border-black dark:border-dim_white border-2">
+            <div class="scroll-wheel dark:bg-white bg-black"></div>
+          </div>
         </div>
       </section>
     </div>
