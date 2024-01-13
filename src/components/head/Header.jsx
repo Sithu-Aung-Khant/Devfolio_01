@@ -22,7 +22,7 @@ const Header = ({ isDark, toggleDarkMode }) => {
   return (
     <header className="bg-white dark:bg-black dark:text-dim_white">
       <nav
-        className="flex items-center justify-between p-4 lg:py-6 lg:px-8"
+        className="flex items-center justify-between py-4 px-4 lg:py-6 lg:px-8"
         aria-label="Global"
       >
         <div className="flex items-center">

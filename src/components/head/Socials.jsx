@@ -15,7 +15,7 @@ const SocialIcons = () => {
         <a
           key={item.name}
           href={item.url}
-          className="block p-2 hover:scale-110"
+          className="block py-2 hover:scale-110"
           target="_blank"
         >
           <FontAwesomeIcon
