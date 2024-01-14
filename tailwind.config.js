@@ -24,6 +24,10 @@ export default {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
+      fontSize: {
+        header: '40px',
+        xxs: '11px',
+      },
     },
   },
   plugins: [],

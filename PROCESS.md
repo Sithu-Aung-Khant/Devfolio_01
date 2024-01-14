@@ -146,4 +146,8 @@ One thing I struggled was responsive of the widths I created. At first the width
 
 Today- After I moved the social icons to thr right, I am content with the design so I won't test putting them at the bottom and I will add other features instead.
 
-What I want to add right now is the mouse scroll icons with animation to encourage users to scroll down.
+What I want to add right now is the mouse scroll icons with animation to encourage users to scroll down. I was able to implement the feature I wanted.
+
+# 14/1/2024
+
+I added about me component. reduce font-size a little bit because I was styling the website with 90% zoom entire time. I didn't know when it accidentally did it but glad I notice before too soon.

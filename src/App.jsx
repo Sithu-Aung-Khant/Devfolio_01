@@ -20,6 +20,7 @@ function App() {
   const toggleDarkMode = () => {
     setIsDark((prevDarkMode) => !prevDarkMode);
   };
+
   return (
     <>
       <Navbar isDark={isDark} toggleDarkMode={toggleDarkMode} />
