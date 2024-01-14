@@ -3,7 +3,7 @@ import './hero-section.css';
 
 const HeroSection = () => {
   return (
-    <div className="hero-section container-2xl mx-auto ">
+    <div className="hero-section container-2xl mx-auto max-h-max">
       <section
         className="px-4 py-8 lg:px-40 lg:py-20 2xl:px-72 dark:bg-black dark:text-dim_white"
         id="home"
