@@ -1,5 +1,5 @@
-import SocialIcons from '../head/Socials';
-import './hero.css';
+import SocialIcons from './Socials';
+import './hero-section.css';
 
 const HeroSection = () => {
   return (

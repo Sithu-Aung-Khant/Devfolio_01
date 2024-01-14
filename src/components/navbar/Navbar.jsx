@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Toggle from './Toggle';
-import Socials from './Socials';
 
 const navigation = [
   { name: 'HOME', href: '#' },
@@ -11,7 +10,7 @@ const navigation = [
   { name: 'CONTACT', href: '#' },
 ];
 
-const Header = ({ isDark, toggleDarkMode }) => {
+const Navbar = ({ isDark, toggleDarkMode }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -123,4 +122,4 @@ const Header = ({ isDark, toggleDarkMode }) => {
   );
 };
 
-export default Header;
+export default Navbar;

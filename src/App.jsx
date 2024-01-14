@@ -1,8 +1,7 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import Header from './components/head/Header';
+import Navbar from './components/navbar/Navbar';
 import HeroSection from './components/main/HeroSection';
-// import Main from './components/main/Main';
 
 function App() {
   // To check system preference of dark/light mode
@@ -22,9 +21,8 @@ function App() {
   };
   return (
     <>
-      <Header isDark={isDark} toggleDarkMode={toggleDarkMode} />
+      <Navbar isDark={isDark} toggleDarkMode={toggleDarkMode} />
       <HeroSection />
-      {/* <Main /> */}
     </>
   );
 }
