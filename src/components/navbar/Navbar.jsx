@@ -33,8 +33,8 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
             />
           </a>
           <div className="block">
-            <div className="text-xl mt-1 leading-5 font-semibold">SITHU</div>
-            <div className="text-xs  font-semibold">AUNG KHANT</div>
+            <div className="text-lg mt-1 leading-4 font-semibold">SITHU</div>
+            <div className="text-xxs  font-semibold">AUNG KHANT</div>
           </div>
         </div>
         <div className="flex md:hidden items-center">
@@ -56,7 +56,7 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
             <a
               key={item.name}
               href={item.href}
-              className="text-md font-semibold leading-6 text-gray-900 dark:text-dim_white"
+              className="text-sm font-semibold leading-6 text-gray-900 dark:text-dim_white"
             >
               {item.name}
             </a>

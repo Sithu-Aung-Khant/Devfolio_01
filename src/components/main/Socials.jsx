@@ -19,7 +19,7 @@ const SocialIcons = () => {
           target="_blank"
         >
           <FontAwesomeIcon
-            className="py-1 size-6 text-green dark:text-dim_white"
+            className="py-1 size-5 text-green dark:text-dim_white"
             icon={item.icon}
           />
         </a>

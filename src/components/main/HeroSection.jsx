@@ -5,26 +5,28 @@ const HeroSection = () => {
   return (
     <div className="hero-section container-2xl mx-auto max-h-max">
       <section
-        className="px-4 py-8 lg:px-40 lg:py-20 2xl:px-72 dark:bg-black dark:text-dim_white"
+        className="px-4 py-8 lg:px-48 lg:pt-24 2xl:px-72 dark:bg-black dark:text-dim_white"
         id="home"
       >
         <div className="md:flex justify-around items-center">
           <div className="md:3/5 text-start type-effect ">
-            <p className="text-3xl md:text-5xl font-bold">Front-End React</p>
-            <p className="text-3xl md:text-5xl font-bold ">Developer</p>
-            <p className="mt-2 leading-6 font-text tracking-tight md:py-0 md:mb-0 md:text-lg">
+            <div className="text-4xl lg:text-header lg:leading-tight font-bold">
+              <p>Front-End React</p>
+              <p>Developer</p>
+            </div>
+            <div className="mt-3 leading-6 font-text tracking-tight md:py-0 md:mb-0 ">
               I am{' '}
-              <span className="bg-gradient-to-t from-blue dark:from-green">
+              <span className="bg-gradient-to-t from-blue dark:from-green ">
                 Sithu,
               </span>{' '}
               <span className="hidden md:inline-block">
                 a developer with a focus on React,
               </span>
-            </p>
-            <p className="inline-block md:hidden">
+            </div>
+            <div className="inline-block md:hidden ">
               a developer with a focus on React,
-            </p>
-            <p className="md:text-lg">
+            </div>
+            <div className="">
               shaping{' '}
               <span className="bg-gradient-to-t from-blue dark:from-green">
                 intuitive
@@ -36,24 +38,24 @@ const HeroSection = () => {
               <span className="md:hidden bg-gradient-to-r from-blue dark:from-green">
                 Front-end solutions.
               </span>
-            </p>
-            <p className=" leading-6 font-text tracking-tight hidden md:block md:text-lg">
-              <span className="bg-gradient-to-r from-blue dark:from-green">
+            </div>
+            <div className=" leading-6 font-text tracking-tight hidden md:block">
+              <span className="bg-gradient-to-t from-blue dark:from-green">
                 Front-end solutions.
               </span>
-            </p>
+            </div>
             <div className="flex items-center mt-5">
-              <button className="bg-green text-dim_white py-2 px-4  rounded-md font-medium text-lg">
+              <button className="bg-green text-dim_white py-2 px-4  rounded-md font-medium ">
                 PROJECTS
               </button>
             </div>
           </div>
-          <div className="md:w-72 xl:w-2/5 ">
+          <div className="md:w-60 xl:w-2/5 ">
             <div className="wrapper flex items-center justify-center">
-              <div className="blob relative bg-cover bg-center shadow-lg shadow-gray-400 dark:shadow-gray-900 animate-class transition-all duration-1000 size-72 bg-[url('./cyan01.png')]"></div>
+              <div className="blob relative bg-cover bg-center shadow-lg shadow-gray-400 dark:shadow-gray-900 animate-class transition-all duration-1000 size-60 bg-[url('./cyan01.png')]"></div>
             </div>
           </div>
-          <div className="hidden lg:block absolute right-28 xl:right-40">
+          <div className="hidden lg:block absolute right-36 xl:right-60">
             <SocialIcons />
           </div>
         </div>
