@@ -57,9 +57,9 @@ const HeroSection = () => {
             <SocialIcons />
           </div>
         </div>
-        <div className="mt-20 flex justify-center">
-          <div class="mouse w-6 h-10 rounded-full relative overflow-hidden border-black dark:border-dim_white border-2">
-            <div class="scroll-wheel dark:bg-white bg-black"></div>
+        <div className="hidden md:flex mt-20 justify-center">
+          <div className="mouse w-6 h-10 rounded-full relative overflow-hidden border-black dark:border-dim_white border-2">
+            <div className="scroll-wheel dark:bg-white bg-black"></div>
           </div>
         </div>
       </section>
