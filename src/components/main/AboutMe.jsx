@@ -26,7 +26,7 @@ const AboutMe = () => {
           <p className="text-3xl md:text-4xl font-bold">About me</p>
           <p className="w-20 h-1 mt-3 md:mt-7 bg-green rounded-full "></p>
         </div>
-        <div className="md:flex mt-10 justify-around text-center border rounded-xl  overflow-hidden">
+        <div className="md:flex mt-10 justify-around text-center border dark:border-gray-700 rounded-xl  overflow-hidden">
           <div className="md:shrink-0">
             <img
               className="size-full md:size-80 md:h-full lg:size-96 object-cover"

@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <div className="hero-section container-2xl mx-auto max-h-max">
       <section
-        className="px-4 py-8 lg:px-48 lg:p-24 2xl:px-72 dark:bg-black dark:text-dim_white"
+        className="px-4 py-8 lg:px-28 lg:py-24 2xl:px-72 dark:bg-black dark:text-dim_white"
         id="home"
       >
         <div className="md:flex justify-around items-center">
@@ -58,8 +58,8 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-          <div className="md:w-60 xl:w-2/5 ">
-            <div className="wrapper flex items-center justify-center">
+          <div className="md:w-72 xl:w-2/5 ">
+            <div className="wrapper flex items-start ">
               <div className="blob relative bg-cover bg-center shadow-lg shadow-gray-400 dark:shadow-gray-900 animate-class transition-all duration-1000 size-60 bg-[url('./cyan01.png')]"></div>
             </div>
           </div>
