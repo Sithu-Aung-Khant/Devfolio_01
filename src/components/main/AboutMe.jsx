@@ -20,8 +20,8 @@ const skills = [
 
 const AboutMe = () => {
   return (
-    <section className="container-2xl mx-auto mb-20">
-      <div className="p-4 lg:px-24 xl:px-40 2xl:px-72 dark:bg-black dark:text-dim_white">
+    <section className="container-2xl mx-auto dark:bg-black dark:text-dim_white py-20">
+      <div className="p-4 lg:px-24 xl:px-40 2xl:px-72 ">
         <div className="About-me flex  items-center flex-col">
           <p className="text-3xl md:text-4xl font-bold">About me</p>
           <p className="w-20 h-1 mt-3 md:mt-7 bg-green rounded-full "></p>

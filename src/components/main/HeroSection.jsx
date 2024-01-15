@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <div className="hero-section container-2xl mx-auto max-h-max">
       <section
-        className="px-4 py-8 lg:px-48 lg:pt-24 2xl:px-72 dark:bg-black dark:text-dim_white"
+        className="px-4 py-8 lg:px-48 lg:p-24 2xl:px-72 dark:bg-black dark:text-dim_white"
         id="home"
       >
         <div className="md:flex justify-around items-center">
@@ -45,9 +45,17 @@ const HeroSection = () => {
               </span>
             </div>
             <div className="flex items-center mt-5">
-              <button className="bg-green text-dim_white py-2 px-4  rounded-md font-medium ">
+              <button className="bg-green text-dim_white py-2.5 px-4  rounded-md font-medium ">
                 PROJECTS
               </button>
+            </div>
+            <div className="hidden absolute md:flex mt-20 r-0 items-center">
+              <div className="mouse w-6 h-9 rounded-full relative overflow-hidden border-black dark:border-dim_white border-2">
+                <div className="scroll-wheel dark:bg-white bg-black"></div>
+              </div>
+              <div className="px-3 font-text text-sm tracking-tight">
+                Scroll down
+              </div>
             </div>
           </div>
           <div className="md:w-60 xl:w-2/5 ">
@@ -57,11 +65,6 @@ const HeroSection = () => {
           </div>
           <div className="hidden lg:block absolute right-36 xl:right-60">
             <SocialIcons />
-          </div>
-        </div>
-        <div className="hidden md:flex mt-20 justify-center">
-          <div className="mouse w-6 h-10 rounded-full relative overflow-hidden border-black dark:border-dim_white border-2">
-            <div className="scroll-wheel dark:bg-white bg-black"></div>
           </div>
         </div>
       </section>
