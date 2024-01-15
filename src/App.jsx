@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Navbar from './components/navbar/Navbar';
 import HeroSection from './components/main/HeroSection';
 import AboutMe from './components/main/AboutMe';
+import Qualification from './components/main/Qualification';
 
 function App() {
   // To check system preference of dark/light mode
@@ -22,11 +23,12 @@ function App() {
   };
 
   return (
-    <>
+    <div className="dark:bg-black dark:text-white">
       <Navbar isDark={isDark} toggleDarkMode={toggleDarkMode} />
       <HeroSection />
       <AboutMe />
-    </>
+      <Qualification />
+    </div>
   );
 }
 

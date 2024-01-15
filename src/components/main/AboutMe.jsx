@@ -20,22 +20,22 @@ const skills = [
 
 const AboutMe = () => {
   return (
-    <section className="container-2xl mx-auto dark:bg-black dark:text-dim_white py-20">
+    <section className="container-2xl mx-auto dark:bg-black dark:text-dim_white pt-20">
       <div className="p-4 lg:px-24 xl:px-40 2xl:px-72 ">
         <div className="About-me flex  items-center flex-col">
           <p className="text-3xl md:text-4xl font-bold">About me</p>
-          <p className="w-20 h-1 mt-3 md:mt-7 bg-green rounded-full "></p>
+          {/* <p className="w-20 h-1 mt-3 md:mt-7 bg-green rounded-full "></p> */}
         </div>
         <div className="md:flex mt-10 justify-around text-center border dark:border-gray-700 rounded-xl  overflow-hidden">
           <div className="md:shrink-0">
             <img
-              className="size-full md:size-80 md:h-full lg:size-96 object-cover"
+              className="size-full md:size-80 md:h-full lg:w-96 object-cover"
               src="./profiles/profile.sit.jpg"
               alt=""
             />
           </div>
           <div className="px-3 py-4 md:p-8">
-            <h3 className="text-2xl mt-3 mb-6 font-semibold tracking-wide">
+            <h3 className="text-2xl mt-2 mb-3 font-semibold tracking-wide">
               Who am I
             </h3>
             <div className="md:text-start font-text md:p-4">
@@ -45,7 +45,7 @@ const AboutMe = () => {
               craft. Driven to create websites that truly add value by solving
               complex problems and building innovative applications.{' '}
             </div>
-            <div className="columns-3 gap-8 mt-6 md:w-11/12">
+            <div className="columns-3 gap-8 mt-5 md:w-11/12">
               <div className="">
                 <div className="text-2xl font-bold mb-1">15+</div>
                 <div className="text-sm">Completed</div>
@@ -67,10 +67,13 @@ const AboutMe = () => {
 
         {/* <div className="md:flex justify-around text-center mt-5 ">
           <div className="md:w-1/2 px-6">
-            <h3 className="text-2xl mt-3 mb-6 font-semibold">Who am I</h3>
+            <h3 className="text-2xl mt-3 mb-6 font-semibold">
+              My Qualification
+            </h3>
+            <p>My personal journey</p>
           </div>
           <div className="md:w-1/2">
-            <h3 className="text-2xl mt-3 mb-6 font-semibold">My Skills</h3>
+            <h3 className="text-2xl mt-3 mb-6 font-semibold">Skills</h3>
             <div className="skills flex flex-wrap justify-center md:justify-start ">
               {skills.map((skill) => (
                 <div
