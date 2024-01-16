@@ -6,26 +6,26 @@ import {
   faCalendarDays,
 } from '@fortawesome/free-solid-svg-icons';
 
+const qualificationTabs = [
+  { icon: faGraduationCap, text: 'Education' },
+  { icon: faBriefcase, text: 'Work' },
+];
+
 const Qualification = () => {
   return (
     <section id="qualification" className="container text-center mx-auto">
       <div className=" mb-6">
         <div className="text-2xl font-semibold py-4">My Qualification</div>
         <div className="qualification_tabs flex justify-center gap-10">
-          <div className="">
-            <FontAwesomeIcon icon={faGraduationCap} />
-            <span className="pl-2">Education</span>
-          </div>
-          <div className="">
-            <FontAwesomeIcon icon={faBriefcase} />
-            <span className="pl-2">Work</span>
-          </div>
+          {qualificationTabs.map((item, index) => (
+            <div key={index} className="">
+              <FontAwesomeIcon icon={item.icon} />
+              <span className="pl-2 text-sm font-text">{item.text}</span>
+            </div>
+          ))}
         </div>
         {/* ONE */}
-        <div
-          id="education"
-          className="qualification_contents px-4 py-8 md:p-10"
-        >
+        <div id="education" className=" px-4 py-8 md:p-10">
           <div className="qua_1 grid grid-cols-3">
             <div className="">
               <div className="font-semibold">
@@ -66,7 +66,7 @@ const Qualification = () => {
           </div>
         </div>
         {/* TWO */}
-        <div id="work" className="qualification_contents mt-10">
+        <div id="work" className="mt-10">
           <div className="qua_1 grid grid-cols-3">
             <div className="">
               <div className="font-semibold">Front End Developer</div>
