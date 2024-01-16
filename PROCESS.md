@@ -151,3 +151,11 @@ What I want to add right now is the mouse scroll icons with animation to encoura
 # 14/1/2024
 
 I added about me component. reduce font-size a little bit because I was styling the website with 90% zoom entire time. I didn't know when it accidentally did it but glad I notice before too soon.
+
+# 15/1/2024
+
+I try styling for who am I section and then I moved to qualification section. I want to apply the same style from the inspiration website but it is build with SASS so I have to look at them and have to figure out how can I apply the same with tailwind.
+
+# 16/1/2024
+
+- I was able to figure out grid system for the layout and apply it perfectly.
