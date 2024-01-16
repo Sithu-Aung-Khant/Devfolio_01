@@ -1,15 +1,11 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import EduTab from './tabs/EduTab';
 import {
   faGraduationCap,
   faBriefcase,
   faCalendarDays,
 } from '@fortawesome/free-solid-svg-icons';
-
-const qualificationTabs = [
-  { icon: faGraduationCap, text: 'Education' },
-  { icon: faBriefcase, text: 'Work' },
-];
 
 const Qualification = () => {
   const [activeTab, setActiveTab] = useState('education');
@@ -49,6 +45,13 @@ const Qualification = () => {
         {/* EDUCATION */}
         {activeTab === 'education' && (
           <div id="education" className=" px-4 py-8 md:p-10">
+            <div className="grid grid-cos-3">
+              <EduTab />
+            </div>
+          </div>
+        )}
+        {/* {activeTab === 'education' && (
+          <div id="education" className=" px-4 py-8 md:p-10">
             <div className="qua_1 grid grid-cols-3">
               <div className="">
                 <div className="font-semibold">
@@ -58,16 +61,10 @@ const Qualification = () => {
                 <FontAwesomeIcon icon={faCalendarDays} />
                 <span className="text-sm pl-2">2023</span>
               </div>
-              <div className="col-start-2 flex justify-center">
-                <div className="circle  size-3.5 rounded-full bg-green"></div>
-                <div className="line h-full w-0.5 bg-green transform -translate-x-2"></div>
-              </div>
+              <DottedLine />
             </div>
             <div className="qua_2 grid grid-cols-3">
-              <div className="col-start-2 flex justify-center items-center">
-                <div className="circle  size-3.5 rounded-full bg-green"></div>
-                <div className="line h-full w-0.5 bg-green transform -translate-x-2"></div>
-              </div>
+              <DottedLine align="center" />
               <div className="">
                 <div className="font-semibold">Responsive Web Design</div>
                 <div className="text-sm">freeCodeCamp</div>
@@ -82,13 +79,10 @@ const Qualification = () => {
                 <FontAwesomeIcon icon={faCalendarDays} />
                 <span className="text-sm pl-2">2016-2019</span>
               </div>
-              <div className="col-start-2 flex justify-center items-end">
-                <div className="circle  size-3.5 rounded-full bg-green"></div>
-                <div className="line h-full w-0.5 bg-green transform -translate-x-2 "></div>
-              </div>
+              <DottedLine align="end" />
             </div>
           </div>
-        )}
+        )} */}
         {/* WORK  */}
         {activeTab === 'work' && (
           <div id="work" className="mt-10">
@@ -134,5 +128,10 @@ const Qualification = () => {
     </section>
   );
 };
+
+const qualificationTabs = [
+  { icon: faGraduationCap, text: 'Education' },
+  { icon: faBriefcase, text: 'Work' },
+];
 
 export default Qualification;
