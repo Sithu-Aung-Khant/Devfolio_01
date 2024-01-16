@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import EduTab from './tabs/EduTab';
+import WorkTab from './tabs/WorkTab';
 import {
   faGraduationCap,
   faBriefcase,
-  faCalendarDays,
 } from '@fortawesome/free-solid-svg-icons';
+
+const qualificationTabs = [
+  { icon: faGraduationCap, text: 'Education' },
+  { icon: faBriefcase, text: 'Work' },
+];
 
 const Qualification = () => {
   const [activeTab, setActiveTab] = useState('education');
@@ -21,7 +26,6 @@ const Qualification = () => {
     >
       <div className=" m-6">
         <div className="text-2xl font-semibold py-4">My Qualification</div>
-
         {/* QUALIFICATION TABS */}
         <div className="flex justify-center gap-10">
           {qualificationTabs.map((item, index) => (
@@ -45,93 +49,18 @@ const Qualification = () => {
         {/* EDUCATION */}
         {activeTab === 'education' && (
           <div id="education" className=" px-4 py-8 md:p-10">
-            <div className="grid grid-cos-3">
-              <EduTab />
-            </div>
+            <EduTab />
           </div>
         )}
-        {/* {activeTab === 'education' && (
-          <div id="education" className=" px-4 py-8 md:p-10">
-            <div className="qua_1 grid grid-cols-3">
-              <div className="">
-                <div className="font-semibold">
-                  JS DataStructures & Algorithms
-                </div>
-                <div className="text-sm">freeCodeCamp</div>
-                <FontAwesomeIcon icon={faCalendarDays} />
-                <span className="text-sm pl-2">2023</span>
-              </div>
-              <DottedLine />
-            </div>
-            <div className="qua_2 grid grid-cols-3">
-              <DottedLine align="center" />
-              <div className="">
-                <div className="font-semibold">Responsive Web Design</div>
-                <div className="text-sm">freeCodeCamp</div>
-                <FontAwesomeIcon icon={faCalendarDays} />
-                <span className="text-sm pl-2">2023</span>
-              </div>
-            </div>
-            <div className="qua_3 grid grid-cols-3">
-              <div className="">
-                <div className="font-semibold">Civil Engineering</div>
-                <div className="text-sm">Lashio Technological University</div>
-                <FontAwesomeIcon icon={faCalendarDays} />
-                <span className="text-sm pl-2">2016-2019</span>
-              </div>
-              <DottedLine align="end" />
-            </div>
-          </div>
-        )} */}
         {/* WORK  */}
         {activeTab === 'work' && (
-          <div id="work" className="mt-10">
-            <div className="qua_1 grid grid-cols-3">
-              <div className="col-start-2 flex justify-center">
-                <div className="circle  size-3.5 rounded-full bg-green"></div>
-                <div className="line h-full w-0.5 bg-green transform -translate-x-2"></div>
-              </div>
-              <div className="">
-                <div className="font-semibold">Front End Developer</div>
-                <div className="text-sm">Frontend Mentor</div>
-                <FontAwesomeIcon icon={faCalendarDays} />
-                <span className="text-sm pl-2">2023</span>
-              </div>
-            </div>
-            <div className="qua_2 grid grid-cols-3">
-              <div className="">
-                <div className="font-semibold">Senior Project Officer</div>
-                <div className="text-sm">CIM (NGo)</div>
-                <FontAwesomeIcon icon={faCalendarDays} />
-                <span className="text-sm pl-2">2023</span>
-              </div>
-              <div className="col-start-2 flex justify-center items-center">
-                <div className="circle  size-3.5 rounded-full bg-green"></div>
-                <div className="line h-full w-0.5 bg-green transform -translate-x-2"></div>
-              </div>
-            </div>
-            <div className="qua_3 grid grid-cols-3">
-              <div className="col-start-2 flex justify-center items-end">
-                <div className="circle  size-3.5 rounded-full bg-green"></div>
-                <div className="line h-full w-0.5 bg-green transform -translate-x-2"></div>
-              </div>
-              <div className="">
-                <div className="font-semibold">Project Officer</div>
-                <div className="text-sm">CIM</div>
-                <FontAwesomeIcon icon={faCalendarDays} />
-                <span className="text-sm pl-2">2021-2022</span>
-              </div>
-            </div>
+          <div id="work" className="px-4 py-8 md:p-10">
+            <WorkTab />
           </div>
         )}
       </div>
     </section>
   );
 };
-
-const qualificationTabs = [
-  { icon: faGraduationCap, text: 'Education' },
-  { icon: faBriefcase, text: 'Work' },
-];
 
 export default Qualification;

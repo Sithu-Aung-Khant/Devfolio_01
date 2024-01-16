@@ -1,4 +1,3 @@
-import React from 'react';
 import DottedLine from './DottedLine';
 import Content from './Content';
 

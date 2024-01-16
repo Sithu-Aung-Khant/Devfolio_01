@@ -159,3 +159,4 @@ I try styling for who am I section and then I moved to qualification section. I 
 # 16/1/2024
 
 - I was able to figure out grid system for the layout and apply it perfectly. Now what I want to do is conditionally render the two tabs I created.
+  After that, I Refactor the Qualification to reduce duplication and improve maintainability by introducing smaller, reusable components.
