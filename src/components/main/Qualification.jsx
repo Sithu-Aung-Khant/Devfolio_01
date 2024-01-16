@@ -5,7 +5,6 @@ import {
   faBriefcase,
   faCalendarDays,
 } from '@fortawesome/free-solid-svg-icons';
-import { tableHeadClasses } from '@mui/material';
 
 const qualificationTabs = [
   { icon: faGraduationCap, text: 'Education' },
@@ -26,6 +25,8 @@ const Qualification = () => {
     >
       <div className=" m-6">
         <div className="text-2xl font-semibold py-4">My Qualification</div>
+
+        {/* QUALIFICATION TABS */}
         <div className="flex justify-center gap-10">
           {qualificationTabs.map((item, index) => (
             <div
@@ -45,7 +46,7 @@ const Qualification = () => {
             </div>
           ))}
         </div>
-        {/* ONE */}
+        {/* EDUCATION */}
         {activeTab === 'education' && (
           <div id="education" className=" px-4 py-8 md:p-10">
             <div className="qua_1 grid grid-cols-3">
@@ -88,6 +89,7 @@ const Qualification = () => {
             </div>
           </div>
         )}
+        {/* WORK  */}
         {activeTab === 'work' && (
           <div id="work" className="mt-10">
             <div className="qua_1 grid grid-cols-3">
