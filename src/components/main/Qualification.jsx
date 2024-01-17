@@ -24,19 +24,18 @@ const Qualification = () => {
       id="qualification"
       className="container text-center mx-auto h-96 md:w-3/4"
     >
-      <div className="text-2xl font-semibold py-4">My Qualification</div>
+      <div className="text-2xl font-semibold py-4">Qualification</div>
       {/* QUALIFICATION TABS */}
       <div className="flex justify-center gap-10">
         {qualificationTabs.map((item, index) => (
           <div
             key={index}
-            className=""
+            className="cursor-pointer hover:scale-105"
             onClick={() => handleTabClick(item.text.toLowerCase())}
-            style={{ cursor: 'pointer' }}
           >
             <FontAwesomeIcon icon={item.icon} />
             <span
-              className={`ml-2 text-sm hover:bg-gradient-to-t from-blue dark:from-green ${
+              className={`ml-2 text-sm hover:bg-gradient-to-t from-blue dark:from-green  ${
                 activeTab === item.text.toLowerCase()
                   ? 'bg-gradient-to-t from-blue dark:from-green'
                   : ''
