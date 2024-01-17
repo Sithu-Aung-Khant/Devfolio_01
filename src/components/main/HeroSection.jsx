@@ -59,7 +59,7 @@ const HeroSection = () => {
           </div>
           <div className="md:w-72 xl:w-2/5 ">
             <div className="wrapper flex items-start ">
-              <div className="blob relative bg-cover bg-center shadow-lg shadow-gray-400 dark:shadow-gray-900 animate-class transition-all duration-1000 size-60 bg-[url('./cyan01.png')]"></div>
+              <div className="blob relative bg-cover bg-center shadow-lg shadow-gray-400 dark:shadow-gray-900 animate-class transition-all size-60 bg-[url('./cyan01.png')]"></div>
             </div>
           </div>
           <div className="hidden lg:block absolute right-36 xl:right-60">
