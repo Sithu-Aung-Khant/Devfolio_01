@@ -5,7 +5,7 @@ import Toggle from './Toggle';
 
 const navigation = [
   { name: 'HOME', href: '#' },
-  { name: 'ABOUT', href: '#' },
+  { name: 'ABOUT', href: '#aboutMe' },
   { name: 'PROJECTS', href: '#' },
   { name: 'CONTACT', href: '#' },
 ];
