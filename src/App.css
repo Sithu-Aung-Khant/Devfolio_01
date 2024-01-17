@@ -71,8 +71,8 @@
   transform: translateX(-50%);
   border-radius: 50%;
   opacity: 1;
-  animation: wheel 1.3s infinite;
   -webkit-animation: wheel 1.3s infinite;
+  animation: wheel 1.3s infinite;
 }
 
 @keyframes wheel {

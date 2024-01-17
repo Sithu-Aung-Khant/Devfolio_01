@@ -1,5 +1,4 @@
 import SocialIcons from './Socials';
-import './hero-section.css';
 
 const HeroSection = () => {
   return (

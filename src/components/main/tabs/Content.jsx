@@ -1,15 +1,15 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 
-const Content = ({ entry }) => {
+const Content = ({ entry, hover }) => {
   return (
     <>
-      <div>
-        <div className="font-semibold">{entry.title}</div>
+      <a href={entry.link} target="_blank" className={`${hover}`}>
+        <div className="font-semibold tracking-tight">{entry.title}</div>
         <div className="text-sm">{entry.institution}</div>
-        <FontAwesomeIcon icon={faCalendarDays} />
+        <FontAwesomeIcon size="sm" icon={faCalendarDays} />
         <span className="text-sm pl-2">{entry.date}</span>
-      </div>
+      </a>
     </>
   );
 };

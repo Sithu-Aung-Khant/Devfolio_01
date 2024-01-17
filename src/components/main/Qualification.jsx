@@ -37,8 +37,10 @@ const Qualification = () => {
             >
               <FontAwesomeIcon icon={item.icon} />
               <span
-                className={`pl-2 text-sm ${
-                  activeTab === item.text.toLowerCase() ? 'text-green' : ''
+                className={`ml-2 text-sm hover:bg-gradient-to-t from-blue dark:from-green ${
+                  activeTab === item.text.toLowerCase()
+                    ? 'bg-gradient-to-t from-blue dark:from-green'
+                    : ''
                 }`}
               >
                 {item.text}
