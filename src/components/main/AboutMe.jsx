@@ -27,7 +27,7 @@ const AboutMe = () => {
       <div className="p-4 lg:px-24 xl:px-40 2xl:px-72 ">
         <div className="About-me flex  items-center flex-col">
           <p className="text-3xl md:text-4xl font-bold">About me</p>
-          {/* <p className="w-20 h-1 mt-3 md:mt-7 bg-green rounded-full "></p> */}
+          <p className="w-20 h-1 mt-3 md:mt-7 bg-green rounded-full "></p>
         </div>
         <div className="md:flex mt-10 justify-around text-center border dark:border-gray-700 rounded-xl  overflow-hidden">
           <div className="md:shrink-0">
@@ -67,28 +67,6 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-
-        {/* <div className="md:flex justify-around text-center mt-5 ">
-          <div className="md:w-1/2 px-6">
-            <h3 className="text-2xl mt-3 mb-6 font-semibold">
-              My Qualification
-            </h3>
-            <p>My personal journey</p>
-          </div>
-          <div className="md:w-1/2">
-            <h3 className="text-2xl mt-3 mb-6 font-semibold">Skills</h3>
-            <div className="skills flex flex-wrap justify-center md:justify-start ">
-              {skills.map((skill) => (
-                <div
-                  className="px-4 py-2 m-1.5 bg-slate-200 dark:bg-green rounded-lg dark:text-dim_white "
-                  key={skill}
-                >
-                  {skill}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div> */}
       </div>
     </section>
   );
