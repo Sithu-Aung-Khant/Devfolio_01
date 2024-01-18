@@ -1,4 +1,4 @@
-import SocialIcons from './Socials';
+import SocialIcons from "./Socials";
 
 const HeroSection = () => {
   return (
@@ -19,10 +19,10 @@ const HeroSection = () => {
               <p>Developer</p>
             </div>
             <div className="mt-3 leading-6 font-text tracking-tight md:py-0 md:mb-0 ">
-              I am{' '}
+              I am{" "}
               <span className="bg-gradient-to-t from-blue dark:from-green ">
                 Sithu,
-              </span>{' '}
+              </span>{" "}
               <span className="hidden md:inline-block">
                 a developer with a focus on React,
               </span>
@@ -31,14 +31,14 @@ const HeroSection = () => {
               a developer with a focus on React,
             </div>
             <div className="">
-              shaping{' '}
+              shaping{" "}
               <span className="bg-gradient-to-t from-blue dark:from-green">
                 intuitive
-              </span>{' '}
-              and{' '}
+              </span>{" "}
+              and{" "}
               <span className="bg-gradient-to-t from-blue dark:from-green">
                 visually appealing
-              </span>{' '}
+              </span>{" "}
               <span className="md:hidden bg-gradient-to-r from-blue dark:from-green">
                 Front-end solutions.
               </span>
