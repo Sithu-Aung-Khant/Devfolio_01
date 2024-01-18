@@ -4,7 +4,6 @@ import Navbar from './components/navbar/Navbar';
 import HeroSection from './components/main/HeroSection';
 import AboutMe from './components/main/AboutMe';
 import Skills from './components/main/Skills';
-import TechSkills from './components/main/TechSkills';
 import Qualification from './components/main/Qualification';
 
 function App() {
@@ -29,7 +28,6 @@ function App() {
       <Navbar isDark={isDark} toggleDarkMode={toggleDarkMode} />
       <HeroSection />
       <AboutMe />
-      {/* <TechSkills /> */}
       <Skills />
       <Qualification />
     </div>
