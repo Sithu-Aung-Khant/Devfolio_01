@@ -36,9 +36,7 @@ const TechSkills = () => {
       id="tech-skills"
       className="container mx-auto h-full my-4 md:w-10/12"
     >
-      <div className="text-2xl text-center font-semibold py-4">
-        Technical Skills
-      </div>
+      <div className="text-2xl text-center font-semibold py-4">Tech Stack</div>
       <div className="skills flex flex-wrap justify-center">
         {skills.map((skill, index) => (
           <div

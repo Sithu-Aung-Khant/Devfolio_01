@@ -29,8 +29,8 @@ function App() {
       <Navbar isDark={isDark} toggleDarkMode={toggleDarkMode} />
       <HeroSection />
       <AboutMe />
-      <TechSkills />
-      {/* <Skills /> */}
+      {/* <TechSkills /> */}
+      <Skills />
       <Qualification />
     </div>
   );
