@@ -8,7 +8,12 @@ const HeroSection = () => {
         id="home"
       >
         <div className="md:flex justify-around items-center">
-          <div className="md:3/5 text-start type-effect ">
+          <div className="md:w-72 xl:w-2/5 md:order-2">
+            <div className="wrapper flex justify-center md:justify-start items-start ">
+              <div className="blob relative bg-cover bg-center shadow-lg shadow-gray-400 dark:shadow-gray-900 animate-class transition-all size-60 bg-[url('./cyan01.png')]"></div>
+            </div>
+          </div>
+          <div className="md:3/5 md:order-1 text-start type-effect pt-10 md:p-0">
             <div className="text-4xl lg:text-header lg:leading-tight font-bold">
               <p>Front-End React</p>
               <p>Developer</p>
@@ -55,11 +60,6 @@ const HeroSection = () => {
               <div className="px-3 font-text text-sm tracking-tight">
                 Scroll down
               </div>
-            </div>
-          </div>
-          <div className="md:w-72 xl:w-2/5 ">
-            <div className="wrapper flex items-start ">
-              <div className="blob relative bg-cover bg-center shadow-lg shadow-gray-400 dark:shadow-gray-900 animate-class transition-all size-60 bg-[url('./cyan01.png')]"></div>
             </div>
           </div>
           <div className="hidden lg:block absolute right-36 xl:right-60">

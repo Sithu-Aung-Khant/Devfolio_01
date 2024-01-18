@@ -22,7 +22,7 @@ const AboutMe = () => {
   return (
     <section
       id="aboutMe"
-      className="container-2xl mx-auto dark:bg-black dark:text-dim_white pt-20"
+      className="container-2xl mx-auto dark:bg-black dark:text-dim_white md:pt-20"
     >
       <div className="p-4 lg:px-24 xl:px-40 2xl:px-72 ">
         <div className="About-me flex  items-center flex-col">
