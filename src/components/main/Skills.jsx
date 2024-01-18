@@ -7,7 +7,6 @@ import {
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  // faHTML5,
   faCss3Alt,
   faSquareJs,
   faReact,
@@ -58,7 +57,6 @@ const Skills = () => {
       <div className="">
         <Accordion type="single" collapsible defaultValue="item-1">
           <AccordionItem value="item-1">
-            {/* <AccordionTrigger>Frontend Development</AccordionTrigger> */}
             <AccordionTrigger>Languages & Frameworks</AccordionTrigger>
             <AccordionContent>
               <div className="skills flex flex-wrap justify-center md:justify-start">
@@ -72,15 +70,6 @@ const Skills = () => {
                   </div>
                 ))}
               </div>
-              {/* {skills.map((skill, index) => (
-                <div
-                  className="flex justify-between px-4 py-2 m-1.5 rounded  bg-slate-200 dark:bg-green dark:text-dim_white "
-                  key={index}
-                >
-                  <div className="">{skill.name}</div>
-                  <FontAwesomeIcon className="size-4" icon={skill.icon} />
-                </div>
-              ))} */}
             </AccordionContent>
           </AccordionItem>
         </Accordion>
