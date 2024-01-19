@@ -1,10 +1,11 @@
-import './App.css';
-import { useState, useEffect } from 'react';
-import Navbar from './components/navbar/Navbar';
-import HeroSection from './components/main/HeroSection';
-import AboutMe from './components/main/AboutMe';
-import Skills from './components/main/Skills';
-import Qualification from './components/main/Qualification';
+import "./App.css";
+import { useState, useEffect } from "react";
+import Navbar from "./components/navbar/Navbar";
+import HeroSection from "./components/main/HeroSection";
+import AboutMe from "./components/main/AboutMe";
+import Skills from "./components/main/Skills";
+import Qualification from "./components/main/Qualification";
+import Projects from "./components/projects/Projects";
 
 function App() {
   // To check system preference of dark/light mode
@@ -15,7 +16,7 @@ function App() {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    const isDarkMode = localStorage.getItem("darkMode") === "true";
     setIsDark(isDarkMode);
   }, []);
 
@@ -29,7 +30,8 @@ function App() {
       <HeroSection />
       <AboutMe />
       <Skills />
-      <Qualification />
+      {/* <Qualification /> */}
+      <Projects />
     </div>
   );
 }
