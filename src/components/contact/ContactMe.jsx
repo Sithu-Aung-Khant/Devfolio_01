@@ -17,6 +17,7 @@ const ContactMe = () => {
       .then(
         (result) => {
           console.log(result.text);
+          e.target.reset();
         },
         (error) => {
           console.log(error.text);
@@ -32,22 +33,31 @@ const ContactMe = () => {
           <div className="md:w-1/2"></div>
           <div className="md:w-1/2">
             <form ref={form} onSubmit={sendEmail}>
-              <label className="hidden">Name</label>
+              <label htmlFor="user_name" className="hidden">
+                Name
+              </label>
               <input
                 type="text"
+                id="user_name"
                 placeholder="Name"
                 name="user_name"
                 className="block w-full border p-2 rounded-lg my-2"
               />
-              <label className="hidden">Email</label>
+              <label htmlFor="user_email" className="hidden">
+                Email
+              </label>
               <input
                 type="email"
+                id="user_email"
                 placeholder="Email"
                 name="user_email"
                 className="block w-full border p-2 rounded-lg my-2"
               />
-              <label className="hidden">Message</label>
+              <label htmlFor="message" className="hidden">
+                Message
+              </label>
               <textarea
+                id="message"
                 placeholder="Your Message"
                 name="message"
                 className="bg-slate-200 p-4 rounded-lg w-full block h-full"
