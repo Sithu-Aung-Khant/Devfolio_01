@@ -32,6 +32,7 @@ module.exports = {
         black: "#242424",
         blue: "#bae1ec",
         // green: "#67645a",
+        dark_blue: "#2d2741",
         green: "#2D4A53",
         dim_white: "#ffffffde",
         border: "hsl(var(--border))",

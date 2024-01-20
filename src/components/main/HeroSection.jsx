@@ -2,7 +2,7 @@ import SocialIcons from "./Socials";
 
 const HeroSection = () => {
   return (
-    <div className="hero-section container-2xl mx-auto max-h-max">
+    <div className="hero-section container-2xl mx-auto max-h-max md:pb-20">
       <section
         className="px-4 py-8 lg:px-28 lg:py-24 2xl:px-72 dark:bg-black dark:text-dim_white"
         id="home"

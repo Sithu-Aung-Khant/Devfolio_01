@@ -1,28 +1,8 @@
-import React from 'react';
-
-const skills = [
-  'HTML',
-  'CSS',
-  'BOOTSTRAP',
-  'TAILWIND CSS',
-  'REACT',
-  'JAVASCRIPT',
-  'SASS',
-  'GULP',
-  'NPM',
-  'DATA STRUCTURE',
-  'ALGORITHMS',
-  'NETLIFY',
-  'VITE',
-  'GIT',
-  'GITHUB',
-];
-
 const AboutMe = () => {
   return (
     <section
       id="aboutMe"
-      className="container-2xl mx-auto dark:bg-black dark:text-dim_white md:pt-20"
+      className="container-2xl mx-auto dark:bg-black dark:text-dim_white"
     >
       <div className="p-4 lg:px-24 xl:px-40 2xl:px-72 ">
         <div className="About-me flex  items-center flex-col">
@@ -46,7 +26,7 @@ const AboutMe = () => {
               concepts into captivating web interfaces. My love for coding,
               problem-solving, and creating value fuels my dedication to this
               craft. Driven to create websites that truly add value by solving
-              complex problems and building innovative applications.{' '}
+              complex problems and building innovative applications.{" "}
             </div>
             <div className="columns-3 gap-8 mt-5 md:w-11/12">
               <div className="">
