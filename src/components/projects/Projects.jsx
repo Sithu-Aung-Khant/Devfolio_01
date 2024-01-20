@@ -16,10 +16,19 @@ const Projects = () => {
           <div className="md:w-1/2 px-6">
             <h3 className="text-2xl font-semibold">Insurance Landing Page</h3>
             <p className="py-3">
-              An insurance landing page developed with React-Bootstrap.
+              Fully responsive insurance company website with React-Bootstrap,
+              ensuring optimal display across various screen sizes.
             </p>
-            <button className="bg-slate-200 rounded-lg px-4 py-2 dark:text-dim_white">
+            <button className="bg-slate-200 rounded-lg px-4 py-2 dark:text-dim_white hover:bg-green hover:text-dim_white">
               <a href="">Case Study</a>
+            </button>
+            <button className=" rounded-lg px-4 py-2 ml-3 dark:text-dim_white hover:bg-green hover:text-dim_white">
+              <a
+                href="https://insure-insurance-company.netlify.app/"
+                target="_blank"
+              >
+                Live Site
+              </a>
             </button>
           </div>
         </div>
@@ -30,11 +39,18 @@ const Projects = () => {
           </div>
           <div className="md:w-1/2 order-1 pl-10">
             <h3 className="text-2xl font-semibold">Age Calculator</h3>
-            <p className="py-3">
-              An insurance landing page developed with React-Bootstrap.
+            <p className="py-3 ">
+              A lightweight web app with an intuitive interface for calculating
+              and displaying age based on entered birthdate, featuring input
+              validation for accuracy.
             </p>
             <button className="bg-slate-200 rounded-lg px-4 py-2 dark:text-dim_white">
               <a href="">Case Study</a>
+            </button>
+            <button className="bg-slate-200 rounded-lg px-4 py-2 dark:text-dim_white">
+              <a href="https://age-calculator-web-app-sithu-thedev.netlify.app/">
+                Live Site
+              </a>
             </button>
           </div>
         </div>
@@ -46,10 +62,17 @@ const Projects = () => {
           <div className="md:w-1/2 px-6">
             <h3 className="text-2xl font-semibold">Image Search App</h3>
             <p className="py-3">
-              An insurance landing page developed with React-Bootstrap.
+              Responsive image search web app with Bootstrap, Pexels API
+              integration, and dynamic JavaScript for real-time access to
+              high-quality visuals.
             </p>
             <button className="bg-slate-200 rounded-lg px-4 py-2 dark:text-dim_white">
               <a href="">Case Study</a>
+            </button>
+            <button className="bg-slate-200 rounded-lg px-4 py-2 dark:text-dim_white">
+              <a href="https://image-search-app-by-sithu-thedev.netlify.app/">
+                Live Site
+              </a>
             </button>
           </div>
         </div>
