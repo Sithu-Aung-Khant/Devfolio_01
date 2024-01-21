@@ -2,18 +2,15 @@ import SocialIcons from "./Socials";
 
 const HeroSection = () => {
   return (
-    <div className="hero-section container-2xl mx-auto max-h-max md:pb-20">
-      <section
-        className="px-4 py-8 lg:px-28 lg:py-24 2xl:px-72 dark:bg-black dark:text-dim_white"
-        id="home"
-      >
-        <div className="md:flex justify-around items-center">
-          <div className="md:w-72 xl:w-2/5 md:order-2">
-            <div className="wrapper flex justify-center md:justify-start items-start ">
-              <div className="blob relative bg-cover bg-center shadow-lg shadow-gray-400 dark:shadow-gray-900 animate-class transition-all size-60 bg-[url('./cyan01.png')]"></div>
-            </div>
+    <section id="hero">
+      <div className="container-2xl mx-auto lg:w-11/12 max-h-max md:pb-20 px-4 py-8 lg:px-32 lg:py-20 2xl:px-72">
+        <div className="md:flex justify-center items-center lg:justify-between max-w-3xl">
+          {/* BLOB IMAGE */}
+          <div className="md:order-2">
+            <div className="blob relative bg-cover bg-center shadow-lg shadow-gray-400 dark:shadow-gray-900 animate-class transition-all size-60 md:size-72 bg-[url('./cyan01.png')]"></div>
           </div>
-          <div className="md:3/5 md:order-1 text-start type-effect pt-10 md:p-0">
+          {/* TEXT CONTENT */}
+          <div className="md:order-1 md:pr-6">
             <div className="text-4xl lg:text-header lg:leading-tight font-bold">
               <p>Front-End React</p>
               <p>Developer</p>
@@ -62,12 +59,13 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-          <div className="hidden lg:block absolute right-36 xl:right-60">
+          {/* Social Icons */}
+          <div className="hidden lg:block absolute right-28 xl:right-72">
             <SocialIcons />
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 
