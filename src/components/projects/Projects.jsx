@@ -31,7 +31,7 @@ const Project = ({
 const Projects = () => {
   return (
     <section id="Projects">
-      <div className="container mx-auto lg:w-3/4 p-0">
+      <div className="container mx-auto lg:w-3/4 p-0 pt-4">
         <div className="flex items-center flex-col">
           <div className="text-3xl font-bold">Projects</div>
           <div className="w-10 h-1 mt-3 md:mt-7 bg-green rounded-full "></div>

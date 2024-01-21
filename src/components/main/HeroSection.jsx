@@ -50,7 +50,7 @@ const HeroSection = () => {
             </div>
             <div className="flex items-center mt-5">
               <button className="bg-green text-dim_white py-2.5 px-4  rounded-md font-medium ">
-                PROJECTS
+                <a href="#Projects">PROJECTS</a>
               </button>
             </div>
             <div className="hidden absolute md:flex mt-20 r-0 items-center">

@@ -1,21 +1,21 @@
-import { useState, useEffect } from 'react';
-import { Dialog } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import Toggle from './Toggle';
+import { useState, useEffect } from "react";
+import { Dialog } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Toggle from "./Toggle";
 
 const navigation = [
-  { name: 'HOME', href: '#' },
-  { name: 'ABOUT', href: '#aboutMe' },
-  { name: 'PROJECTS', href: '#' },
-  { name: 'CONTACT', href: '#' },
+  { name: "HOME", href: "#" },
+  { name: "ABOUT", href: "#aboutMe" },
+  { name: "PROJECTS", href: "#Projects" },
+  { name: "CONTACT", href: "#" },
 ];
 
 const Navbar = ({ isDark, toggleDarkMode }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    document.documentElement.classList.toggle('dark', isDark);
-    localStorage.setItem('darkMode', isDark);
+    document.documentElement.classList.toggle("dark", isDark);
+    localStorage.setItem("darkMode", isDark);
   }, [isDark]);
 
   return (
