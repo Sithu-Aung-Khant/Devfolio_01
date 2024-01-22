@@ -46,7 +46,7 @@ const HeroSection = () => {
               </span>
             </div>
             <div className="flex items-center mt-5">
-              <button className="bg-green text-dim_white py-2.5 px-4  rounded-md font-medium ">
+              <button className="bg-green text-dim_white py-2.5 px-4  rounded-md font-medium">
                 <a href="#Projects">PROJECTS</a>
               </button>
             </div>

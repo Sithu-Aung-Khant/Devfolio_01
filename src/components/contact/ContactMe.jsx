@@ -57,13 +57,13 @@ const ContactMe = () => {
         <div className="text-3xl font-semibold text-center">Contact Me</div>
         <div className="w-10 h-1 mt-3 md:mt-7 mx-auto bg-green rounded-full "></div>
         <div className="md:flex mt-8 justify-center">
-          <div className="md:w-2/5 text-xl">
+          <div className="md:w-2/5 ">
             <div className="w-full flex items-center">
               <div className="w-10 my-3">
                 <FontAwesomeIcon className="size-10" icon={faWhatsapp} />
               </div>
               <div className="flex flex-col">
-                <div className="pl-2 text-md font-semibold">Whats App</div>
+                <div className="pl-2 text-xl font-semibold">Whats App</div>
                 <div className="pl-2 text-sm font-text">09-768094840</div>
               </div>
             </div>
@@ -76,22 +76,25 @@ const ContactMe = () => {
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=sithu.sithuthedev@gmail.com&su=Subject&body=Body%20Text"
                   target="_blank"
                 >
-                  <div className="pl-2 text-md font-semibold">Email</div>
+                  <div className="pl-2 text-xl font-semibold">Email</div>
                   <div className="pl-2 text-sm font-text leading-4">
                     sithu.sithuthedev@gmail.com
                   </div>
                 </a>
               </div>
             </div>
-            <div className="flex py-4 items-center">
-              <button
-                className="bg-slate-200 px-4 py-2 rounded-lg dark:bg-green "
-                onClick={downloadResume}
-              >
-                Resume
-                <FontAwesomeIcon className="pl-2" icon={faArrowUpFromBracket} />
-              </button>
-            </div>
+            <button
+              className="flex items-center my-4 bg-green font-medium text-dim_white px-4 py-2 rounded-lg dark:bg-green "
+              onClick={downloadResume}
+            >
+              RESUME
+              {/* <FontAwesomeIcon className="pl-2" icon={faArrowUpFromBracket} /> */}
+              <img
+                className="size-4 text-dim_white ml-1.5 animate-bounce"
+                src="./svgs/003.svg"
+                alt=""
+              />
+            </button>
             <a
               href="https://www.linkedin.com/in/sithu-aung-khant-504ba91b5/"
               className="pl-2 text-sm hover:underline font-semibold"
