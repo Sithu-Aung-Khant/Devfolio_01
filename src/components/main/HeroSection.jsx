@@ -11,7 +11,7 @@ const HeroSection = () => {
           </div>
           {/* TEXT CONTENT */}
           <div className="md:order-1 md:pr-6">
-            <div className="text-4xl lg:text-header lg:leading-tight font-bold">
+            <div className="text-4xl lg:text-header lg:leading-tight font-bold type-effect">
               <p>Front-End React</p>
               <p>Developer</p>
             </div>
