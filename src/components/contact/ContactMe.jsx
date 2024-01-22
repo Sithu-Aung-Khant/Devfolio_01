@@ -1,7 +1,11 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWhatsapp, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faWhatsapp,
+  faLinkedin,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
   faShareFromSquare,
@@ -49,45 +53,61 @@ const ContactMe = () => {
 
   return (
     <section id="contact_me">
-      <div className="container mx-auto my-8">
+      <div className="container mx-auto px-6 my-8 max-w-4xl">
         <div className="text-3xl font-semibold text-center">Contact Me</div>
         <div className="w-10 h-1 mt-3 md:mt-7 mx-auto bg-green rounded-full "></div>
-        <div className="md:flex mt-8">
-          <div className="md:w-1/2 text-xl md:  pl-10">
-            <div className="w-full">
-              <FontAwesomeIcon icon={faWhatsapp} />
-              <span className="pl-2">09-768094840</span>
+        <div className="md:flex mt-8 justify-center">
+          <div className="md:w-2/5 text-xl">
+            <div className="w-full flex items-center">
+              <div className="w-10 my-3">
+                <FontAwesomeIcon className="size-10" icon={faWhatsapp} />
+              </div>
+              <div className="flex flex-col">
+                <div className="pl-2 text-md font-semibold">Whats App</div>
+                <div className="pl-2 text-sm font-text">09-768094840</div>
+              </div>
             </div>
-            <div className="w-full">
-              <FontAwesomeIcon icon={faEnvelope} />
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=sithu.sithuthedev@gmail.com&su=Subject&body=Body%20Text"
-                target="_blank"
-                className="pl-2"
+            <div className="w-full flex items-center">
+              <div className="w-10 my-3">
+                <FontAwesomeIcon className="size-9" icon={faEnvelope} />
+              </div>
+              <div className="flex flex-col">
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=sithu.sithuthedev@gmail.com&su=Subject&body=Body%20Text"
+                  target="_blank"
+                >
+                  <div className="pl-2 text-md font-semibold">Email</div>
+                  <div className="pl-2 text-sm font-text leading-4">
+                    sithu.sithuthedev@gmail.com
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div className="flex py-4 items-center">
+              <button
+                className="bg-slate-200 px-4 py-2 rounded-lg dark:bg-green "
+                onClick={downloadResume}
               >
-                sithu.sithuthedev@gmail.com
-              </a>
-            </div>
-            <div className="w-full">
-              <FontAwesomeIcon icon={faLinkedin} />
-              <a
-                href="https://www.linkedin.com/in/sithu-aung-khant-504ba91b5/"
-                className="pl-2 hover:underline"
-              >
-                LinkedIn
-              </a>
-            </div>
-            <div className="w-full">
-              <button onClick={downloadResume}>
                 Resume
-                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                <FontAwesomeIcon className="pl-2" icon={faArrowUpFromBracket} />
               </button>
             </div>
-            <FontAwesomeIcon icon={faDownload} />
-            <FontAwesomeIcon icon={faArrowUpFromBracket} />
-            <FontAwesomeIcon icon={faShareFromSquare} />
+            <a
+              href="https://www.linkedin.com/in/sithu-aung-khant-504ba91b5/"
+              className="pl-2 text-sm hover:underline font-semibold"
+              target="_blank"
+            >
+              Linked <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a
+              href="https://github.com/Sithu-Aung-Khant"
+              className="pl-2 text-sm font-semibold hover:underline"
+              target="_blank"
+            >
+              Github <FontAwesomeIcon icon={faGithub} />
+            </a>
           </div>
-          <div className="md:w-1/2">
+          <div className="md:w-2/5">
             <form ref={form} onSubmit={sendEmail}>
               <label htmlFor="user_name" className="hidden">
                 Name

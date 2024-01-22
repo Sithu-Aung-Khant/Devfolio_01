@@ -1,9 +1,6 @@
 const AboutMe = () => {
   return (
-    <section
-      id="aboutMe"
-      className="container-2xl mx-auto dark:bg-black dark:text-dim_white"
-    >
+    <section id="aboutMe" className="container-2xl mx-auto">
       <div className="p-4 lg:px-24 xl:px-40 2xl:px-72 ">
         <div className="About-me flex  items-center flex-col">
           <p className="text-3xl md:text-4xl font-bold">About me</p>

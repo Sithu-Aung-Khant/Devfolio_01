@@ -3,7 +3,7 @@ import SocialIcons from "./Socials";
 const HeroSection = () => {
   return (
     <section id="hero">
-      <div className="container-2xl mx-auto lg:w-11/12 max-h-max md:pb-20 px-4 py-8 lg:px-32 lg:py-20 2xl:px-72">
+      <div className="container-2xl mx-auto lg:w-11/12 max-h-max md:pb-20 px-4 py-8 lg:px-32 lg:py-20 2xl:px-72 max-w-5xl">
         <div className="md:flex justify-center items-center lg:justify-between max-w-3xl">
           {/* BLOB IMAGE */}
           <div className="md:order-2">
