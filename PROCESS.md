@@ -166,3 +166,11 @@ I try styling for who am I section and then I moved to qualification section. I 
 - Today I will add links for my certifications on the education tab.
 - Add styles for when hovering.
 - add cv download button.
+
+# 21.1.2024
+
+I rearrange hero section image and text for look good in every view points.
+
+# 22.1.2024
+
+I replace fontawesome icons with svgs from canva and it look slick. I also design contact me section for optimal appealing in every screen size. What I realized was I have to import validation to my contact form and I will try importing those features today.
