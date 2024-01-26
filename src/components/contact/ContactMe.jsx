@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -6,40 +6,41 @@ import {
   faLinkedin,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import {
-  faEnvelope,
-  faShareFromSquare,
-} from "@fortawesome/free-regular-svg-icons";
-import {
-  faDownload,
-  faArrowUpFromBracket,
-  faArrowUpRightFromSquare,
-  faLink,
-} from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { useForm } from "react-hook-form";
 const Resume = "http://localhost:5173/sithuthedev.pdf";
 
+const emailServiceConfig = {
+  serviceId: "service_nejaw98",
+  templateId: "template_9j8w10t",
+  userId: "W6q8zyo65G01qqIUG",
+};
+
 const ContactMe = () => {
+  const [emailSent, setEmailSent] = useState(false);
+  const { register, handleSubmit } = useForm();
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_nejaw98",
-        "template_9j8w10t",
+  const sendEmail = async (formData) => {
+    try {
+      const result = await emailjs.sendForm(
+        emailServiceConfig.serviceId,
+        emailServiceConfig.templateId,
         form.current,
-        "W6q8zyo65G01qqIUG",
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          e.target.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        },
+        emailServiceConfig.userId,
       );
+
+      console.log(result.text);
+      console.log("Email sent");
+      // Reset the form
+      form.current.reset();
+
+      // Set the emailSent state to true to display a success message
+      setEmailSent(true);
+    } catch (error) {
+      console.error("Error sending email:", error);
+      // Display a user-friendly error message to the user
+    }
   };
 
   const downloadResume = () => {
@@ -53,7 +54,7 @@ const ContactMe = () => {
 
   return (
     <section id="contact_me">
-      <div className="container mx-auto px-6 my-8 max-w-4xl">
+      <div className="container mx-auto px-6 mt-8 mb-16 max-w-4xl">
         <div className="text-3xl font-semibold text-center">Contact Me</div>
         <div className="w-10 h-1 mt-3 md:mt-7 mx-auto bg-green rounded-full "></div>
         <div className="md:flex mt-8 justify-center">
@@ -90,7 +91,7 @@ const ContactMe = () => {
               RESUME
               {/* <FontAwesomeIcon className="pl-2" icon={faArrowUpFromBracket} /> */}
               <img
-                className="size-4 text-dim_white ml-1.5 animate-bounce"
+                className="size-4 text-dim_white ml-3 animate-bounce"
                 src="./svgs/003.svg"
                 alt=""
               />
@@ -110,22 +111,28 @@ const ContactMe = () => {
               Github <FontAwesomeIcon icon={faGithub} />
             </a>
           </div>
+
+          {/* FORM FIELD */}
           <div className="md:w-2/5">
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={handleSubmit(sendEmail)}>
+              {/* NAME */}
               <label htmlFor="user_name" className="hidden">
                 Name
               </label>
               <input
+                {...register("user_name", { required: true })}
                 type="text"
                 id="user_name"
                 placeholder="Name"
                 name="user_name"
                 className="block w-full border p-2 rounded-lg my-2"
               />
+              {/* EMAIL */}
               <label htmlFor="user_email" className="hidden">
                 Email
               </label>
               <input
+                {...register("user_email", { required: true })}
                 type="email"
                 id="user_email"
                 placeholder="Email"
@@ -136,6 +143,7 @@ const ContactMe = () => {
                 Message
               </label>
               <textarea
+                {...register("message", { required: true })}
                 id="message"
                 placeholder="Your Message"
                 name="message"

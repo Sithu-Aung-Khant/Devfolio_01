@@ -27,7 +27,7 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
         <div className="flex items-center">
           <a href="#">
             <img
-              src="./svgs/9.svg"
+              src="./svgs/terminal.svg"
               alt=""
               className="h-10 w-auto pe-1 pt-1 dark:text-dim_white"
             />

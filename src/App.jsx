@@ -8,6 +8,7 @@ import TechStack from "./components/main/TechStack";
 import Qualification from "./components/main/Qualification";
 import Projects from "./components/projects/Projects";
 import ContactMe from "./components/contact/ContactMe";
+import Footer from "./components/foot/Footer";
 
 function App() {
   // To check system preference of dark/light mode
@@ -27,7 +28,7 @@ function App() {
   };
 
   return (
-    <div className="dark:bg-black dark:text-white">
+    <div className="dark:bg-black dark:text-white !scroll-smooth">
       <Navbar isDark={isDark} toggleDarkMode={toggleDarkMode} />
       <HeroSection />
       <AboutMe />
@@ -36,6 +37,7 @@ function App() {
       {/* <Qualification /> */}
       <Projects />
       <ContactMe />
+      <Footer />
     </div>
   );
 }

@@ -174,3 +174,7 @@ I rearrange hero section image and text for look good in every view points.
 # 22.1.2024
 
 I replace fontawesome icons with svgs from canva and it look slick. I also design contact me section for optimal appealing in every screen size. What I realized was I have to import validation to my contact form and I will try importing those features today.
+
+# 26.1.2023
+
+Today, is the day I refocus on building this site after a long break. Today I will build footer component. To do that I need to make my logo and name as a component and reuse it in the footer.
