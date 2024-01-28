@@ -37,7 +37,7 @@ function App() {
       {/* <Skills /> */}
       {/* <Qualification /> */}
       <Projects />
-      <ContactMe />
+      {/* <ContactMe /> */}
       {/* <Footer /> */}
       <WorkTogether isDark={isDark} />
     </div>
