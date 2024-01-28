@@ -50,6 +50,7 @@ const HeroSection = () => {
                 <a href="#Projects">PROJECTS</a>
               </button>
             </div>
+            {/* MOUSE SCROLL */}
             <div className="hidden absolute md:flex mt-20 r-0 items-center">
               <div className="mouse w-6 h-9 rounded-full relative overflow-hidden border-black dark:border-dim_white border-2">
                 <div className="scroll-wheel dark:bg-white bg-black"></div>

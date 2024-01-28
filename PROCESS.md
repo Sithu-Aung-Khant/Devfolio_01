@@ -182,3 +182,4 @@ Today, is the day I refocus on building this site after a long break. Today I wi
 # 28.1.2023
 
 Today, I want to try some footer page from canva to my portfolio website.
+After implementing it to my website, I really love it and want to import entire design concept to my portfolio. So Today, I will restyle projects sections, after that I will move to about me and hero section.
