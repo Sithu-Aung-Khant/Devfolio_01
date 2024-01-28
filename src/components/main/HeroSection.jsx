@@ -7,7 +7,7 @@ const HeroSection = () => {
         <div className="md:flex justify-center items-center lg:justify-between max-w-3xl">
           {/* BLOB IMAGE */}
           <div className="md:order-2">
-            <div className="blob relative bg-cover bg-center shadow-lg shadow-gray-400 dark:shadow-gray-900 animate-class transition-all size-60 md:size-72 bg-[url('./cyan01.png')]"></div>
+            <div className="blob relative bg-cover bg-center shadow-lg shadow-gray-400 dark:shadow-gray-900 animate-class transition-all size-60 md:size-72 bg-[url('./cyan02.png')]"></div>
           </div>
           {/* TEXT CONTENT */}
           <div className="md:order-1 md:pr-6">

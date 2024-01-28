@@ -4,11 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faWhatsapp,
   faLinkedin,
+  faLinkedinIn,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { useForm } from "react-hook-form";
 const Resume = "http://localhost:5173/sithuthedev.pdf";
+import SocialIcons from "../main/Socials";
 
 const emailServiceConfig = {
   serviceId: "service_nejaw98",
@@ -54,11 +56,12 @@ const ContactMe = () => {
 
   return (
     <section id="contact_me">
-      <div className="container mx-auto px-6 mt-8 mb-16 max-w-4xl">
+      <div className="container mx-auto px-6 mt-8 pb-16 max-w-4xl">
         <div className="text-3xl font-semibold text-center">Contact Me</div>
         <div className="w-10 h-1 mt-3 md:mt-7 mx-auto bg-green rounded-full "></div>
         <div className="md:flex mt-8 justify-center">
           <div className="md:w-2/5 ">
+            {/* WHATS APP */}
             <div className="w-full flex items-center">
               <div className="w-10 my-3">
                 <FontAwesomeIcon className="size-10" icon={faWhatsapp} />
@@ -68,7 +71,8 @@ const ContactMe = () => {
                 <div className="pl-2 text-sm font-text">09-768094840</div>
               </div>
             </div>
-            <div className="w-full flex items-center">
+            {/* EMAIL */}
+            <div className="w-full flex items-center mb-3">
               <div className="w-10 my-3">
                 <FontAwesomeIcon className="size-9" icon={faEnvelope} />
               </div>
@@ -84,32 +88,32 @@ const ContactMe = () => {
                 </a>
               </div>
             </div>
+            {/* <a
+              href="https://www.linkedin.com/in/sithu-aung-khant-504ba91b5/"
+              className="ml-12 hover:underline font-semibold"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/Sithu-Aung-Khant"
+              className="pl-4 font-semibold hover:underline"
+              target="_blank"
+            >
+              Github
+            </a> */}
+
             <button
               className="flex items-center my-4 bg-green font-medium text-dim_white px-4 py-2 rounded-lg dark:bg-green "
               onClick={downloadResume}
             >
-              RESUME
-              {/* <FontAwesomeIcon className="pl-2" icon={faArrowUpFromBracket} /> */}
+              <div className="">RESUME</div>
               <img
                 className="size-4 text-dim_white ml-3 animate-bounce"
                 src="./svgs/003.svg"
                 alt=""
               />
             </button>
-            <a
-              href="https://www.linkedin.com/in/sithu-aung-khant-504ba91b5/"
-              className="pl-2 text-sm hover:underline font-semibold"
-              target="_blank"
-            >
-              Linked <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-            <a
-              href="https://github.com/Sithu-Aung-Khant"
-              className="pl-2 text-sm font-semibold hover:underline"
-              target="_blank"
-            >
-              Github <FontAwesomeIcon icon={faGithub} />
-            </a>
           </div>
 
           {/* FORM FIELD */}
@@ -125,7 +129,7 @@ const ContactMe = () => {
                 id="user_name"
                 placeholder="Name"
                 name="user_name"
-                className="block w-full border p-2 rounded-lg my-2"
+                className="block w-full border p-2 rounded-lg my-2 dark:bg-black dark:border-dim_white"
               />
               {/* EMAIL */}
               <label htmlFor="user_email" className="hidden">
@@ -137,7 +141,7 @@ const ContactMe = () => {
                 id="user_email"
                 placeholder="Email"
                 name="user_email"
-                className="block w-full border p-2 rounded-lg my-2"
+                className="block w-full border p-2 rounded-lg my-2 dark:bg-black dark:border-dim_white"
               />
               <label htmlFor="message" className="hidden">
                 Message
@@ -147,13 +151,13 @@ const ContactMe = () => {
                 id="message"
                 placeholder="Your Message"
                 name="message"
-                className="bg-slate-200 p-4 rounded-lg w-full block h-full"
+                className="bg-slate-200 p-4 border rounded-lg w-full block h-full  dark:bg-black dark:border-dim_white"
               />
 
               <input
                 type="submit"
                 value="Send"
-                className="bg-slate-300 w-full mt-4 px-4 py-2 rounded-lg"
+                className="bg-slate-200 hover:bg-slate-300 w-full mt-4 px-4 py-2 rounded-lg dark:bg-green dark:hover:bg-green"
               />
             </form>
           </div>

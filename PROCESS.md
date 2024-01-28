@@ -178,3 +178,7 @@ I replace fontawesome icons with svgs from canva and it look slick. I also desig
 # 26.1.2023
 
 Today, is the day I refocus on building this site after a long break. Today I will build footer component. To do that I need to make my logo and name as a component and reuse it in the footer.
+
+# 28.1.2023
+
+Today, I want to try some footer page from canva to my portfolio website.

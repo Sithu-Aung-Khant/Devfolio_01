@@ -30,10 +30,12 @@ module.exports = {
     extend: {
       colors: {
         black: "#242424",
+        dark_black: "#181A1B",
         blue: "#bae1ec",
-        // green: "#67645a",
+        yellow: "#FFCB3D",
         dark_blue: "#2d2741",
         green: "#2D4A53",
+        dim_gray: "#F2F2F2",
         dim_white: "#ffffffde",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

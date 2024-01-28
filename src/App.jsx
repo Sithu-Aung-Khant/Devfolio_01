@@ -28,7 +28,7 @@ function App() {
   };
 
   return (
-    <div className="dark:bg-black dark:text-white !scroll-smooth">
+    <div className="dark:bg-black dark:text-dim_white !scroll-smooth">
       <Navbar isDark={isDark} toggleDarkMode={toggleDarkMode} />
       <HeroSection />
       <AboutMe />
@@ -37,7 +37,7 @@ function App() {
       {/* <Qualification /> */}
       <Projects />
       <ContactMe />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
