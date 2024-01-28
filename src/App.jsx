@@ -9,6 +9,7 @@ import Qualification from "./components/main/Qualification";
 import Projects from "./components/projects/Projects";
 import ContactMe from "./components/contact/ContactMe";
 import Footer from "./components/foot/Footer";
+import WorkTogether from "./components/foot/WorkTogether";
 
 function App() {
   // To check system preference of dark/light mode
@@ -38,6 +39,7 @@ function App() {
       <Projects />
       <ContactMe />
       {/* <Footer /> */}
+      <WorkTogether isDark={isDark} />
     </div>
   );
 }
