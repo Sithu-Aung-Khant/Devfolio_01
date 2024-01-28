@@ -1,67 +1,80 @@
-import React from "react";
-import SocialIcons from "../main/Socials";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
-const Footer = () => {
+const Footer = ({ isDark }) => {
   return (
-    <section id="footer">
-      <div className="container  mx-auto py-3 px-6 lg:px-24 h-full">
-        <div className="md:flex justify-between">
-          <div className="logo flex items-center justify-center">
-            <img
-              src="./svgs/terminal.svg"
-              alt=""
-              className="h-10 w-auto pe-1 pt-1 dark:text-dim_white"
-            />
-            <div className="block">
-              <div className="text-lg mt-1 leading-4 font-semibold">SITHU</div>
-              <div className="text-xxs  font-semibold">AUNG KHANT</div>
-            </div>
-          </div>
-          <div className="flex justify-center pt-1 gap-8">
-            <SocialIcons />
-          </div>
+    <section id="work_together">
+      <div className="container mx-auto h-dvh pr-0 pl-3 pt-16 lg:pl-16 bg-gray-100">
+        <div className="flex justify-end items-center">
+          <div className="w-20 h-3 md:w-40 md:h-5 bg-black dark:bg-dim_white"></div>
+          <div className="w-16 md:w-40 h-0.5 bg-black dark:bg-dim_white"></div>
         </div>
-        <div className="line h-0.5 bg-gray-300"></div>
-        <div className="grid grid-cols-3">
-          <div className="font-text font-semibold text-gray-600 py-2.5">
-            <p>
-              <a href="#aboutMe">About</a>
-            </p>
-            <p className="pt-1">
-              <a href="#tech-skills">Skills </a>
-            </p>
-            <p className="pt-1">
-              <a href="projects">Projects</a>
-            </p>
-          </div>
-          <div className="font-text font-semibold text-gray-600 py-2.5">
-            <div className="">Socials</div>
-            <p className="pt-1">
-              <a
-                href="https://www.linkedin.com/in/sithu-aung-khant-504ba91b5/"
-                target="_blank"
-              >
-                Linkedin
-              </a>
-            </p>
-            <p className="pt-1">
-              <a href="https://github.com/Sithu-Aung-Khant" target="_blank">
-                Github
-              </a>
-            </p>
-          </div>
-          <div className="font-text font-semibold text-gray-600 py-2.5">
-            {/* Download */}
-            <button
-              className="flex items-center my-3  font-medium px-4 py-2 rounded bg-slate-200 hover:bg-slate-300 "
-              // onClick={downloadResume}
+        <div className="text-4xl md:text-7xl lg:text-8xl">
+          <h1>LET'S</h1>
+          <h1>WORK</h1>
+          <h1>TOGETHER</h1>
+        </div>
+        <div className="md:flex items-start gap-6 lg:gap-20 pt-10 md:pl-3">
+          {/* PHONE */}
+          <div className="phone py-2 text-sm md:text-base">
+            {isDark ? (
+              <img src="./phone&email/7.svg" alt="" className="size-6 inline" />
+            ) : (
+              <img src="./phone&email/6.svg" alt="" className="size-6 inline" />
+            )}
+            <a
+              href="https://wa.me/959768094840?text=Hello,+I+am+Front+End+Developer.+Let's+work+together."
+              target="_blank"
+              className="pl-2 hover:underline"
             >
-              RESUME
-              <img className="size-4 ml-3 " src="./svgs/24.svg" alt="" />
-            </button>
+              +959-768094840
+            </a>
           </div>
+          {/* EMAIL */}
+          <div className="email py-2 text-sm md:text-base">
+            {isDark ? (
+              <img src="./phone&email/9.svg" alt="" className="size-6 inline" />
+            ) : (
+              <img src="./phone&email/8.svg" alt="" className="size-6 inline" />
+            )}
+            <a
+              className="pl-2 hover:underline"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=sithu.sithuthedev@gmail.com&su=Subject&body=Body%20Text"
+              target="_blank"
+            >
+              sithu.sithuthedev@gmail.com
+            </a>
+          </div>
+          {/* GITHUB */}
+          <a
+            href="https://github.com/Sithu-Aung-Khant"
+            target="_blank"
+            className="flex items-center py-2 text-sm md:text-base"
+          >
+            <FontAwesomeIcon className="size-6" icon={faGithub} />
+            <span className="pl-2 hover:underline font-medium">GitHub</span>
+          </a>
+          {/* LINKEDIN */}
+          <a
+            href="https://www.linkedin.com/in/sithu-aung-khant-504ba91b5/"
+            target="_blank"
+            className="flex items-center py-2 text-sm md:text-base"
+          >
+            <FontAwesomeIcon className="size-6" icon={faLinkedin} />
+            <span className="pl-2 hover:underline font-medium">LinkedIn</span>
+          </a>
         </div>
       </div>
+      <p className="text-xs font-text text-center text-gray-400 pb-3 -my-8">
+        Developed by{" "}
+        <a
+          href="https://github.com/Sithu-Aung-Khant"
+          className="hover:underline hover:font-medium"
+          target="_blank"
+        >
+          @Sithu-thedev
+        </a>
+      </p>
     </section>
   );
 };
