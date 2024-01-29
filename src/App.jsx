@@ -38,8 +38,7 @@ function App() {
       {/* <Qualification /> */}
       <Projects />
       <ProjectsSection />
-      <Project01 />
-      {/* <Footer isDark={isDark} /> */}
+      <Footer isDark={isDark} />
     </div>
   );
 }
