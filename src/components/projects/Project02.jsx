@@ -1,20 +1,16 @@
 import React from "react";
 
-const Project01 = () => {
+const Project02 = () => {
   return (
-    <section id="project01">
-      <div className="container mx-auto px-0 md:pt-4 h-dvh flex flex-col justify-center">
-        <div className="flex items-center py-6">
-          <h1 className="text-4xl md:text-7xl px-8 font-medium">Projects</h1>
-          <div className="h-0.5 bg-black dark:bg-dim_white w-full"></div>
+    <section id="project02">
+      <div className="px-0 md:pt-4 h-dvh flex flex-col justify-center md:pl-40">
+        <div className="flex items-center pb-8">
+          <h1 className="w-1/3 text-4xl font-medium px-30">Image Search App</h1>
+          <div className="w-2/3 h-0.5 bg-black dark:bg-dim_white "></div>
         </div>
-        <div className="md:flex items-center mx-auto max-w-screen-lg">
-          <div className="md:w-1/2">
-            <img className="" src="/insure-landing-page54.png" alt="" />
-          </div>
+        <div className="md:flex items-center max-w-screen-lg pr-36">
           <div className="md:w-1/2 pr-4">
-            <h1 className="text-4xl font-medium">Insure: Landing Page</h1>
-            <p className="pt-4">
+            <p className="">
               Fully responsive insurance company website with React Bootstrap,
               ensuring optimal display across various screen sizes.
             </p>
@@ -35,10 +31,13 @@ const Project01 = () => {
               </a>
             </button>
           </div>
+          <div className="md:w-1/2">
+            <img className="" src="/image-search-app02.png" alt="" />
+          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default Project01;
+export default Project02;

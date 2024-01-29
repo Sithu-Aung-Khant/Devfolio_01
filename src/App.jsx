@@ -36,9 +36,9 @@ function App() {
       <TechStack />
       {/* <Skills /> */}
       {/* <Qualification /> */}
-      <Projects />
+      {/* <Projects /> */}
       <ProjectsSection />
-      <Footer isDark={isDark} />
+      {/* <Footer isDark={isDark} /> */}
     </div>
   );
 }
