@@ -7,6 +7,8 @@ import Skills from "./components/main/Skills";
 import TechStack from "./components/main/TechStack";
 import Qualification from "./components/main/Qualification";
 import Projects from "./components/projects/Projects";
+import ProjectsSection from "./components/projects/ProjectsSection";
+import Project01 from "./components/projects/Project01";
 import Footer from "./components/foot/Footer";
 
 function App() {
@@ -27,15 +29,17 @@ function App() {
   };
 
   return (
-    <div className="dark:bg-black dark:text-dim_white !scroll-smooth">
+    <div className="bg-white dark:bg-black dark:text-dim_white !scroll-smooth">
       <Navbar isDark={isDark} toggleDarkMode={toggleDarkMode} />
       <HeroSection />
       <AboutMe />
       <TechStack />
       {/* <Skills /> */}
-      <Projects />
       {/* <Qualification /> */}
-      <Footer isDark={isDark} />
+      <Projects />
+      <ProjectsSection />
+      <Project01 />
+      {/* <Footer isDark={isDark} /> */}
     </div>
   );
 }

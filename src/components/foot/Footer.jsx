@@ -4,7 +4,7 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 const Footer = ({ isDark }) => {
   return (
     <section id="work_together">
-      <div className="container mx-auto h-dvh pr-0 pl-3 pt-16 lg:pl-16 bg-gray-100">
+      <div className="container mx-auto h-dvh pr-0 pl-3 pt-16 lg:pl-16">
         <div className="flex justify-end items-center">
           <div className="w-20 h-3 md:w-40 md:h-5 bg-black dark:bg-dim_white"></div>
           <div className="w-16 md:w-40 h-0.5 bg-black dark:bg-dim_white"></div>
@@ -65,11 +65,11 @@ const Footer = ({ isDark }) => {
           </a>
         </div>
       </div>
-      <p className="text-xs font-text text-center text-gray-400 pb-3 -my-8">
+      <p className="text-xs font-text text-center text-gray-400 pb-3 -my-8 dark:text-dim_white dark:opacity-20">
         Developed by{" "}
         <a
           href="https://github.com/Sithu-Aung-Khant"
-          className="hover:underline hover:font-medium"
+          className="hover:underline hover:font-medium "
           target="_blank"
         >
           @Sithu-thedev
