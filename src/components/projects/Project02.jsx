@@ -3,8 +3,8 @@ import React from "react";
 const Project02 = () => {
   return (
     <section id="project02">
-      <div className="flex justify-start -mb-10">
-        <div className="w-20 h-3 md:w-40 md:h-5 bg-brown03 dark:bg-dim_white ml-10"></div>
+      <div className="flex justify-end -mb-10">
+        <div className="w-20 h-3 md:w-40 md:h-5 bg-brown03 dark:bg-dim_white mr-10"></div>
       </div>
       <div className="px-0 md:pt-4 h-dvh flex flex-col justify-center md:pr-36">
         <div className="md:flex items-center max-w-screen-lg pl-40">
