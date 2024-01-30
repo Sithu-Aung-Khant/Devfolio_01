@@ -24,7 +24,7 @@ const TechSkills = () => {
         <div className="skills flex flex-wrap justify-center">
           {skills.map((skill, index) => (
             <div
-              className="flex items-center px-4 py-2 m-1.5 text-sm bg-slate-200 dark:bg-green rounded-lg dark:text-dim_white"
+              className="flex items-center px-4 py-2 m-1.5 text-sm bg-zinc-100  dark:bg-green rounded-lg dark:text-dim_white"
               key={index}
             >
               <img className="size-5 mr-1" src={skill.svg} alt={skill.name} />

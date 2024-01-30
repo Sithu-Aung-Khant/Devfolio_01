@@ -26,13 +26,13 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
       >
         <div className="flex items-center">
           <a href="#">
-            <img
+            {/* <img
               src="./svgs/terminal.svg"
               alt=""
               className="h-10 w-auto pe-1 pt-1 dark:text-dim_white"
-            />
+            /> */}
           </a>
-          <div className="block">
+          <div className="block opacity-0">
             <div className="text-lg mt-1 leading-4 font-semibold">SITHU</div>
             <div className="text-xxs  font-semibold">AUNG KHANT</div>
           </div>

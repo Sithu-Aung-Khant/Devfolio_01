@@ -1,7 +1,6 @@
 import Project01 from "./Project01";
 import Project02 from "./Project02";
 import Project03 from "./Project03";
-import Project02Test from "./Project02Test";
 
 const ProjectsSection = () => {
   return (
