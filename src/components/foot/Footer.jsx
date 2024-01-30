@@ -9,7 +9,7 @@ const Footer = ({ isDark }) => {
           <div className="w-20 h-3 md:w-40 md:h-5 bg-black dark:bg-dim_white"></div>
           <div className="w-16 md:w-40 h-0.5 bg-black dark:bg-dim_white"></div>
         </div>
-        <div className="text-4xl md:text-7xl lg:text-8xl">
+        <div className="text-4xl md:text-7xl lg:text-8xl leading-snug">
           <h1>LET'S</h1>
           <h1>WORK</h1>
           <h1>TOGETHER</h1>

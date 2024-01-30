@@ -1,18 +1,15 @@
 import React from "react";
 
-const Project03 = () => {
+const Project02Test = () => {
   return (
-    <section id="project01">
-      <div className="flex justify-start pt-12 md:pt-0 md:-mb-10">
-        <div className="w-20 h-2 md:w-40 md:h-5 bg-brown03 dark:bg-dim_white md:ml-10"></div>
+    <section id="project02">
+      <div className="flex justify-end -mb-10">
+        <div className="w-20 h-3 md:w-40 md:h-5 bg-brown03 dark:bg-dim_white mr-10"></div>
       </div>
-      <div className="container mx-auto px-0 md:pt-4 md:h-dvh flex flex-col justify-center">
-        <div className="md:flex items-center mx-auto max-w-screen-lg">
-          <div className="md:w-1/2 px-2 md:pr-4 md:pl-16">
-            <img className="" src="/age-calculator894.png" alt="" />
-          </div>
-          <div className="md:w-1/2 px-6">
-            <h1 className="text-4xl font-medium">Age Calculator</h1>
+      <div className="px-0 md:pt-4 md:h-dvh flex flex-col justify-center md:pr-36">
+        <div className="md:flex items-center max-w-screen-lg md:pl-40">
+          <div className="md:w-1/2 pr-4">
+            <h1 className="text-4xl font-medium">Image Search App</h1>
             <p className="pt-4">
               Fully responsive insurance company website with React Bootstrap,
               ensuring optimal display across various screen sizes.
@@ -34,10 +31,13 @@ const Project03 = () => {
               </a>
             </button>
           </div>
+          <div className="md:w-1/2">
+            <img className="" src="/image-search-app02.png" alt="" />
+          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default Project03;
+export default Project02Test;
