@@ -175,13 +175,17 @@ I rearrange hero section image and text for look good in every view points.
 
 I replace fontawesome icons with svgs from canva and it look slick. I also design contact me section for optimal appealing in every screen size. What I realized was I have to import validation to my contact form and I will try importing those features today.
 
-# 26.1.2023
+# 26.1.2024
 
 Today, is the day I refocus on building this site after a long break. Today I will build footer component. To do that I need to make my logo and name as a component and reuse it in the footer.
 
-# 28.1.2023
+# 28.1.2024
 
 Today, I want to try some footer page from canva to my portfolio website.
 After implementing it to my website, I really love it and want to import entire design concept to my portfolio. So Today, I will restyle projects sections, after that I will move to about me and hero section.
 
 I have finalized footer section so I will delete footer and contact component and rename work-together component to footer.
+
+# 30.1.2024
+
+Today morning, I have finalized project section UI for desktop version. I will have to work on mobile and other devices in the evening.
