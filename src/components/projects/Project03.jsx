@@ -3,10 +3,10 @@ import React from "react";
 const Project03 = () => {
   return (
     <section id="project01">
+      <div className="flex justify-end -mb-10">
+        <div className="w-20 h-3 md:w-40 md:h-5 bg-brown03 dark:bg-dim_white mr-10"></div>
+      </div>
       <div className="container mx-auto px-0 md:pt-4 h-dvh flex flex-col justify-center">
-        <div className="flex justify-end">
-          <div className="w-20 h-3 md:w-40 md:h-5 bg-brown03 dark:bg-dim_white mr-10"></div>
-        </div>
         <div className="md:flex items-center mx-auto max-w-screen-lg">
           <div className="md:w-1/2">
             <img className="" src="/age-calculator54.png" alt="" />
