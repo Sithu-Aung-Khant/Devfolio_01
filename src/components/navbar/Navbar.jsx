@@ -5,10 +5,10 @@ import Toggle from "./Toggle";
 import Switch from "./Switch";
 
 const navigation = [
-  // { name: "HOME", href: "#" },
-  { name: "ABOUT", href: "#aboutMe" },
-  { name: "PROJECTS", href: "#Projects" },
-  { name: "CONTACT", href: "#" },
+  { name: "HOME", href: "#intro" },
+  { name: "ABOUT", href: "#about" },
+  { name: "PROJECTS", href: "#projects" },
+  { name: "CONTACT", href: "#contact" },
 ];
 
 const Navbar = ({ isDark, toggleDarkMode }) => {
@@ -20,26 +20,20 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
   }, [isDark]);
 
   return (
-    <header className="bg-white dark:bg-black dark:text-dim_white">
+    <>
       <nav
-        className="flex items-center justify-between py-4 px-4 lg:py-6 lg:px-8"
+        className="fixed flex justify-center items-center w-full pt-4 px-4 lg:py-6 lg:px-8"
+        // className="flex items-center justify-center pt-4 px-4 lg:py-6 lg:px-8"
         aria-label="Global"
       >
         <div className="flex items-center">
-          <a href="#">
-            {/* <img
-              src="./svgs/terminal.svg"
-              alt=""
-              className="h-10 w-auto pe-1 pt-1 dark:text-dim_white"
-            /> */}
-          </a>
           <div className="block opacity-0">
             <div className="text-lg mt-1 leading-4 font-semibold">SITHU</div>
             <div className="text-xxs  font-semibold">AUNG KHANT</div>
           </div>
         </div>
         <div className="flex md:hidden items-center">
-          <Toggle isDark={isDark} onToggle={toggleDarkMode} />
+          <Switch isDark={isDark} onToggle={toggleDarkMode} />
           <button
             type="button"
             className="inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
@@ -57,12 +51,11 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-gray-900 dark:text-dim_white"
+              className="text-sm font-semibold leading-6 text-gray-900 dark:text-dim_white hover:underline"
             >
               {item.name}
             </a>
           ))}
-          {/* <Toggle isDark={isDark} onToggle={toggleDarkMode} /> */}
           <Switch isDark={isDark} onToggle={toggleDarkMode} />
         </div>
       </nav>
@@ -120,7 +113,7 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
           </div>
         </Dialog.Panel>
       </Dialog>
-    </header>
+    </>
   );
 };
 
