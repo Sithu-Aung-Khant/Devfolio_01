@@ -3,9 +3,9 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@/components/ui/accordion';
+} from "@/components/ui/accordion";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCss3Alt,
   faSquareJs,
@@ -18,33 +18,33 @@ import {
   faGithub,
   faNpm,
   faGulp,
-} from '@fortawesome/free-brands-svg-icons';
-import { faFileCode, faCode } from '@fortawesome/free-solid-svg-icons';
+} from "@fortawesome/free-brands-svg-icons";
+import { faFileCode, faCode } from "@fortawesome/free-solid-svg-icons";
 
 const skills = [
-  { name: 'HTML', icon: faHtml5 },
-  { name: 'CSS', icon: faCss3 },
-  { name: 'JAVASCRIPT', icon: faSquareJs },
-  { name: 'REACT', icon: faReact },
-  { name: 'BOOTSTRAP', icon: faBootstrap },
-  { name: 'TAILWIND CSS', icon: faFileCode },
-  { name: 'SASS', icon: faSass },
+  { name: "HTML", icon: faHtml5 },
+  { name: "CSS", icon: faCss3 },
+  { name: "JAVASCRIPT", icon: faSquareJs },
+  { name: "REACT", icon: faReact },
+  { name: "BOOTSTRAP", icon: faBootstrap },
+  { name: "TAILWIND CSS", icon: faFileCode },
+  { name: "SASS", icon: faSass },
 ];
 
 const tools = [
-  { name: 'GIT', icon: faGitAlt },
-  { name: 'GITHUB', icon: faGithub },
-  { name: 'NPM', icon: faNpm },
-  { name: 'VITE', icon: faBootstrap },
-  { name: 'GULP', icon: faGulp },
-  { name: 'VS CODE', icon: faCode },
+  { name: "GIT", icon: faGitAlt },
+  { name: "GITHUB", icon: faGithub },
+  { name: "NPM", icon: faNpm },
+  { name: "VITE", icon: faBootstrap },
+  { name: "GULP", icon: faGulp },
+  { name: "VS CODE", icon: faCode },
 ];
 
 const others = [
-  { name: 'PROBLEM SOLVING', icon: faGitAlt },
-  { name: 'PROJECT MANAGEMENT', icon: faGithub },
-  { name: 'ENGLISH', icon: faNpm },
-  { name: 'PCM', icon: faBootstrap },
+  { name: "PROBLEM SOLVING", icon: faGitAlt },
+  { name: "PROJECT MANAGEMENT", icon: faGithub },
+  { name: "ENGLISH", icon: faNpm },
+  { name: "PCM", icon: faBootstrap },
 ];
 
 const Skills = () => {
@@ -62,7 +62,7 @@ const Skills = () => {
               <div className="skills flex flex-wrap justify-center md:justify-start">
                 {skills.map((skill, index) => (
                   <div
-                    className="px-4 py-2 my-1.5 mr-3 bg-slate-200 dark:bg-green rounded-lg dark:text-dim_white"
+                    className="px-4 py-2 my-1.5 mr-3 dark:mr-2 bg-slate-200 dark:bg-black dark:border border-dim_white rounded-lg dark:text-dim_white"
                     key={index}
                   >
                     <FontAwesomeIcon className="pr-1" icon={skill.icon} />
