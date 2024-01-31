@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Dialog } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import Toggle from "./Toggle";
+import { XMarkIcon, Squares2X2Icon } from "@heroicons/react/24/outline";
 import Switch from "./Switch";
 
 const navigation = [
@@ -22,8 +21,7 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
   return (
     <>
       <nav
-        className="fixed flex justify-center items-center w-full pt-4 px-4 lg:py-6 lg:px-8"
-        // className="flex items-center justify-center pt-4 px-4 lg:py-6 lg:px-8"
+        className="fixed border-brown bottom-0 md:top-4 md:bottom-full flex justify-end md:justify-center md:items-center w-full lg:py-6 lg:px-8"
         aria-label="Global"
       >
         <div className="flex items-center">
@@ -36,11 +34,11 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
           <Switch isDark={isDark} onToggle={toggleDarkMode} />
           <button
             type="button"
-            className="inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            className="inline-flex items-center justify-center rounded-md p-2 text-gray-700"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon
+            <Squares2X2Icon
               className="h-8 w-8 dark:text-dim_white"
               aria-hidden="true"
             />
@@ -66,27 +64,11 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-50" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white dark:bg-black p-4 sm:max-w-sm ">
-          <div className="flex items-center justify-between dark:text-dim_white">
-            <div className="flex items-center">
-              <a href="#">
-                <span className="sr-only">S Logo</span>
-                {isDark ? (
-                  <img src="./1-1.png" alt="" className="h-8 w-auto pe-1" />
-                ) : (
-                  <img src="./2-1.png" alt="" className="h-8 w-auto pe-1" />
-                )}
-              </a>
-              <div className="block text-start">
-                <div className="text-xl mt-1 leading-5 font-semibold">
-                  SITHU
-                </div>
-                <div className="text-xs  font-semibold">AUNG KHANT</div>
-              </div>
-            </div>
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white dark:bg-black sm:max-w-sm ">
+          <div className="flex items-end justify-end dark:text-dim_white">
             <button
               type="button"
-              className="rounded-md p-2.5 text-gray-700"
+              className="fixed bottom-0 rounded-md p-2 text-gray-700"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
