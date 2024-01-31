@@ -1,19 +1,19 @@
 // Dark/Light Theme Switcher Toggle
 
-import { SunIcon, MoonIcon } from '@heroicons/react/24/outline';
-import { useEffect } from 'react';
+import { SunIcon, MoonIcon } from "@heroicons/react/24/outline";
+import { useEffect } from "react";
 
 const Toggle = ({ onToggle, isDark }) => {
   const handleKeyPress = (event) => {
-    if (event.key === 'm' && event.ctrlKey) {
+    if (event.key === "m" && event.ctrlKey) {
       onToggle();
     }
   };
 
   useEffect(() => {
-    window.addEventListener('keydown', handleKeyPress);
+    window.addEventListener("keydown", handleKeyPress);
     return () => {
-      window.removeEventListener('keydown', handleKeyPress);
+      window.removeEventListener("keydown", handleKeyPress);
     };
   }, [onToggle]);
 

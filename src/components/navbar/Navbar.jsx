@@ -2,9 +2,10 @@ import { useState, useEffect } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Toggle from "./Toggle";
+import Switch from "./Switch";
 
 const navigation = [
-  { name: "HOME", href: "#" },
+  // { name: "HOME", href: "#" },
   { name: "ABOUT", href: "#aboutMe" },
   { name: "PROJECTS", href: "#Projects" },
   { name: "CONTACT", href: "#" },
@@ -61,7 +62,8 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
               {item.name}
             </a>
           ))}
-          <Toggle isDark={isDark} onToggle={toggleDarkMode} />
+          {/* <Toggle isDark={isDark} onToggle={toggleDarkMode} /> */}
+          <Switch isDark={isDark} onToggle={toggleDarkMode} />
         </div>
       </nav>
       <Dialog
