@@ -1,16 +1,17 @@
 import "./App.css";
 import { useState, useEffect } from "react";
-import Navbar from "./components/navbar/Navbar";
-import HeroSection from "./components/main/HeroSection";
-import AboutMe from "./components/main/AboutMe";
-import AboutSection from "./components/sections/AboutSection";
-import Skills from "./components/main/Skills";
-import TechStack from "./components/main/TechStack";
-import Qualification from "./components/main/Qualification";
-import ProjectsSection from "./components/projects/ProjectsSection";
-import Project01 from "./components/projects/Project01";
-import Footer from "./components/foot/Footer";
-import IntroSection from "./components/sections/IntroSection";
+import {
+  Navbar,
+  HeroSection,
+  AboutMe,
+  AboutSection,
+  Skills,
+  TechStack,
+  Qualification,
+  ProjectsSection,
+  Footer,
+  IntroSection,
+} from "./components";
 
 function App() {
   // To check system preference of dark/light mode
@@ -33,14 +34,14 @@ function App() {
     <div className="bg-white dark:bg-black dark:text-dim_white !scroll-smooth">
       <Navbar isDark={isDark} toggleDarkMode={toggleDarkMode} />
       <IntroSection />
-      {/* <HeroSection /> */}
-      {/* <AboutMe /> */}
       <AboutSection />
       <Skills />
-      {/* <Qualification /> */}
-      {/* <TechStack /> */}
       <ProjectsSection />
       <Footer isDark={isDark} />
+      {/* <HeroSection /> */}
+      {/* <AboutMe /> */}
+      {/* <Qualification /> */}
+      {/* <TechStack /> */}
     </div>
   );
 }

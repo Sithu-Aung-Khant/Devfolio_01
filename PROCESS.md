@@ -189,3 +189,13 @@ I have finalized footer section so I will delete footer and contact component an
 # 30.1.2024
 
 Today morning, I have finalized project section UI for desktop version. I will have to work on mobile and other devices in the evening.
+I couldn't sleep so I build intro section at 3 am in the morining.
+
+# 31.1.2024
+
+- Change Dark/Light Toggle from shancnUi Switch
+- update navbar to center and reference design from navigtation menu and Tabs
+
+Refactor: Consolidate Imports in App Component
+
+Created an external 'index' file to streamline import statements in the App component. Moved import lines for various components into the 'components/index.js' file, reducing clutter and improving code organization. This change enhances code readability and maintainability.

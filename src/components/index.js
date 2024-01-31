@@ -1,0 +1,10 @@
+export { default as Navbar } from "./navbar/Navbar";
+export { default as HeroSection } from "./main/HeroSection";
+export { default as AboutMe } from "./main/AboutMe";
+export { default as AboutSection } from "./sections/AboutSection";
+export { default as Skills } from "./main/Skills";
+export { default as TechStack } from "./main/TechStack";
+export { default as Qualification } from "./main/Qualification";
+export { default as ProjectsSection } from "./projects/ProjectsSection";
+export { default as Footer } from "./foot/Footer";
+export { default as IntroSection } from "./sections/IntroSection";
