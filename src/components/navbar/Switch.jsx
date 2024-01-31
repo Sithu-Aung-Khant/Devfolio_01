@@ -22,7 +22,7 @@ const Switch = ({ onToggle, isDark }) => {
         type="checkbox"
         id="check"
         checked={isDark}
-        onClick={onToggle}
+        onChange={onToggle}
         className="sr-only peer"
       />
       <span className="w-2/5 h-4/5 rounded-full bg-brown03  absolute left-1 top-0.5 peer-checked:bg-dim_white peer-checked:left-6 transition-all duration-500"></span>
