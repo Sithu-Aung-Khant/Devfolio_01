@@ -1,13 +1,21 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Dialog } from "@headlessui/react";
-import { XMarkIcon, Squares2X2Icon } from "@heroicons/react/24/outline";
+import {
+  XMarkIcon,
+  Squares2X2Icon,
+  UserIcon,
+  HomeIcon,
+  HomeModernIcon,
+  WrenchScrewdriverIcon,
+  PaperAirplaneIcon,
+} from "@heroicons/react/24/outline";
 import Switch from "./Switch";
 
 const navigation = [
-  { name: "HOME", href: "#intro" },
-  { name: "ABOUT", href: "#about" },
-  { name: "PROJECTS", href: "#projects" },
-  { name: "CONTACT", href: "#contact" },
+  { name: "Home", href: "#intro", icon: HomeIcon },
+  { name: "About", href: "#about", icon: UserIcon },
+  { name: "Projects", href: "#projects", icon: WrenchScrewdriverIcon },
+  { name: "Contact", href: "#contact", icon: PaperAirplaneIcon },
 ];
 
 const Navbar = ({ isDark, toggleDarkMode }) => {
@@ -21,7 +29,7 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
   return (
     <>
       <nav
-        className="fixed border-brown bottom-0 md:top-4 md:bottom-full flex justify-end md:justify-center md:items-center w-full lg:py-6 lg:px-8"
+        className="fixed border-brown bottom-0 md:top-4 md:bottom-full flex justify-end md:justify-center md:items-center w-full md:py-4 lg:py-6 z-50"
         aria-label="Global"
       >
         <div className="flex items-center">
@@ -49,7 +57,7 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-gray-900 dark:text-dim_white hover:underline"
+              className="text-sm uppercase font-semibold leading-6 text-gray-900 dark:text-dim_white hover:underline"
             >
               {item.name}
             </a>
@@ -64,7 +72,8 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-50" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white dark:bg-black sm:max-w-sm ">
+        {/* MOBILE NAVBAR */}
+        <Dialog.Panel className="fixed inset-y-72 bottom-0 z-50 w-full overflow-y-auto bg-white dark:bg-black sm:max-w-sm border-t border-brown rounded-t-lg">
           <div className="flex items-end justify-end dark:text-dim_white">
             <button
               type="button"
@@ -78,19 +87,26 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
               />
             </button>
           </div>
-          <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6">
-                {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="-mx-3 block rounded-md px-3 py-2 text-center font-semibold leading-7 text-gray-900 dark:text-dim_white hover:bg-gray-50 dark:hover:bg-zinc-800"
-                  >
-                    {item.name}
-                  </a>
-                ))}
-              </div>
+          <div className="">
+            {/* MOBILE MENU */}
+            <div className="grid grid-cols-3 pt-6">
+              {navigation.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="block px-3 py-2 text-center text-sm font-medium text-gray-900 dark:text-dim_white"
+                >
+                  <div className="flex flex-col">
+                    <div className="mx-auto">
+                      {React.createElement(item.icon, {
+                        className: "size-6 dark:text-dim_white",
+                        "aria-hidden": "true",
+                      })}
+                    </div>
+                    <div className="py-1">{item.name}</div>
+                  </div>
+                </a>
+              ))}
             </div>
           </div>
         </Dialog.Panel>
