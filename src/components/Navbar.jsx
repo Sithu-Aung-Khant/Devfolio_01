@@ -89,7 +89,7 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
           </div>
           <div className="">
             {/* MOBILE MENU */}
-            <div className="grid grid-cols-3 pt-6">
+            <div className="grid grid-cols-3 pt-10">
               {navigation.map((item) => (
                 <a
                   key={item.name}
@@ -99,11 +99,11 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
                   <div className="flex flex-col">
                     <div className="mx-auto">
                       {React.createElement(item.icon, {
-                        className: "size-8 dark:text-dim_white",
+                        className: "size-7 dark:text-dim_white",
                         "aria-hidden": "true",
                       })}
                     </div>
-                    <div className="py-2 text-lg">{item.name}</div>
+                    <div className="py-2">{item.name}</div>
                   </div>
                 </a>
               ))}

@@ -68,7 +68,7 @@ const Contact = ({ isDark }) => {
             className="flex items-center py-3"
           >
             <FontAwesomeIcon className="size-6" icon={faGithub} />
-            <span className="pl-2 hover:underline font-medium">GitHub</span>
+            <span className="pl-2 hover:underline">GitHub</span>
           </a>
           {/* LINKEDIN */}
           <a
@@ -77,7 +77,7 @@ const Contact = ({ isDark }) => {
             className="flex items-center py-3"
           >
             <FontAwesomeIcon className="size-6" icon={faLinkedin} />
-            <span className="pl-2 hover:underline font-medium">LinkedIn</span>
+            <span className="pl-2 hover:underline">LinkedIn</span>
           </a>
         </div>
       </div>

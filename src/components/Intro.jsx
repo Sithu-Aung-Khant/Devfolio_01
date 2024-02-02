@@ -12,7 +12,7 @@ const Intro = () => {
 
         <div className="md:flex items-end">
           <div className="md:pl-5 lg:pl-20 relative">
-            <div className="absolute z-10 top-6 md:top-10 left-0 md:-left-1 lg:left-8">
+            <div className="absolute z-10 -top-16 left-1 md:top-10 md:-left-1 lg:left-8">
               <div className="w-28 h-5 md:w-40 bg-brown03 dark:bg-dim_white"></div>
             </div>
             <img
