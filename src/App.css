@@ -41,7 +41,7 @@
     border-right: 4px solid #2d4a53;
   }
   100% {
-    width: 9ch;
+    width: 10ch;
     /* width: 12ch; */
     border-right: none;
   }
@@ -56,7 +56,7 @@
   }
   60%,
   70% {
-    width: 9ch;
+    width: 10ch;
     border-right: 3px solid #2d4a53;
   }
 }

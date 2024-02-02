@@ -4,7 +4,7 @@ import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 const Intro = () => {
   return (
     <section id="intro">
-      <div className="container-2xl mx-auto p-4 md:h-dvh lg:px-24 xl:px-40 2xl:px-72 pt-20 md:pt-16 lg:pt-24">
+      <div className="container-2xl mx-auto p-4 pt-28 md:h-dvh lg:px-24 xl:px-40 2xl:px-72 md:pt-16 lg:pt-24">
         <div className="hidden md:flex justify-end">Developer Portfolio</div>
         {/* <div className="md:hidden absolute left-2 top-4">
           Developer Portfolio
@@ -16,7 +16,7 @@ const Intro = () => {
               <div className="w-28 h-4 md:w-40 md:h-5 bg-brown03 dark:bg-dim_white"></div>
             </div>
             <img
-              className="size-60 md:size-80 rounded-full mx-auto object-cover"
+              className="size-72 md:size-80 rounded-full mx-auto object-cover"
               src="./profiles/profile.intro.jpg"
               alt=""
             />
@@ -29,7 +29,7 @@ const Intro = () => {
             </a>
             {/* <div className="blob relative bg-cover bg-center shadow-lg shadow-gray-400 dark:shadow-gray-900 animate-class transition-all size-60 md:size-80 bg-[url('./profiles/profile.sit03.jpg')]"></div> */}
           </div>
-          <div className="md:w-2/3 py-6 md:py-10 md:-ml-16 z-30">
+          <div className="md:w-2/3 pt-12 pb-6 md:py-10 md:-ml-16 z-30">
             <div className="text-4xl md:text-7xl font-medium type-effect">
               <p>FRONT END</p>
               <p>DEVELOPER</p>

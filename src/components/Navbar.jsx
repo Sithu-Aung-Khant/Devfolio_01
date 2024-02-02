@@ -29,7 +29,7 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
   return (
     <>
       <nav
-        className="fixed border-brown bottom-0 md:top-4 md:bottom-full flex justify-end md:justify-center md:items-center w-full md:py-4 lg:py-6 z-50"
+        className="fixed border-brown bottom-2 right-2 md:top-4 md:bottom-full flex justify-end md:justify-center md:items-center w-full md:py-4 lg:py-6 z-50"
         aria-label="Global"
       >
         <div className="flex items-center">
@@ -47,7 +47,7 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
           >
             <span className="sr-only">Open main menu</span>
             <Squares2X2Icon
-              className="h-8 w-8 dark:text-dim_white"
+              className="size-14 dark:text-dim_white"
               aria-hidden="true"
             />
           </button>
@@ -73,7 +73,7 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
       >
         <div className="fixed inset-0 z-50" />
         {/* MOBILE NAVBAR */}
-        <Dialog.Panel className="fixed inset-y-72 bottom-0 z-50 w-full overflow-y-auto bg-white dark:bg-black sm:max-w-sm border-t border-brown rounded-t-lg">
+        <Dialog.Panel className="fixed bottom-0 z-50 w-full h-1/4 overflow-y-auto bg-white dark:bg-black sm:max-w-sm border-t border-brown rounded-t-lg">
           <div className="flex items-end justify-end dark:text-dim_white">
             <button
               type="button"

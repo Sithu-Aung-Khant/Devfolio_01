@@ -71,7 +71,7 @@ const others = [
 const Skills = ({ isDark }) => {
   return (
     <section id="skill-section">
-      <div className="container mx-auto px-0 md:pt-4 md:h-dvh  flex flex-col justify-center">
+      <div className="container mx-auto px-0 py-4 md:pt-4 md:h-dvh  flex flex-col justify-center">
         <div className="flex items-center py-6">
           <h1 className="text-4xl md:text-7xl pl-4 lg:pl-24 pr-8">Skills</h1>
           <div className="h-0.5 bg-black dark:bg-dim_white w-full"></div>

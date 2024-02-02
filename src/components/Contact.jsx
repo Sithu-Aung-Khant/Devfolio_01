@@ -4,19 +4,19 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 const Contact = ({ isDark }) => {
   return (
     <section id="contact">
-      <div className="container mx-auto h-dvh pr-0 pl-3 pt-16 lg:pl-16">
+      <div className="container mx-auto md:h-dvh pr-0 pl-4 py-16 lg:pl-16">
         <div className="flex justify-end items-center">
           <div className="w-20 h-3 md:w-40 md:h-5 bg-black dark:bg-dim_white"></div>
           <div className="w-16 md:w-40 h-0.5 bg-black dark:bg-dim_white"></div>
         </div>
-        <div className="text-4xl md:text-7xl lg:text-8xl leading-snug">
+        <div className="text-5xl md:text-7xl lg:text-8xl leading-snug">
           <h1>LET'S</h1>
           <h1>WORK</h1>
           <h1>TOGETHER</h1>
         </div>
         <div className="md:flex items-start gap-6 lg:gap-20 pt-10 md:pl-3">
           {/* PHONE */}
-          <div className="phone py-2 text-sm md:text-base">
+          <div className="phone py-2">
             {isDark ? (
               <img
                 src="./icons/phone.dark.svg"
@@ -39,7 +39,7 @@ const Contact = ({ isDark }) => {
             </a>
           </div>
           {/* EMAIL */}
-          <div className="email py-2 text-sm md:text-base">
+          <div className="email py-2 ">
             {isDark ? (
               <img
                 src="./icons/email.dark.svg"
@@ -65,7 +65,7 @@ const Contact = ({ isDark }) => {
           <a
             href="https://github.com/Sithu-Aung-Khant"
             target="_blank"
-            className="flex items-center py-2 text-sm md:text-base"
+            className="flex items-center py-2"
           >
             <FontAwesomeIcon className="size-6" icon={faGithub} />
             <span className="pl-2 hover:underline font-medium">GitHub</span>
@@ -74,14 +74,14 @@ const Contact = ({ isDark }) => {
           <a
             href="https://www.linkedin.com/in/sithu-aung-khant-504ba91b5/"
             target="_blank"
-            className="flex items-center py-2 text-sm md:text-base"
+            className="flex items-center py-2"
           >
             <FontAwesomeIcon className="size-6" icon={faLinkedin} />
             <span className="pl-2 hover:underline font-medium">LinkedIn</span>
           </a>
         </div>
       </div>
-      <p className="text-xs font-text text-center text-gray-400 pb-3 -my-8 dark:text-dim_white dark:opacity-20">
+      <p className="text-xs font-text text-center text-gray-400 py-2 dark:text-dim_white dark:opacity-20">
         Developed by{" "}
         <a
           href="https://github.com/Sithu-Aung-Khant"
