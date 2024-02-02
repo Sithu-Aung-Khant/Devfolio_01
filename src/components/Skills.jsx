@@ -79,7 +79,9 @@ const Skills = ({ isDark }) => {
         <div className="mb-10 md:px-24">
           <Accordion type="single" collapsible defaultValue="item-1">
             <AccordionItem value="item-1">
-              <AccordionTrigger>Languages & Frameworks</AccordionTrigger>
+              <AccordionTrigger className="px-4">
+                Languages & Frameworks
+              </AccordionTrigger>
               <AccordionContent>
                 <div className="skills flex flex-wrap justify-center md:justify-start">
                   {skills.map((skill, index) => (
@@ -104,9 +106,11 @@ const Skills = ({ isDark }) => {
           </Accordion>
           <Accordion type="single" collapsible defaultValue="item-2">
             <AccordionItem value="item-2">
-              <AccordionTrigger>Development Toolkit</AccordionTrigger>
+              <AccordionTrigger className="px-4">
+                Development Toolkit
+              </AccordionTrigger>
               <AccordionContent>
-                <div className="flex flex-wrap">
+                <div className="flex flex-wrap justify-center md:justify-start">
                   {tools.map((tool, index) => (
                     <div
                       className="flex items-center pl-3 pr-4 py-1.5 my-1.5 mr-3 bg-white border border-brown03  dark:bg-black dark:border-white rounded-lg dark:text-dim_white"
@@ -132,9 +136,9 @@ const Skills = ({ isDark }) => {
           </Accordion>
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
-              <AccordionTrigger>Others</AccordionTrigger>
+              <AccordionTrigger className="px-4">Others</AccordionTrigger>
               <AccordionContent>
-                <div className="flex flex-wrap">
+                <div className="flex flex-wrap justify-center md:justify-start">
                   {others.map((skill, index) => (
                     <div
                       className="px-4 py-2 my-1.5 mr-3 bg-white border border-brown03  dark:bg-black dark:border-white rounded-lg dark:text-dim_white"
