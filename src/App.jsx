@@ -11,6 +11,7 @@ import {
   ProjectsSection,
   Footer,
   IntroSection,
+  SkillsSection,
 } from "./components";
 
 function App() {
@@ -36,9 +37,10 @@ function App() {
       <IntroSection />
       <AboutSection />
       {/* <TechStack /> */}
-      <Skills />
-      <ProjectsSection />
-      <Footer isDark={isDark} />
+      <SkillsSection isDark={isDark} />
+      {/* <Skills /> */}
+      {/* <ProjectsSection /> */}
+      {/* <Footer isDark={isDark} /> */}
       {/* <HeroSection /> */}
       {/* <AboutMe /> */}
       {/* <Qualification /> */}

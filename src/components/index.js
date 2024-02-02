@@ -8,3 +8,4 @@ export { default as Qualification } from "./main/Qualification";
 export { default as ProjectsSection } from "./projects/ProjectsSection";
 export { default as Footer } from "./foot/Footer";
 export { default as IntroSection } from "./sections/IntroSection";
+export { default as SkillsSection } from "./sections/SkillsSection";

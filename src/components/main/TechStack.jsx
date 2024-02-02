@@ -18,7 +18,7 @@ const TechSkills = () => {
   return (
     <section id="tech-skills">
       <div className="flex items-center pt-20 lg:px-24 text-center justify-end">
-        <div className="text-2xl md:text-5xl pr-8">Tech Stack</div>
+        <div className="text-2xl md:text-5xl pr-8">Skills</div>
         <div className="w-1/3 h-0.5 bg-brown03"></div>
       </div>
       <div className="container mx-auto h-full my-14 pb-4 md:w-10/12">
