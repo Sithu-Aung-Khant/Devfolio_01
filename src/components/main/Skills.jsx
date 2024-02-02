@@ -49,11 +49,8 @@ const others = [
 
 const Skills = () => {
   return (
-    <section
-      id="skills"
-      className="container mx-auto h-full px-20 mb-10 md:w-10/12"
-    >
-      <div className="text-2xl text-center font-semibold py-4">Tech Stack</div>
+    <section id="skills" className="container mx-auto h-full mb-10 md:px-24">
+      {/* <div className="text-2xl text-center font-semibold py-4">Tech Stack</div> */}
       <div className="">
         <Accordion type="single" collapsible defaultValue="item-1">
           <AccordionItem value="item-1">
@@ -62,7 +59,7 @@ const Skills = () => {
               <div className="skills flex flex-wrap justify-center md:justify-start">
                 {skills.map((skill, index) => (
                   <div
-                    className="px-4 py-2 my-1.5 mr-3 dark:mr-2 bg-slate-200 dark:bg-black dark:border border-dim_white rounded-lg dark:text-dim_white"
+                    className="px-4 py-2 my-1.5 mr-3 dark:mr-2 bg-white border border-brown03  dark:bg-black dark:border-white rounded-lg dark:text-dim_white"
                     key={index}
                   >
                     <FontAwesomeIcon className="pr-1" icon={skill.icon} />
@@ -81,7 +78,7 @@ const Skills = () => {
             <div className="flex flex-wrap">
               {tools.map((tool, index) => (
                 <div
-                  className="px-4 py-2 my-1.5 mr-3 bg-slate-200 dark:bg-green rounded-lg dark:text-dim_white"
+                  className="px-4 py-2 my-1.5 mr-3 bg-white border border-brown03  dark:bg-black dark:border-white rounded-lg dark:text-dim_white"
                   key={index}
                 >
                   <FontAwesomeIcon className="pr-1" icon={tool.icon} />
@@ -99,7 +96,7 @@ const Skills = () => {
             <div className="flex flex-wrap">
               {others.map((skill, index) => (
                 <div
-                  className="px-4 py-2 my-1.5 mr-3 bg-slate-200 dark:bg-green rounded-lg dark:text-dim_white"
+                  className="px-4 py-2 my-1.5 mr-3 bg-white border border-brown03  dark:bg-black dark:border-white rounded-lg dark:text-dim_white"
                   key={index}
                 >
                   {skill.name}

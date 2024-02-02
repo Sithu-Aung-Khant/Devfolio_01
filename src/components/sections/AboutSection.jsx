@@ -1,4 +1,15 @@
 import React from "react";
+import { ChevronDoubleRightIcon } from "@heroicons/react/24/outline";
+const Resume = "http://localhost:5173/sithuthedev.pdf";
+
+const downloadResume = () => {
+  const aTag = document.createElement("a");
+  aTag.href = Resume;
+  aTag.setAttribute("download", "sithuthedev.pdf");
+  document.body.appendChild(aTag);
+  aTag.click();
+  aTag.remove();
+};
 
 const AboutSection = () => {
   return (
@@ -19,30 +30,55 @@ const AboutSection = () => {
               alt=""
             />
           </div>
-          <div className="px-3 py-4 md:p-8">
+          <div className="px-3 pt-4 pb-10 md:p-8 relative">
             <div className="md:text-start font-text md:p-4">
-              Developer who thrives on transforming concepts into captivating
-              web interfaces. My love for coding, problem-solving, and creating
-              value fuels my dedication to this craft. Driven to create websites
-              that truly add value by solving complex problems and building
-              innovative applications.{" "}
+              Front End Developer who thrives on transforming concepts into
+              captivating web interfaces. My love for coding, problem-solving,
+              and building software fuels my dedication to this craft. Driven to
+              create websites that truly add value by solving complex problems
+              and building innovative applications.{" "}
             </div>
-            <div className="columns-3 gap-8 mt-5 md:w-11/12">
-              <div className="">
-                <div className="text-2xl font-bold mb-1">15+</div>
+            <div className="columns-3 gap-8 mt-5 mb-7 md:w-11/12">
+              {/* Projects */}
+              <a
+                href="https://www.linkedin.com/in/sithu-aung-khant/details/projects/?profileUrn=urn%3Ali%3Afsd_profile%3AACoAADIwPZQBztFQJT2opohmyQMO1xEW6ONlezY"
+                className=""
+                target="_blank"
+              >
+                <div className="text-2xl font-bold mb-1 hover:scale-105">
+                  15+
+                </div>
                 <div className="text-sm">Completed</div>
                 <div className="text-sm">Projects</div>
-              </div>
-              <div className="">
-                <div className="text-2xl font-bold mb-1">1+ </div>
+              </a>
+              {/* Experience */}
+              <a
+                href="https://github.com/Sithu-Aung-Khant?tab=repositories"
+                target="_blank"
+              >
+                <div className="text-2xl font-bold mb-1 hover:scale-105">
+                  1+{" "}
+                </div>
                 <div className="text-sm">Year coding</div>
                 <div className="text-sm">Experience</div>
-              </div>
-              <div className="">
-                <div className="text-2xl font-bold mb-1">2</div>
+              </a>
+              {/* Certificate */}
+              <a
+                href="https://www.linkedin.com/in/sithu-aung-khant/details/certifications/"
+                className=""
+                target="_blank"
+              >
+                <div className="text-2xl font-bold mb-1 hover:scale-105">2</div>
                 <div className="text-sm">Professional</div>
                 <div className="text-sm">Certificate</div>
-              </div>
+              </a>
+              <button
+                onClick={downloadResume}
+                className="absolute right-2 bottom-2 md:right-4 font-text text-sm hover:underline "
+              >
+                Check out Resume
+                <ChevronDoubleRightIcon className="size-4 ml-1 inline-block" />
+              </button>
             </div>
           </div>
         </div>

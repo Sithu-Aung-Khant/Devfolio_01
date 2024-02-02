@@ -35,13 +35,13 @@ function App() {
       <Navbar isDark={isDark} toggleDarkMode={toggleDarkMode} />
       <IntroSection />
       <AboutSection />
+      {/* <TechStack /> */}
       <Skills />
       <ProjectsSection />
       <Footer isDark={isDark} />
       {/* <HeroSection /> */}
       {/* <AboutMe /> */}
       {/* <Qualification /> */}
-      {/* <TechStack /> */}
     </div>
   );
 }

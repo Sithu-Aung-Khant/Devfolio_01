@@ -199,3 +199,9 @@ I couldn't sleep so I build intro section at 3 am in the morining.
 Refactor: Consolidate Imports in App Component
 
 Created an external 'index' file to streamline import statements in the App component. Moved import lines for various components into the 'components/index.js' file, reducing clutter and improving code organization. This change enhances code readability and maintainability.
+
+# 1.2.2024
+
+- Change Projects to link
+- Add Resume Download feature
+- Change Tech Stack Design

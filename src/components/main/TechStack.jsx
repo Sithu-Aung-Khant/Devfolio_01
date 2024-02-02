@@ -17,14 +17,18 @@ const skills = [
 const TechSkills = () => {
   return (
     <section id="tech-skills">
-      <div className="container mx-auto h-full my-4 pb-4 md:w-10/12">
-        <div className="text-2xl text-center font-semibold pb-5">
+      <div className="flex items-center pt-20 lg:px-24 text-center justify-end">
+        <div className="text-2xl md:text-5xl pr-8">Tech Stack</div>
+        <div className="w-1/3 h-0.5 bg-brown03"></div>
+      </div>
+      <div className="container mx-auto h-full my-14 pb-4 md:w-10/12">
+        {/* <div className="text-2xl text-center font-semibold pb-5">
           Tech Stack
-        </div>
+        </div> */}
         <div className="skills flex flex-wrap justify-center">
           {skills.map((skill, index) => (
             <div
-              className="flex items-center px-4 py-2 m-1.5 text-sm bg-zinc-100  dark:bg-green rounded-lg dark:text-dim_white"
+              className="flex items-center px-4 py-2 m-1.5 text-sm bg-white border border-brown03  dark:bg-black dark:border-white rounded-lg dark:text-dim_white"
               key={index}
             >
               <img className="size-5 mr-1" src={skill.svg} alt={skill.name} />
