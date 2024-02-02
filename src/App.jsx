@@ -1,18 +1,6 @@
 import "./App.css";
 import { useState, useEffect } from "react";
-import {
-  Navbar,
-  HeroSection,
-  AboutMe,
-  AboutSection,
-  Skills,
-  TechStack,
-  Qualification,
-  ProjectsSection,
-  Footer,
-  IntroSection,
-  SkillsSection,
-} from "./components";
+import { Navbar, About, Projects, Contact, Intro, Skills } from "./components";
 
 function App() {
   // To check system preference of dark/light mode
@@ -34,16 +22,11 @@ function App() {
   return (
     <div className="bg-white dark:bg-black dark:text-dim_white !scroll-smooth">
       <Navbar isDark={isDark} toggleDarkMode={toggleDarkMode} />
-      <IntroSection />
-      <AboutSection />
-      {/* <TechStack /> */}
-      <SkillsSection isDark={isDark} />
-      {/* <Skills /> */}
-      {/* <ProjectsSection /> */}
-      {/* <Footer isDark={isDark} /> */}
-      {/* <HeroSection /> */}
-      {/* <AboutMe /> */}
-      {/* <Qualification /> */}
+      <Intro />
+      <About />
+      <Skills isDark={isDark} />
+      <Projects />
+      <Contact isDark={isDark} />
     </div>
   );
 }
