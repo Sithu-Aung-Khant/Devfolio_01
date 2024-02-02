@@ -35,7 +35,7 @@ const Contact = ({ isDark }) => {
               target="_blank"
               className="pl-2 hover:underline"
             >
-              +959-768094840
+              959-768094840
             </a>
           </div>
           {/* EMAIL */}
