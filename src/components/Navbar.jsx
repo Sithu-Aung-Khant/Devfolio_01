@@ -73,16 +73,16 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
       >
         <div className="fixed inset-0 z-50" />
         {/* MOBILE NAVBAR */}
-        <Dialog.Panel className="fixed bottom-0 z-50 w-full h-1/4 overflow-y-auto bg-white dark:bg-black sm:max-w-sm border-t border-brown rounded-t-lg">
+        <Dialog.Panel className="fixed bottom-0 z-50 w-full h-1/3 overflow-y-auto bg-white dark:bg-black sm:max-w-sm border-t border-brown rounded-t-lg">
           <div className="flex items-end justify-end dark:text-dim_white">
             <button
               type="button"
-              className="fixed bottom-0 rounded-md p-2 text-gray-700"
+              className="fixed bottom-0 rounded-md p-4 text-gray-700"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
               <XMarkIcon
-                className="h-8 w-8 dark:text-dim_white"
+                className="size-14 dark:text-dim_white"
                 aria-hidden="true"
               />
             </button>
@@ -99,11 +99,11 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
                   <div className="flex flex-col">
                     <div className="mx-auto">
                       {React.createElement(item.icon, {
-                        className: "size-6 dark:text-dim_white",
+                        className: "size-8 dark:text-dim_white",
                         "aria-hidden": "true",
                       })}
                     </div>
-                    <div className="py-1">{item.name}</div>
+                    <div className="py-2 text-lg">{item.name}</div>
                   </div>
                 </a>
               ))}

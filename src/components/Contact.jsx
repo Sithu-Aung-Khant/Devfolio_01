@@ -14,9 +14,9 @@ const Contact = ({ isDark }) => {
           <h1>WORK</h1>
           <h1>TOGETHER</h1>
         </div>
-        <div className="md:flex items-start gap-6 lg:gap-20 pt-10 md:pl-3">
+        <div className="md:flex items-start gap-6 lg:gap-20 pt-10 pl-2">
           {/* PHONE */}
-          <div className="phone py-2">
+          <div className="phone py-3">
             {isDark ? (
               <img
                 src="./icons/phone.dark.svg"
@@ -39,7 +39,7 @@ const Contact = ({ isDark }) => {
             </a>
           </div>
           {/* EMAIL */}
-          <div className="email py-2 ">
+          <div className="email py-3 ">
             {isDark ? (
               <img
                 src="./icons/email.dark.svg"
@@ -65,7 +65,7 @@ const Contact = ({ isDark }) => {
           <a
             href="https://github.com/Sithu-Aung-Khant"
             target="_blank"
-            className="flex items-center py-2"
+            className="flex items-center py-3"
           >
             <FontAwesomeIcon className="size-6" icon={faGithub} />
             <span className="pl-2 hover:underline font-medium">GitHub</span>
@@ -74,7 +74,7 @@ const Contact = ({ isDark }) => {
           <a
             href="https://www.linkedin.com/in/sithu-aung-khant-504ba91b5/"
             target="_blank"
-            className="flex items-center py-2"
+            className="flex items-center py-3"
           >
             <FontAwesomeIcon className="size-6" icon={faLinkedin} />
             <span className="pl-2 hover:underline font-medium">LinkedIn</span>
