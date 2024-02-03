@@ -20,7 +20,10 @@ const Intro = () => {
               src="./profiles/profile.intro.jpg"
               alt=""
             /> */}
-            <div className="blob mx-auto relative bg-cover bg-center shadow-lg shadow-gray-400 dark:shadow-gray-900 animate-class transition-all size-80 bg-[url('./profiles/profile.intro.jpg')]"></div>
+            <div
+              style={{ backgroundImage: `url('./profiles/profile.intro.jpg')` }}
+              className="blob mx-auto relative bg-cover bg-center shadow-lg shadow-gray-400 dark:shadow-gray-900 animate-class transition-all size-80"
+            ></div>
             <a
               href="https://github.com/Sithu-Aung-Khant"
               target="_blank"
