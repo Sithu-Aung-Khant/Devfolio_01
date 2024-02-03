@@ -4,7 +4,7 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 const Contact = ({ isDark }) => {
   return (
     <section id="contact">
-      <div className="container mx-auto md:h-dvh pr-0 pl-4 py-16 lg:pl-16">
+      <div className="container mx-auto md:h-dvh pr-0 pl-4 py-16 lg:py-32 lg:pl-16">
         <div className="flex justify-end items-center">
           <div className="w-20 h-3 md:w-40 md:h-5 bg-black dark:bg-dim_white"></div>
           <div className="w-16 md:w-40 h-0.5 bg-black dark:bg-dim_white"></div>

@@ -19,9 +19,9 @@ import {
   faGithub,
   faNpm,
   faGulp,
+  faFreeCodeCamp,
 } from "@fortawesome/free-brands-svg-icons";
-import { faFileCode, faCode } from "@fortawesome/free-solid-svg-icons";
-import { Item } from "@radix-ui/react-accordion";
+import { faCode, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 
 const skills = [
   { name: "HTML", icon: faHtml5, svg: false },
@@ -59,13 +59,20 @@ const tools = [
   },
 ];
 
-const others = [
-  { name: "DATA STRUCTURE", icon: faGitAlt },
-  { name: "ALGORITHMS", icon: faGithub },
-  { name: "OBJECT ORIENTED PROGRAMMING", icon: faNpm },
-  { name: "FUNCTIONAL PROGRAMMING", icon: faNpm },
-  { name: "RESPONSIVE DESIGN", icon: faBootstrap },
-  { name: "PROJECT MANAGEMENT", icon: faBootstrap },
+const certifications = [
+  {
+    name: "JavaScript Data Structures & Algorithms",
+    href: "https://www.freecodecamp.org/certification/sithu_thedev/javascript-algorithms-and-data-structures",
+    certifications: true,
+  },
+  {
+    name: "Responsive Design",
+    href: "https://www.freecodecamp.org/certification/sithu_thedev/responsive-web-design",
+    certifications: true,
+  },
+  { name: "Object Oriented Programming", certifications: false },
+  { name: "Functional Programming", certifications: false },
+  { name: "PROJECT MANAGEMENT", certifications: false },
 ];
 
 const Skills = ({ isDark }) => {
@@ -79,7 +86,7 @@ const Skills = ({ isDark }) => {
         <div className="mb-10 md:px-24">
           <Accordion type="single" collapsible defaultValue="item-1">
             <AccordionItem value="item-1">
-              <AccordionTrigger className="px-4">
+              <AccordionTrigger className="px-4 md:px-0">
                 Languages & Frameworks
               </AccordionTrigger>
               <AccordionContent>
@@ -106,7 +113,7 @@ const Skills = ({ isDark }) => {
           </Accordion>
           <Accordion type="single" collapsible defaultValue="item-2">
             <AccordionItem value="item-2">
-              <AccordionTrigger className="px-4">
+              <AccordionTrigger className="px-4 md:px-0">
                 Development Toolkit
               </AccordionTrigger>
               <AccordionContent>
@@ -134,18 +141,24 @@ const Skills = ({ isDark }) => {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
-          <Accordion type="single" collapsible>
-            <AccordionItem value="item-1">
-              <AccordionTrigger className="px-4">Others</AccordionTrigger>
+          <Accordion type="single" collapsible defaultValue="items-3">
+            <AccordionItem value="item-3">
+              <AccordionTrigger className="px-4 md:px-0">
+                Skills & Certifications
+              </AccordionTrigger>
               <AccordionContent>
                 <div className="flex flex-wrap justify-center md:justify-start">
-                  {others.map((skill, index) => (
-                    <div
-                      className="px-4 py-2 my-1.5 mr-3 bg-white border border-brown03  dark:bg-black dark:border-white rounded-lg dark:text-dim_white"
+                  {certifications.map((skill, index) => (
+                    <a
+                      className={`flex font-medium ${skill.certifications ? "hover:bg-brown01 dark:hover:bg-brown03" : "hover:none"} gap-2 items-center px-4 py-2 my-1.5 mr-3 bg-white border border-brown03 dark:bg-black dark:border-white rounded-lg dark:text-dim_white`}
                       key={index}
+                      target="_blank"
+                      href={skill.href}
                     >
+                      {/* <FontAwesomeIcon icon={faGraduationCap} /> */}
+                      <FontAwesomeIcon icon={faFreeCodeCamp} />
                       {skill.name}
-                    </div>
+                    </a>
                   ))}
                 </div>
               </AccordionContent>
