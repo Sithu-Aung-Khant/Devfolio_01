@@ -30,7 +30,7 @@ const About = () => {
               alt=""
             />
           </div>
-          <div className="px-3 pt-4 pb-10 md:p-8 relative">
+          <div className="px-3 pt-5 pb-10 md:p-8 relative">
             <div className="md:text-start font-text md:p-4">
               Front End Developer who thrives on transforming concepts into
               captivating web interfaces. My love for coding, problem-solving,

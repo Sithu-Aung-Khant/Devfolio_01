@@ -34,7 +34,7 @@ const Intro = () => {
             <a
               href="https://github.com/Sithu-Aung-Khant"
               target="_blank"
-              className="md:hidden absolute -bottom-3 right-0"
+              className="md:hidden text-lg absolute -bottom-5 right-0"
             >
               @Sithu-thedev
             </a>

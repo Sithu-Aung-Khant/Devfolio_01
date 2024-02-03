@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 import { Dialog } from "@headlessui/react";
 import {
   XMarkIcon,
@@ -12,10 +13,10 @@ import {
 import Switch from "./ui/Switch";
 
 const navigation = [
-  { name: "Home", href: "#intro", icon: HomeIcon },
-  { name: "About", href: "#about", icon: UserIcon },
-  { name: "Projects", href: "#projects", icon: WrenchScrewdriverIcon },
-  { name: "Contact", href: "#contact", icon: PaperAirplaneIcon },
+  { name: "Home", to: "intro", icon: HomeIcon },
+  { name: "About", to: "about", icon: UserIcon },
+  { name: "Projects", to: "projects", icon: WrenchScrewdriverIcon },
+  { name: "Contact", to: "contact", icon: PaperAirplaneIcon },
 ];
 
 const Navbar = ({ isDark, toggleDarkMode }) => {
@@ -54,13 +55,18 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
         </div>
         <div className="hidden md:flex md:gap-x-6">
           {navigation.map((item) => (
-            <a
+            <Link
+              to={item.to}
+              spy={true}
+              smooth={true}
+              // offset={50}
+              duration={500}
               key={item.name}
               href={item.href}
               className="text-sm uppercase font-semibold leading-6 text-gray-900 dark:text-dim_white hover:underline"
             >
               {item.name}
-            </a>
+            </Link>
           ))}
           <Switch isDark={isDark} onToggle={toggleDarkMode} />
         </div>
