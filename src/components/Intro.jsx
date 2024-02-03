@@ -5,7 +5,14 @@ const Intro = () => {
   return (
     <section id="intro">
       <div className="container-2xl mx-auto p-4 pt-36 h-screen lg:px-24 xl:px-40 2xl:px-72 md:pt-16 lg:pt-24">
-        <div className="hidden md:flex justify-end">Developer Portfolio</div>
+        <a
+          target="_blank"
+          className="hidden md:flex justify-end"
+          href="https://www.linkedin.com/in/sithu-aung-khant"
+        >
+          Developer Portfolio
+        </a>
+        {/* <div className="hidden md:flex justify-end">Developer Portfolio</div> */}
         {/* <div className="md:hidden absolute left-2 top-4">
           Developer Portfolio
         </div> */}
@@ -22,7 +29,7 @@ const Intro = () => {
             /> */}
             <div
               style={{ backgroundImage: `url('./profiles/profile.intro.jpg')` }}
-              className="blob mx-auto relative bg-cover bg-center shadow-lg shadow-gray-400 dark:shadow-gray-900 animate-class transition-all size-80"
+              className="blob mx-auto border border-brown03 relative bg-cover bg-center shadow-lg shadow-gray-400 dark:shadow-gray-900 animate-class transition-all size-80"
             ></div>
             <a
               href="https://github.com/Sithu-Aung-Khant"
