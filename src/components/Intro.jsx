@@ -33,7 +33,7 @@ const Intro = () => {
             </a>
           </div>
           <div className="md:w-2/3 pt-20 pb-6 md:py-10 md:-ml-16 z-30">
-            <div className="text-6xl md:text-7xl font-medium type-effect">
+            <div className="text-5xl md:text-7xl leading-tight font-medium type-effect">
               <p>FRONT END</p>
               <p>DEVELOPER</p>
             </div>
