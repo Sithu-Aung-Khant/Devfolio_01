@@ -8,7 +8,6 @@ import {
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faCss3Alt,
   faSquareJs,
   faReact,
   faSass,
@@ -70,14 +69,14 @@ const certifications = [
     href: "https://www.freecodecamp.org/certification/sithu_thedev/responsive-web-design",
     certifications: true,
   },
-  { name: "Object Oriented Programming", certifications: false },
-  { name: "Functional Programming", certifications: false },
-  { name: "PROJECT MANAGEMENT", certifications: false },
+  { name: "Regex", certifications: false },
+  { name: "OOP", certifications: false },
+  { name: "FP", certifications: false },
 ];
 
 const Skills = ({ isDark }) => {
   return (
-    <section id="skill-section">
+    <section id="skills">
       <div className="container mx-auto px-0 py-4 md:pt-4 md:h-dvh  flex flex-col justify-center">
         <div className="flex items-center py-6">
           <h1 className="text-4xl md:text-7xl pl-4 lg:pl-24 pr-8">Skills</h1>
@@ -111,7 +110,12 @@ const Skills = ({ isDark }) => {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
-          <Accordion type="single" collapsible defaultValue="item-2">
+          <Accordion
+            id="certifications"
+            type="single"
+            collapsible
+            defaultValue="item-2"
+          >
             <AccordionItem value="item-2">
               <AccordionTrigger className="px-4 md:px-0">
                 Development Toolkit
@@ -150,13 +154,17 @@ const Skills = ({ isDark }) => {
                 <div className="flex flex-wrap justify-center md:justify-start">
                   {certifications.map((skill, index) => (
                     <a
-                      className={`flex font-medium ${skill.certifications ? "hover:bg-brown01 dark:hover:bg-brown03" : "hover:none"} gap-2 items-center px-4 py-2 my-1.5 mr-3 bg-white border border-brown03 dark:bg-black dark:border-white rounded-lg dark:text-dim_white`}
+                      className={`flex font-medium ${skill.certifications ? "hover:bg-brown04 dark:hover:bg-brown03" : "hover:none"} gap-2 items-center px-4 py-2 my-1.5 mr-3 bg-white border border-brown03 dark:bg-black dark:border-white rounded-lg dark:text-dim_white`}
                       key={index}
                       target="_blank"
                       href={skill.href}
                     >
-                      {/* <FontAwesomeIcon icon={faGraduationCap} /> */}
-                      <FontAwesomeIcon icon={faFreeCodeCamp} />
+                      {skill.certifications ? (
+                        <FontAwesomeIcon icon={faGraduationCap} />
+                      ) : (
+                        <FontAwesomeIcon icon={faFreeCodeCamp} />
+                      )}
+                      {/* */}
                       {skill.name}
                     </a>
                   ))}

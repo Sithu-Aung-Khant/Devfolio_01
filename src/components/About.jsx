@@ -1,6 +1,7 @@
 import React from "react";
 import { ChevronDoubleRightIcon } from "@heroicons/react/24/outline";
 const Resume = "http://localhost:5173/sithuthedev.pdf";
+import { Link } from "react-scroll";
 
 const downloadResume = () => {
   const aTag = document.createElement("a");
@@ -41,7 +42,7 @@ const About = () => {
             <div className="columns-3 gap-8 mt-5 mb-7 md:w-11/12">
               {/* Projects */}
               <a
-                href="https://www.linkedin.com/in/sithu-aung-khant/details/projects/?profileUrn=urn%3Ali%3Afsd_profile%3AACoAADIwPZQBztFQJT2opohmyQMO1xEW6ONlezY"
+                href="https://github.com/Sithu-Aung-Khant?tab=repositories"
                 className=""
                 target="_blank"
               >
@@ -53,7 +54,7 @@ const About = () => {
               </a>
               {/* Experience */}
               <a
-                href="https://github.com/Sithu-Aung-Khant?tab=repositories"
+                href="https://www.linkedin.com/in/sithu-aung-khant/details/projects/?profileUrn=urn%3Ali%3Afsd_profile%3AACoAADIwPZQBztFQJT2opohmyQMO1xEW6ONlezY"
                 target="_blank"
               >
                 <div className="text-2xl font-bold mb-1 hover:scale-105">
@@ -63,15 +64,22 @@ const About = () => {
                 <div className="text-sm">Experience</div>
               </a>
               {/* Certificate */}
-              <a
-                href="https://www.linkedin.com/in/sithu-aung-khant/details/certifications/"
-                className=""
-                target="_blank"
-              >
+              {/* <a href="#certifications">
                 <div className="text-2xl font-bold mb-1 hover:scale-105">2</div>
                 <div className="text-sm">Professional</div>
                 <div className="text-sm">Certificate</div>
-              </a>
+              </a> */}
+              <Link
+                to="certifications"
+                spy="true"
+                smooth="smooth"
+                duration="500"
+                className="cursor-pointer"
+              >
+                <div className="text-2xl font-bold mb-1 hover:scale-110">2</div>
+                <div className="text-sm">Professional</div>
+                <div className="text-sm">Certificate</div>
+              </Link>
               <button
                 onClick={downloadResume}
                 className="absolute right-2 bottom-2 md:right-4 font-text text-sm hover:underline "
