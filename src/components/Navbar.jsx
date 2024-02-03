@@ -6,17 +6,31 @@ import {
   Squares2X2Icon,
   UserIcon,
   HomeIcon,
-  HomeModernIcon,
   WrenchScrewdriverIcon,
   PaperAirplaneIcon,
+  CircleStackIcon,
 } from "@heroicons/react/24/outline";
 import Switch from "./ui/Switch";
 
-const navigation = [
+const nav_mobile = [
   { name: "Home", to: "intro", icon: HomeIcon },
   { name: "About", to: "about", icon: UserIcon },
-  { name: "Projects", to: "projects", icon: WrenchScrewdriverIcon },
+  { name: "Skills", to: "skills", icon: CircleStackIcon },
+  {
+    name: "Projects",
+    to: "projects",
+    icon: WrenchScrewdriverIcon,
+  },
   { name: "Contact", to: "contact", icon: PaperAirplaneIcon },
+];
+const nav_desktop = [
+  { name: "Home", to: "intro" },
+  { name: "About", to: "about" },
+  {
+    name: "Projects",
+    to: "projects",
+  },
+  { name: "Contact", to: "contact" },
 ];
 
 const Navbar = ({ isDark, toggleDarkMode }) => {
@@ -54,12 +68,11 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
           </button>
         </div>
         <div className="hidden md:flex md:gap-x-6">
-          {navigation.map((item) => (
+          {nav_desktop.map((item) => (
             <Link
               to={item.to}
               spy={true}
               smooth={true}
-              // offset={50}
               duration={500}
               key={item.name}
               href={item.href}
@@ -96,8 +109,12 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
           <div className="">
             {/* MOBILE MENU */}
             <div className="grid grid-cols-3 pt-10">
-              {navigation.map((item) => (
-                <a
+              {nav_mobile.map((item) => (
+                <Link
+                  to={item.to}
+                  spy={true}
+                  smooth={true}
+                  duration={500}
                   key={item.name}
                   href={item.href}
                   className="block px-3 py-2 text-center text-sm font-medium text-gray-900 dark:text-dim_white"
@@ -111,7 +128,7 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
                     </div>
                     <div className="py-2">{item.name}</div>
                   </div>
-                </a>
+                </Link>
               ))}
             </div>
           </div>
