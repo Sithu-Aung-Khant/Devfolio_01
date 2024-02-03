@@ -41,6 +41,7 @@ module.exports = {
         brown01: "#c1c1b3",
         brown02: "#8f8f84",
         brown03: "#2b2b2a",
+        brown04: "#d1d1cb",
         dim_white: "#ffffffde",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

@@ -62,7 +62,7 @@ const Intro = () => {
             />
             <div className="w-72 h-0.5 bg-brown03 dark:bg-dim_white"></div>
           </div>
-          <div className="hidden md:block absolute right-0 w-56 h-28 bg-[#d1d1cb]"></div>
+          <div className="hidden md:block absolute right-0 w-56 h-28 bg-brown04"></div>
         </div>
       </div>
     </section>
