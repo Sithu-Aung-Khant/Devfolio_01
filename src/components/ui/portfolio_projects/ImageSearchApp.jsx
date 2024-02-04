@@ -1,6 +1,6 @@
 import React from "react";
 
-const Project02 = () => {
+const ImageSearchApp = () => {
   return (
     <section id="project02">
       <div className="flex justify-end pt-10 md:pt-0 md:-mb-10">
@@ -23,12 +23,17 @@ const Project02 = () => {
               <li>Built With: React-Bootstrap</li>
               <li>Fully Responsive</li>
             </ul>
-            <button className="bg-brown text-dim_white hover:bg-brown02 px-4 py-2 font-medium">
-              <a href="#">Case Study</a>
+            <button className="border border-brown03 dark:border-dim_white bg-brown03 dark:bg-black dark:hover:bg-brown03 text-dim_white px-4 py-2 font-medium">
+              <a
+                href="https://github.com/Sithu-Aung-Khant/Image-Search-App-Bootstrap-5"
+                target="_blank"
+              >
+                Case Study
+              </a>
             </button>
             <button className="px-4 py-2 ml-3 dark:text-dim_white hover:underline hover:font-semibold">
               <a
-                href="https://insure-insurance-company.netlify.app/"
+                href="https://image-search-app-by-sithu-thedev.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -42,4 +47,4 @@ const Project02 = () => {
   );
 };
 
-export default Project02;
+export default ImageSearchApp;

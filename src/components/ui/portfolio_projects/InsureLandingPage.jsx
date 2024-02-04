@@ -1,9 +1,9 @@
 import React from "react";
 
-const Project01 = () => {
+const InsureLandingPage = () => {
   return (
     <section id="project01">
-      <div className="container mx-auto px-0 md:pt-4 md:h-dvh  flex flex-col justify-center">
+      <div className="container mx-auto px-0 md:pt-4 flex flex-col justify-center">
         <div className="flex items-center py-6">
           <h1 className="text-4xl md:text-7xl pl-4 lg:pl-24 pr-8">Projects</h1>
           <div className="h-0.5 bg-black dark:bg-dim_white w-full"></div>
@@ -28,8 +28,13 @@ const Project01 = () => {
               <li>Built With: React-Bootstrap</li>
               <li>Fully Responsive</li>
             </ul>
-            <button className="bg-brown text-dim_white hover:bg-brown02 px-4 py-2 font-medium">
-              <a href="#">Case Study</a>
+            <button className="border border-brown03 dark:border-dim_white bg-brown03 dark:bg-black dark:hover:bg-brown03 text-dim_white px-4 py-2 font-medium">
+              <a
+                href="https://github.com/Sithu-Aung-Khant/insure-landing-page"
+                target="_blank"
+              >
+                Case Study
+              </a>
             </button>
             <button className="px-4 py-2 ml-3 dark:text-dim_white hover:underline hover:font-semibold">
               <a
@@ -47,7 +52,7 @@ const Project01 = () => {
   );
 };
 
-export default Project01;
+export default InsureLandingPage;
 
 // const Project01 = () => {
 //   return (

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Project03 = () => {
+const AgeCalculator = () => {
   return (
     <section id="project01">
       <div className="flex justify-start pt-12 md:pt-0 md:-mb-10">
@@ -12,7 +12,7 @@ const Project03 = () => {
             <img className="" src="/projects/age-calculator/894.png" alt="" />
           </div>
           <div className="md:w-1/2 px-6">
-            <h1 className="text-4xl font-medium">Age Calculator</h1>
+            <h1 className="text-4xl font-medium">Age Calculator Web App</h1>
             <p className="pt-4">
               Fully responsive insurance company website with React Bootstrap,
               ensuring optimal display across various screen sizes.
@@ -21,12 +21,17 @@ const Project03 = () => {
               <li>Built With: React-Bootstrap</li>
               <li>Fully Responsive</li>
             </ul>
-            <button className="bg-brown text-dim_white hover:bg-brown02 px-4 py-2 font-medium">
-              <a href="#">Case Study</a>
+            <button className="border border-brown03 dark:border-dim_white bg-brown03 dark:bg-black dark:hover:bg-brown03 text-dim_white px-4 py-2 font-medium">
+              <a
+                href="https://github.com/Sithu-Aung-Khant/Age-Calculator-Web-App"
+                target="_blank"
+              >
+                Case Study
+              </a>
             </button>
             <button className="px-4 py-2 ml-3 dark:text-dim_white hover:underline hover:font-semibold">
               <a
-                href="https://insure-insurance-company.netlify.app/"
+                href="https://age-calculator-web-app-sithu-thedev.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -40,4 +45,4 @@ const Project03 = () => {
   );
 };
 
-export default Project03;
+export default AgeCalculator;
