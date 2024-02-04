@@ -28,7 +28,7 @@ const InsureLandingPage = () => {
               <li>Built With: React-Bootstrap</li>
               <li>Fully Responsive</li>
             </ul>
-            <button className="border border-brown03 dark:border-dim_white bg-brown03 dark:bg-black dark:hover:bg-brown03 text-dim_white px-4 py-2 font-medium">
+            <button className="bg-brown03 text-dim_white border border-brown03  dark:bg-white dark:text-black dark:hover:bg-brown04  px-4 py-2 font-medium">
               <a
                 href="https://github.com/Sithu-Aung-Khant/insure-landing-page"
                 target="_blank"
@@ -36,7 +36,7 @@ const InsureLandingPage = () => {
                 Case Study
               </a>
             </button>
-            <button className="px-4 py-2 ml-3 dark:text-dim_white hover:underline hover:font-semibold">
+            <button className="px-4 py-2 ml-3 border border-brown03 dark:border-white dark:text-dim_white hover:underline ">
               <a
                 href="https://insure-insurance-company.netlify.app/"
                 target="_blank"
