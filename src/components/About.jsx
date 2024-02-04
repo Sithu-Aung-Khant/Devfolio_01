@@ -1,15 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
 import { ChevronDoubleRightIcon } from "@heroicons/react/24/outline";
-const Resume = "http://localhost:5173/sithuthedev.pdf";
+const Resume = "https://sithu-devfolio.netlify.app/pdfs/sithuthedev.pdf";
 import { Link } from "react-scroll";
 
-const downloadResume = () => {
-  const aTag = document.createElement("a");
-  aTag.href = Resume;
-  aTag.setAttribute("download", "sithuthedev.pdf");
-  document.body.appendChild(aTag);
-  aTag.click();
-  aTag.remove();
+const DownloadResume = () => {
+  const aTagRef = useRef(null);
+
+  const downloadResume = () => {
+    const aTag = aTagRef.current;
+    aTag.href = Resume;
+    aTag.setAttribute("download", "Sithu_Resume.pdf");
+    aTag.target = "_blank";
+    aTag.click();
+  };
+
+  return (
+    <div>
+      <button
+        onClick={downloadResume}
+        className="absolute right-2 bottom-2 md:right-4 font-text text-sm hover:underline "
+      >
+        Checkout Resume
+        <ChevronDoubleRightIcon className="size-4 ml-1 inline-block" />
+      </button>
+      <a ref={aTagRef} style={{ display: "none" }} />
+    </div>
+  );
 };
 
 const About = () => {
@@ -64,11 +80,6 @@ const About = () => {
                 <div className="text-sm">Experience</div>
               </a>
               {/* Certificate */}
-              {/* <a href="#certifications">
-                <div className="text-2xl font-bold mb-1 hover:scale-105">2</div>
-                <div className="text-sm">Professional</div>
-                <div className="text-sm">Certificate</div>
-              </a> */}
               <Link
                 to="certifications"
                 spy="true"
@@ -80,13 +91,8 @@ const About = () => {
                 <div className="text-sm">Professional</div>
                 <div className="text-sm">Certificate</div>
               </Link>
-              <button
-                onClick={downloadResume}
-                className="absolute right-2 bottom-2 md:right-4 font-text text-sm hover:underline "
-              >
-                Check out Resume
-                <ChevronDoubleRightIcon className="size-4 ml-1 inline-block" />
-              </button>
+              {/* DownloadResume */}
+              <DownloadResume />
             </div>
           </div>
         </div>

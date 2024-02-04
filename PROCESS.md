@@ -205,3 +205,10 @@ Created an external 'index' file to streamline import statements in the App comp
 - Change Projects to link
 - Add Resume Download feature
 - Change Tech Stack Design
+
+# 4.2.2024
+
+- Make Resume Downloadable
+- Change Projects Case Study Button Design
+- Add description of projects
+- make about nav in desktop view collapsed

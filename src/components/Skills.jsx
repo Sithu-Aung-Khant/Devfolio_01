@@ -77,12 +77,13 @@ const certifications = [
 const Skills = ({ isDark }) => {
   return (
     <section id="skills">
-      <div className="container mx-auto px-0 py-4 md:pt-4 md:h-dvh  flex flex-col justify-center">
+      <div className="container mx-auto px-0 py-4 md:pt-6 flex flex-col justify-center">
         <div className="flex items-center py-6">
           <h1 className="text-4xl md:text-7xl pl-4 lg:pl-24 pr-8">Skills</h1>
           <div className="h-0.5 bg-black dark:bg-dim_white w-full"></div>
         </div>
         <div className="mb-10 md:px-24">
+          {/* LANGUAGE & FRAMEWORKS */}
           <Accordion type="single" collapsible defaultValue="item-1">
             <AccordionItem value="item-1">
               <AccordionTrigger className="px-4 md:px-0">
@@ -110,6 +111,7 @@ const Skills = ({ isDark }) => {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
+          {/* DEVELOPMENT TOOLKIT */}
           <Accordion
             id="certifications"
             type="single"
@@ -145,7 +147,8 @@ const Skills = ({ isDark }) => {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
-          <Accordion type="single" collapsible defaultValue="items-3">
+          {/* SKILLS & CERTIFICATIONS */}
+          <Accordion type="single" collapsible defaultValue="item-3">
             <AccordionItem value="item-3">
               <AccordionTrigger className="px-4 md:px-0">
                 Skills & Certifications
