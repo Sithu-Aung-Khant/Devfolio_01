@@ -1,6 +1,6 @@
-import InsureLandingPage from "./ui/portfolio_projects/InsureLandingPage";
-import ImageSearchApp from "./ui/portfolio_projects/ImageSearchApp";
-import AgeCalculator from "./ui/portfolio_projects/AgeCalculator";
+import InsureLandingPage from "../projects/InsureLandingPage";
+import ImageSearchApp from "../projects/ImageSearchApp";
+import AgeCalculator from "../projects/AgeCalculator";
 
 const Projects = () => {
   return (

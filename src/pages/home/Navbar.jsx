@@ -10,7 +10,7 @@ import {
   PaperAirplaneIcon,
   CircleStackIcon,
 } from "@heroicons/react/24/outline";
-import Switch from "./ui/Switch";
+import Switch from "../../components/ui/Switch";
 
 const nav_mobile = [
   { name: "Home", to: "intro", icon: HomeIcon },

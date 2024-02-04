@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState, useEffect } from "react";
-import { Navbar, About, Projects, Contact, Intro, Skills } from "./components";
+import { Navbar, About, Projects, Contact, Intro, Skills } from "./data/home";
 
 function App() {
   // To check system preference of dark/light mode
