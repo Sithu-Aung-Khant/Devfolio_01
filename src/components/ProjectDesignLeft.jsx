@@ -33,7 +33,7 @@ const ProjectDesignLeft = ({
                 Case Study
               </a>
             </button>
-            <button className="px-4 py-2 ml-3 border border-brown03 dark:border-white dark:text-dim_white hover:underline">
+            <button className="px-4 py-2 ml-3 border border-brown03 dark:border-white dark:text-dim_white hover:bg-brown04">
               <a href={liveSiteLink} target="_blank" rel="noopener noreferrer">
                 Live Site
               </a>

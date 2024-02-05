@@ -69,10 +69,7 @@ const About = () => {
                 <div className="text-sm">Projects</div>
               </a>
               {/* Experience */}
-              <a
-                href="https://www.linkedin.com/in/sithu-aung-khant/details/projects/?profileUrn=urn%3Ali%3Afsd_profile%3AACoAADIwPZQBztFQJT2opohmyQMO1xEW6ONlezY"
-                target="_blank"
-              >
+              <a href="https://github.com/Sithu-Aung-Khant" target="_blank">
                 <div className="text-2xl font-bold mb-1 hover:scale-105">
                   1+{" "}
                 </div>
