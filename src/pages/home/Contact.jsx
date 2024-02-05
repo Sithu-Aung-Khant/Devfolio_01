@@ -81,7 +81,7 @@ const Contact = ({ isDark }) => {
           </a>
         </div>
       </div>
-      <p className="text-xs font-text text-center text-gray-400 py-2 dark:text-dim_white dark:opacity-20">
+      <p className="text-xs font-text text-center text-brown py-2 dark:text-dim_white dark:opacity-20">
         Developed by{" "}
         <a
           href="https://github.com/Sithu-Aung-Khant"
