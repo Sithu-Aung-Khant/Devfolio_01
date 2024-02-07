@@ -8,7 +8,17 @@ module.exports = {
     "./src/**/*.{js,jsx}",
   ],
   prefix: "",
+  // Custom BreakPoints
   theme: {
+    screens: {
+      'xxs': '320px',
+      'xs': '375px',
+      'sm': '400px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
     fontFamily: {
       sans: [
         "Inter",

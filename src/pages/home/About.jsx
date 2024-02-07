@@ -32,7 +32,7 @@ const About = () => {
   return (
     <section id="about">
       <div className="container-2xl mx-auto p-4 lg:px-24 xl:px-40 2xl:px-72">
-        <div className="text-4xl md:text-7xl pt-8 md:pt-20 lg:pt-12">
+        <div className="xxs:text-2xl xs:text-3xl sm:text-4xl md:text-7xl pt-8 md:pt-20 lg:pt-12">
           <div className="flex justify-end">
             <div className="w-20 md:w-32 h-0.5 -rotate-45 mb-6 bg-brown03 dark:bg-dim_white"></div>
           </div>
