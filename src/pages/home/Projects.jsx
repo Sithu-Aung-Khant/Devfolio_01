@@ -1,4 +1,3 @@
-import InsureLandingPage from "../projects/InsureLandingPage";
 import ProjectCard from "@/components/ProjectDesign";
 import ProjectDesignLeft from "@/components/ProjectDesignLeft";
 import ProjectDesignRight from "@/components/ProjectDesignRight";
