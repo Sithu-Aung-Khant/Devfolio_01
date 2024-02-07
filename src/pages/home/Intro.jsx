@@ -4,7 +4,7 @@ import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 const Intro = () => {
   return (
     <section id="intro">
-      <div className="container-2xl mx-auto p-4 pt-28 lg:pt-36 md:h-screen lg:px-24 xl:px-40 2xl:px-72 md:pt-16">
+      <div className="container-2xl md:h-screen mx-auto p-4 pt-32 lg:pt-36 lg:px-24 xl:px-40 2xl:px-72">
         <a
           target="_blank"
           className="hidden md:flex justify-end"
