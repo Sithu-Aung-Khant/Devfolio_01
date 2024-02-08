@@ -22,7 +22,7 @@ const ProjectDesignRight = ({
           <div className="md:w-1/2 px-6">
             <h1 className="text-4xl font-medium">{title}</h1>
             <div className="w-14 h-1 bg-brown03 dark:bg-white my-4"></div>
-            <p>{description}</p>
+            <p className="tracking-wide">{description}</p>
             <ul className="list-disc pl-4 pt-1 pb-6">
               {builtWith.map((item, index) => (
                 <li key={index}>{item}</li>

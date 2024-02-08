@@ -44,7 +44,7 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
   return (
     <>
       <nav
-        className="fixed border-brown bottom-2 right-2 md:top-4 md:bottom-full flex justify-end md:justify-center md:items-center w-full md:py-4 lg:py-6 z-50"
+        className="fixed border-brown bottom-2 right-2 md:top-4 md:bottom-full flex justify-end md:justify-center md:items-center w-full md:py-4 lg:py-6 xl:py-8 z-50"
         aria-label="Global"
       >
         <div className="flex items-center">
@@ -76,7 +76,7 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
               duration={500}
               key={item.name}
               href={item.href}
-              className="text-sm uppercase font-semibold leading-6 text-gray-900 dark:text-dim_white hover:underline"
+              className="text-sm xl:text-base uppercase font-semibold leading-6 text-gray-900 dark:text-dim_white hover:underline hover:cursor-pointer  "
             >
               {item.name}
             </Link>

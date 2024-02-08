@@ -18,7 +18,7 @@ const DownloadResume = () => {
     <div>
       <button
         onClick={downloadResume}
-        className="absolute right-2 bottom-2 md:right-4 font-text text-sm hover:underline xl:text-base"
+        className="absolute right-2 bottom-2 md:right-4 font-text text-sm hover:underline xl:text-base xl:scale-105"
       >
         Checkout Resume
         <ChevronDoubleRightIcon className="size-4 ml-1 inline-block" />
@@ -62,19 +62,19 @@ const About = () => {
                 className=""
                 target="_blank"
               >
-                <div className="text-2xl font-bold mb-1 hover:scale-105">
+                <div className="text-2xl font-bold mb-1 xl:scale-105">
                   15+
                 </div>
-                <div className="text-sm">Completed</div>
-                <div className="text-sm">Projects</div>
+                <div className="text-sm xl:scale-105">Completed</div>
+                <div className="text-sm xl:scale-105">Projects</div>
               </a>
               {/* Experience */}
               <a href="https://github.com/Sithu-Aung-Khant" target="_blank">
-                <div className="text-2xl font-bold mb-1 hover:scale-105">
+                <div className="text-2xl font-bold mb-1 xl:scale-105">
                   1+{" "}
                 </div>
-                <div className="text-sm">Year coding</div>
-                <div className="text-sm">Experience</div>
+                <div className="text-sm xl:scale-105">Year coding</div>
+                <div className="text-sm xl:scale-105">Experience</div>
               </a>
               {/* Certificate */}
               <Link
@@ -84,9 +84,9 @@ const About = () => {
                 duration="500"
                 className="cursor-pointer"
               >
-                <div className="text-2xl font-bold mb-1 hover:scale-110">2</div>
-                <div className="text-sm">Professional</div>
-                <div className="text-sm">Certificate</div>
+                <div className="text-2xl font-bold mb-1 xl:scale-105">2</div>
+                <div className="text-sm xl:scale-105">Professional</div>
+                <div className="text-sm xl:scale-105">Certificate</div>
               </Link>
               {/* DownloadResume */}
               <DownloadResume />
