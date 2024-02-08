@@ -82,7 +82,7 @@ const Skills = ({ isDark }) => {
           <h1 className="text-4xl md:text-7xl pl-4 lg:pl-24 pr-8">Skills</h1>
           <div className="h-0.5 bg-black dark:bg-dim_white w-full"></div>
         </div>
-        <div className="mb-10 md:px-24">
+        <div className="mb-10 md:px-6 lg:px-24">
           {/* LANGUAGE & FRAMEWORKS */}
           <Accordion type="single" collapsible defaultValue="item-1">
             <AccordionItem value="item-1">
