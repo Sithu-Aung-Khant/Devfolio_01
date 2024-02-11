@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { ChevronDoubleRightIcon } from "@heroicons/react/24/outline";
-const Resume = "https://sithuthedev.netlify.app/pdfs/sithuthedev.pdf";
+const Resume = "https://sithuthedev.netlify.app/pdfs/resume.pdf";
 import { Link } from "react-scroll";
 
 const DownloadResume = () => {
@@ -9,7 +9,7 @@ const DownloadResume = () => {
   const downloadResume = () => {
     const aTag = aTagRef.current;
     aTag.href = Resume;
-    aTag.setAttribute("download", "Sithu_Resume.pdf");
+    aTag.setAttribute("download", "Resume.pdf");
     aTag.target = "_blank";
     aTag.click();
   };
@@ -39,7 +39,7 @@ const About = () => {
           <h1 className="leading-tight">Hello,</h1>
           <h1 className="">I'm Sithu Aung Khant</h1>
         </div>
-        <div className="md:flex mt-5 md:mt-10 justify-around text-center border border-brown03 dark:border-gray-700 rounded-xl  overflow-hidden">
+        <div className="md:flex mt-5 md:mt-10 justify-around text-center border border-brown03 dark:border-brown rounded-xl  overflow-hidden">
           <div className="md:shrink-0">
             <img
               className="size-full md:size-80 md:h-full lg:w-96 object-cover"
@@ -49,11 +49,15 @@ const About = () => {
           </div>
           <div className="px-3 pt-5 pb-10 md:p-8 relative xl:p-10">
             <div className="md:text-start font-text md:p-4 xl:text-lg">
-              Front End Developer who thrives on transforming concepts into
-              captivating web interfaces. My love for coding, problem-solving,
-              and building software fuels my dedication to this craft. Driven to
-              create websites that truly add value by solving complex problems
-              and building innovative applications.{" "}
+              As a Front End Developer, I specialize in transforming ideas into
+              dynamic web experiences that captivate users. Dedicated to staying
+              updated on industry trends and proficient in a wide range of tools
+              and technologies essential for modern development workflows. My
+              love for coding and problem-solving, particularly through the lens
+              of technology, fuels my dedictation to this craft. Thriving in
+              collaborative environments, I excel at leveraging my skills to
+              deliver high-quality solutions that drive business objectives
+              forward.
             </div>
             <div className="columns-3 gap-8 mt-5 mb-7 md:w-11/12">
               {/* Projects */}
@@ -62,17 +66,13 @@ const About = () => {
                 className=""
                 target="_blank"
               >
-                <div className="text-2xl font-bold mb-1 xl:scale-105">
-                  15+
-                </div>
+                <div className="text-2xl font-bold mb-1 xl:scale-105">15+</div>
                 <div className="text-sm xl:scale-105">Completed</div>
                 <div className="text-sm xl:scale-105">Projects</div>
               </a>
               {/* Experience */}
               <a href="https://github.com/Sithu-Aung-Khant" target="_blank">
-                <div className="text-2xl font-bold mb-1 xl:scale-105">
-                  1+{" "}
-                </div>
+                <div className="text-2xl font-bold mb-1 xl:scale-105">1+ </div>
                 <div className="text-sm xl:scale-105">Year coding</div>
                 <div className="text-sm xl:scale-105">Experience</div>
               </a>
