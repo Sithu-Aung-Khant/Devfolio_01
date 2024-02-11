@@ -20,7 +20,7 @@ function App() {
   };
 
   return (
-    <div className="bg-white dark:bg-black dark:text-dim_white">
+    <div className="bg-white dark:bg-brown03 dark:text-brown04">
       <Navbar isDark={isDark} toggleDarkMode={toggleDarkMode} />
       <Intro />
       <About />
