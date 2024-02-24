@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { ChevronDoubleRightIcon } from "@heroicons/react/24/outline";
-const Resume = "https://sithuthedev.netlify.app/pdfs/resume.pdf";
+const Resume = "https://sithuthedev.netlify.app/pdfs/Sithu-Aung-Khant.pdf";
 import { Link } from "react-scroll";
 
 const DownloadResume = () => {
@@ -9,7 +9,7 @@ const DownloadResume = () => {
   const downloadResume = () => {
     const aTag = aTagRef.current;
     aTag.href = Resume;
-    aTag.setAttribute("download", "Resume.pdf");
+    aTag.setAttribute("download", "Sithu-Aung-Khant.pdf");
     aTag.target = "_blank";
     aTag.click();
   };
